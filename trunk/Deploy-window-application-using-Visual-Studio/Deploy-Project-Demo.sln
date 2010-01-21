@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld", "HelloWorld\HelloWorld.csproj", "{2229D705-23CB-44A0-93E2-A79586D6488A}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "helloworldSetup", "helloworldSetup\helloworldSetup.vdproj", "{F7EB27A2-D26D-4F82-B7D5-F4924E805259}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2229D705-23CB-44A0-93E2-A79586D6488A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2229D705-23CB-44A0-93E2-A79586D6488A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2229D705-23CB-44A0-93E2-A79586D6488A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2229D705-23CB-44A0-93E2-A79586D6488A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7EB27A2-D26D-4F82-B7D5-F4924E805259}.Debug|Any CPU.ActiveCfg = Debug
+		{F7EB27A2-D26D-4F82-B7D5-F4924E805259}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

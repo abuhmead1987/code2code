@@ -1,0 +1,8 @@
+C:\Users\quachnguyen\Desktop\Deploy-Project\Deploy-Project-Demo\HelloWorld\bin\Debug\HelloWorld.exe
+C:\Users\quachnguyen\Desktop\Deploy-Project\Deploy-Project-Demo\HelloWorld\bin\Debug\HelloWorld.pdb
+C:\Users\quachnguyen\Desktop\Deploy-Project\Deploy-Project-Demo\HelloWorld\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\quachnguyen\Desktop\Deploy-Project\Deploy-Project-Demo\HelloWorld\obj\Debug\HelloWorld.HelloWorld.resources
+C:\Users\quachnguyen\Desktop\Deploy-Project\Deploy-Project-Demo\HelloWorld\obj\Debug\HelloWorld.Properties.Resources.resources
+C:\Users\quachnguyen\Desktop\Deploy-Project\Deploy-Project-Demo\HelloWorld\obj\Debug\HelloWorld.csproj.GenerateResource.Cache
+C:\Users\quachnguyen\Desktop\Deploy-Project\Deploy-Project-Demo\HelloWorld\obj\Debug\HelloWorld.exe
+C:\Users\quachnguyen\Desktop\Deploy-Project\Deploy-Project-Demo\HelloWorld\obj\Debug\HelloWorld.pdb

@@ -1,0 +1,5 @@
+C:\Temp\GetUrlFromSitemap\CS\bin\Debug\CS.exe
+C:\Temp\GetUrlFromSitemap\CS\bin\Debug\CS.pdb
+C:\Temp\GetUrlFromSitemap\CS\obj\Debug\ResolveAssemblyReference.cache
+C:\Temp\GetUrlFromSitemap\CS\obj\Debug\CS.exe
+C:\Temp\GetUrlFromSitemap\CS\obj\Debug\CS.pdb

@@ -1,0 +1,9 @@
+C:\Temp\GetUrlFromSitemap\VB\obj\Debug\ResolveAssemblyReference.cache
+C:\Temp\GetUrlFromSitemap\VB\obj\Debug\VB.Resources.resources
+C:\Temp\GetUrlFromSitemap\VB\obj\Debug\VB.vbproj.GenerateResource.Cache
+C:\Temp\GetUrlFromSitemap\VB\bin\Debug\VB.exe
+C:\Temp\GetUrlFromSitemap\VB\bin\Debug\VB.pdb
+C:\Temp\GetUrlFromSitemap\VB\bin\Debug\VB.xml
+C:\Temp\GetUrlFromSitemap\VB\obj\Debug\VB.exe
+C:\Temp\GetUrlFromSitemap\VB\obj\Debug\VB.xml
+C:\Temp\GetUrlFromSitemap\VB\obj\Debug\VB.pdb

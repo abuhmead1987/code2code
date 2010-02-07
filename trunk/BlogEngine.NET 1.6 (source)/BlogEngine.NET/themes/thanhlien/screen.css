@@ -1,0 +1,166 @@
+body {
+	background:url(images/bg.jpg) repeat;
+	font-family:Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+	margin: 0px;
+	color:#FFF;
+}
+#wrapper { width: 906px; margin: 0px auto 6px;}
+
+/*  @@@@@[  Navigation  ]@@@@@ */
+ul#nav {list-style:none; width:658px; float: right; padding:55px 0 0 10px; margin:0; height:70px;}
+ul#nav li{ background:url(images/bullet_menu.gif) 0 5px no-repeat; font-weight:bold; float:left; text-transform:uppercase; padding-left:15px; padding-right:15px;}
+ul#nav li a{text-decoration:none; color:#FDEBC2; text-decoration:underline;}
+ul#nav li a:hover{color:#270E0C; text-decoration:underline;}
+
+/* @@@@@[  Header / Footer  ]@@@@@ */
+
+#header {
+	width: 906px;
+	height:157px;
+	background: url(images/bg_header.jpg) no-repeat;
+}
+#nav_timer { text-align:right; padding:0 20px 0 0; color:#442C22; font-size:11px; font-weight:bold; height:28px; line-height:28px; width:648px; float:left;}
+#footer {
+	color:#FFFFFF;
+	width: 890px;
+	height:30px;
+	background:url(images/bg_footer.jpg) no-repeat;
+	font-weight:bold;
+	padding:15px 0 0 16px;
+	overflow:hidden;
+}
+#footer a{ text-decoration:none; font-weight:bold; color:#FFFFFF;}
+#footer a:hover{ text-decoration:underline;}
+
+/* @@@@@[  Home Page  ]@@@@@ */
+#main{
+	width: 906px;
+	background:url(images/bg_main.jpg) repeat-y;
+	padding-bottom:6px;
+	overflow:hidden;
+}
+.col1{ width:237px; float:left; padding:0; margin-left:3px; color:#FBC960; text-align:center; text-transform:uppercase; font-weight:bold;}
+.col2{ width:416px; float:left; padding:0 23px;}
+.col3{ width:201px; float:left; padding:0; margin-right:3px;}
+.col3 ul{list-style:none; padding:0; margin:10px 0 10px 0;}
+.col3 li{ background:url(images/bullet_heart.jpg) 0 5px no-repeat; padding-left:13px; margin-top:5px;}
+.col3 p, .col3 ul{padding:0 10px;}
+
+img.border{ border:1px solid #F0E0A5;}
+img.border2{ border:1px solid #663912;}
+img.frame{ padding:9px; background:url(images/img_border.jpg) no-repeat; margin:10px 0 0 0;}
+.space{margin-bottom:10px;}
+.space_up{margin-top:8px;}
+.space_down{margin-top:8px; margin-bottom:8px;}
+.center{text-align:center;}
+img.gallery{ margin-right:25px;}
+.dangky{margin-left:10px;}
+.dangky input{width:158px; margin-bottom:10px;}
+
+/* @@@@@[  Redefined Tags / Classes  ]@@@@@ */
+a:link, a:visited, a:active {
+	color:#FFF;
+	text-decoration: underline;
+}
+a:hover {
+	color:#FFF;
+	text-decoration: none;
+	}
+h1 {color:#F2AA12; font-size:18px; margin-top: 24px; padding-top: 0px; margin-bottom: 2px; padding-bottom:5px;
+}
+h2{ color:#8EA11F; font-size:15px; margin-top: 0px; padding-top: 0px; margin-bottom: 2px; padding-bottom:5px;}
+h3{ color:#8EA11F; font-size:13px; color:#444444; margin:0; padding-bottom:2px;}
+h4{ color:#8EA11F; font-size:11px; color:#8EA11F; font-weight:normal; margin:0; padding-bottom:2px;}
+p {
+	margin-top: 0px;
+	padding-top: 0px;
+	margin-bottom: 13px;
+}
+blockquote {
+	margin: 0px 35px 13px 30px;
+	padding: 0px;
+}
+.clrSolo {
+	clear: both; 
+ 	font-size: 1px; 
+ 	line-height: 1px; 
+ 	margin: 0px; 
+ 	padding: 0px; 
+ 	visibility: hidden;
+}
+.clr {
+ 	clear: both;
+}
+.left {
+ 	float: left;
+}
+.right {
+ 	float: right;
+}
+.imgRight {
+ 	margin-bottom: 10px; 
+ 	margin-left: 10px;
+ 	float: right;
+}
+.imgLeft {
+	margin-top: 6px;
+ 	margin-bottom: 10px; 
+ 	margin-right: 10px;
+ 	float: left;
+	font-size:10px;
+	color:#235079;
+	line-height: 12px;
+	padding:1px;
+	border:1px solid #CCCCCC;
+}
+
+/* @@@@@[  Form Elements  ]@@@@@ */
+input, textarea, select {
+	color: #000; 
+	background: #EDE0B2; 
+	border: 1px solid #4E4E4E;
+}
+input.clean {
+	border-style: none; 
+	background: none;
+}
+table.meteorology{
+	border: 1px solid #7B96AF;
+	border-collapse: collapse;
+}
+table.meteorology td{
+	border: 1px solid #7B96AF;
+	border-collapse: collapse;
+}
+.line{
+	border-bottom: 1px dashed #7B96AF;
+	margin: 0 0 18px 0;
+}
+/*----------------------------Contact page----------------------------*/
+
+#contact{
+	padding-top: 20px;
+}
+
+#contact h1{
+	margin-top: 0;
+}
+
+#contact label{
+	display: block;
+	padding-top: 5px;	
+}
+
+#contact input.field{
+	width: 300px;
+}
+
+#contact textarea{
+	display: block;	
+	overflow: auto;
+	width: 100%;
+	height: 150px;
+	margin: 0;
+}

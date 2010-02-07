@@ -7,7 +7,7 @@
             <li><a href="#"><%=Resources.labels.Intro %></a></li>
             <li><a href="#"><%=Resources.labels.Room %></a></li>
             <li><a href="#"><%=Resources.labels.Feedback %></a></li>
-            <li><a href="#"><%=Resources.labels.New_Event %></a></li>
+            <li><a href="#"><%=Resources.labels.NewEvent%></a></li>
             <li><a href='<%= ResolveUrl("~/t-Contact.aspx") %>'><%=Resources.labels.contact %></a></li></ul>
 <div id="nav_timer">
     <%=DateTime.Now.ToLongDateString() %>

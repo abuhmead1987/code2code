@@ -22,9 +22,11 @@
                 <%#XPath("@name") %>
             </ItemTemplate>
         </asp:DataList>
-        <img src='<%=Page.ResolveUrl("~/themes/thanhlien/images/bg_right_col.jpg")%>' width="201"
-            height="29" alt="" />
-        <p class="center">
-            <a href="#">
-                <img src='<%=Page.ResolveUrl("~/themes/thanhlien/images/btn_dubao.gif")%>' alt="Dự báo thời tiết"
-                    width="148" height="24" border="0" /></a></p>
+        <div style="margin-left:10px">
+            <img src='<%=Page.ResolveUrl("~/themes/thanhlien/images/bg_right_col.jpg")%>' width="190px"
+                height="29" alt=""/>
+            <p class="center">
+                <a href="http://weather.yahoo.com/vietnam/ha-noi/hanoi-1236594?unit=c" target="_blank">
+                    <img src='<%=Page.ResolveUrl("~/themes/thanhlien/images/btn_dubao.gif")%>' alt="Dự báo thời tiết"
+                        width="148" height="24" border="0" /></a></p>
+        </div>

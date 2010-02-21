@@ -4,25 +4,24 @@
         width="201" height="55" />
     <p class="center">
         <label for="<%=txtEmail.ClientID %>" style="font-weight: bold">
-            Enter your e-mail</label><br />
+            <%= Resources.labels.EmailNewLetter.ToString() %></label><br />
     </p>
     <p class="dangky">
-    <asp:TextBox runat="server" ID="txtEmail" Width="158px" />
-    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtEmail"
-        ErrorMessage="Please enter an e-mail address" Display="dynamic" ValidationGroup="newsletter" />
-    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtEmail"
-        ErrorMessage="<%$Resources:labels, enterValidEmail %>" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"
-        Display="dynamic" ValidationGroup="newsletter" />
-    <br />
-    <div style="text-align: center">
-        <asp:ImageButton ID="btnSave" runat="server" ValidationGroup="newsletter" Text="Notify me"
-            OnClientClick="return beginAddEmail()" ImageUrl="~/themes/thanhlien/images/btn_dangky.gif" />
-    </div>
+        <asp:TextBox runat="server" ID="txtEmail" Width="158px" />
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtEmail"
+            ErrorMessage="Please enter an e-mail address" Display="dynamic" ValidationGroup="newsletter" />
+        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtEmail"
+            ErrorMessage="<%$Resources:labels, enterValidEmail %>" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"
+            Display="dynamic" ValidationGroup="newsletter" />
+        <div style="text-align: center">
+            <asp:ImageButton ID="btnSave" runat="server" ValidationGroup="newsletter" Text="Notify me"
+                OnClientClick="return beginAddEmail()" ImageUrl="~/themes/thanhlien/images/btn_dangky.gif" />
+        </div>
     </p>
 </div>
 <div id="newsletterthanks" style="display: none; text-align: center">
     <h2 id="newsletteraction">
-        Thank you</h2>
+        <%= Resources.labels.Thanks.ToString()%></h2>
 </div>
 
 <script type="text/javascript">

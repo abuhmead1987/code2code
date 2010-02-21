@@ -165,4 +165,43 @@ table.meteorology td{
 	margin: 0;
 }
 
-.lstContact{margin-left:33px;text-align:center;}
+.lstContact{margin-left:28px;text-align:center;}
+/*----------------------------slideshow----------------------------*/
+#slideshow {
+    position:relative;
+    height:183px;
+    margin-left:27px;
+}
+
+#slideshow IMG {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+    opacity:0.0;
+}
+
+#slideshow IMG.active {
+    z-index:10;
+    opacity:1.0;
+}
+
+#slideshow IMG.last-active {
+    z-index:9;
+}
+
+/*--------------------------*/
+.loginbox{
+	margin: 0 auto;
+	margin-left:94px;
+	margin-top:15px;
+}
+
+.loginbox td {
+    padding: 3px;
+}
+
+.forgetpass{
+margin-left:63px;
+margin-top:20px;
+}

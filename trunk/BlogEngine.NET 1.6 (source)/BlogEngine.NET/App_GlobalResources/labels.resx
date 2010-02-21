@@ -976,4 +976,16 @@
   <data name="Room" xml:space="preserve">
     <value>Room</value>
   </data>
+  <data name="EmailNewLetter" xml:space="preserve">
+    <value>Enter your e-mail</value>
+  </data>
+  <data name="Gallery" xml:space="preserve">
+    <value>Gallery</value>
+  </data>
+  <data name="Thanks" xml:space="preserve">
+    <value>Thank you</value>
+  </data>
+  <data name="remember" xml:space="preserve">
+    <value>Remember me next time.</value>
+  </data>
 </root>

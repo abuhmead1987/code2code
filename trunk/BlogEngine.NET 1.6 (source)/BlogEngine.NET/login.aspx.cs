@@ -1,17 +1,19 @@
 ﻿#region Using
 
 using System;
-using System.Web;
 using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Web.UI.HtmlControls;
 using BlogEngine.Core;
 
 #endregion
 
 public partial class login : BlogEngine.Core.Web.Controls.BlogBasePage
 {
+
+
+  
+
 	/// <summary>
 	/// Handles the Load event of the Page control.
 	/// </summary>
@@ -19,6 +21,9 @@ public partial class login : BlogEngine.Core.Web.Controls.BlogBasePage
 	/// <param name="e">The <see cref="System.EventArgs"/> instance containing the event data.</param>
 	protected void Page_Load(object sender, EventArgs e)
 	{
+
+
+
 		if (Request.QueryString.ToString() == "logoff")
 		{
 			FormsAuthentication.SignOut();
@@ -46,6 +51,8 @@ public partial class login : BlogEngine.Core.Web.Controls.BlogBasePage
 			Login1.LoggedIn += new EventHandler(Login1_LoggedIn);
 			Login1.FindControl("username").Focus();
 		}
+
+
 	}
 
 	/// <summary>

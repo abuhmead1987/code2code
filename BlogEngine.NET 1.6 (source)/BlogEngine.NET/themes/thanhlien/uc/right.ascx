@@ -14,6 +14,7 @@
     <p>
         <img src='<%=Page.ResolveUrl("~/themes/thanhlien/images/header_hotro.jpg")%>' alt="Hỗ trợ trực tuyến"
             width="190" height="61" />
+            
         <asp:DataList ID="lstContact" runat="server" CssClass="lstContact">
             <ItemTemplate>
                 <a href='<%#XPath("@id") %>'>
@@ -22,6 +23,7 @@
                 <%#XPath("@name") %>
             </ItemTemplate>
         </asp:DataList>
+        
         <div style="margin-left:10px">
             <img src='<%=Page.ResolveUrl("~/themes/thanhlien/images/bg_right_col.jpg")%>' width="190px"
                 height="29" alt=""/>

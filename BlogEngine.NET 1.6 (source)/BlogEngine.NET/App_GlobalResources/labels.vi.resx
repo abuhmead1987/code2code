@@ -117,17 +117,32 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="aboutMe" xml:space="preserve">
+    <value>About Me</value>
+  </data>
+  <data name="accuracy" xml:space="preserve">
+    <value>Accuracy</value>
+  </data>
+  <data name="action" xml:space="preserve">
+    <value>Action</value>
+  </data>
   <data name="add" xml:space="preserve">
     <value>Add</value>
-  </data>
-  <data name="add_Entry" xml:space="preserve">
-    <value>Add entry</value>
   </data>
   <data name="addComment" xml:space="preserve">
     <value>Add comment</value>
   </data>
   <data name="addCustomCodeToHeader" xml:space="preserve">
     <value>Add custom code to the HTML head section</value>
+  </data>
+  <data name="addFilter" xml:space="preserve">
+    <value>Add Filter</value>
+  </data>
+  <data name="addToWhiteList" xml:space="preserve">
+    <value>Add to white list if at least</value>
+  </data>
+  <data name="add_Entry" xml:space="preserve">
+    <value>Add entry</value>
   </data>
   <data name="administrationPanel" xml:space="preserve">
     <value>Control panel</value>
@@ -138,14 +153,26 @@
   <data name="advancedSettings" xml:space="preserve">
     <value>Advanced settings</value>
   </data>
+  <data name="all" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="allow" xml:space="preserve">
+    <value>Allow</value>
+  </data>
   <data name="alternateFeedUrl" xml:space="preserve">
     <value>Alternate feed URL</value>
+  </data>
+  <data name="alwaysTrust" xml:space="preserve">
+    <value>If user authenticated, always trust</value>
   </data>
   <data name="approve" xml:space="preserve">
     <value>Approve</value>
   </data>
   <data name="approveallcomments" xml:space="preserve">
     <value>Approve all Post Comments</value>
+  </data>
+  <data name="approved" xml:space="preserve">
+    <value>Approved</value>
   </data>
   <data name="archive" xml:space="preserve">
     <value>Archive</value>
@@ -154,10 +181,22 @@
     <value>Are you sure you want to {0} {1}?</value>
   </data>
   <data name="attachFile" xml:space="preserve">
-    <value>Attach a file</value>
+    <value>Đính kèm tập tin</value>
   </data>
   <data name="author" xml:space="preserve">
     <value>Author</value>
+  </data>
+  <data name="authorApproved" xml:space="preserve">
+    <value>comments of this author have been approved</value>
+  </data>
+  <data name="authorBlocked" xml:space="preserve">
+    <value>If comment was deleted, always block author</value>
+  </data>
+  <data name="authorRejected" xml:space="preserve">
+    <value>comments of this author have been rejected</value>
+  </data>
+  <data name="automoderation" xml:space="preserve">
+    <value>Automatic Moderation</value>
   </data>
   <data name="avatars" xml:space="preserve">
     <value>Avatars</value>
@@ -168,6 +207,12 @@
   <data name="beTheFirstToRate" xml:space="preserve">
     <value>Be the first to rate this post</value>
   </data>
+  <data name="birthday" xml:space="preserve">
+    <value>Birthday</value>
+  </data>
+  <data name="block" xml:space="preserve">
+    <value>Block</value>
+  </data>
   <data name="blogMLDescription" xml:space="preserve">
     <value>BlogEngine.NET uses BlogML as the format for exporting. The import supports both BlogML and RSS.</value>
   </data>
@@ -177,6 +222,15 @@
   <data name="buttonText" xml:space="preserve">
     <value>Button text</value>
   </data>
+  <data name="calendar" xml:space="preserve">
+    <value>Lịch</value>
+  </data>
+  <data name="cancel" xml:space="preserve">
+    <value>Hủy</value>
+  </data>
+  <data name="cancelReply" xml:space="preserve">
+    <value>Cancel reply to comment</value>
+  </data>
   <data name="categories" xml:space="preserve">
     <value>Categories</value>
   </data>
@@ -184,40 +238,97 @@
     <value>Category</value>
   </data>
   <data name="changePassword" xml:space="preserve">
-    <value>Change password</value>
+    <value>Thay đổi mật khẩu</value>
+  </data>
+  <data name="cheked" xml:space="preserve">
+    <value>Chọn</value>
   </data>
   <data name="chooseOtherName" xml:space="preserve">
     <value>Please choose another name</value>
+  </data>
+  <data name="cityTown" xml:space="preserve">
+    <value>City/Town</value>
+  </data>
+  <data name="clear" xml:space="preserve">
+    <value>Xóa</value>
   </data>
   <data name="closeCommetsAfter" xml:space="preserve">
     <value>Close comments after</value>
   </data>
   <data name="comment" xml:space="preserve">
-    <value>Comment</value>
+    <value>Bình luận</value>
   </data>
   <data name="commentLabelText" xml:space="preserve">
     <value>Comment label text</value>
   </data>
+  <data name="commentNotificationUnsubscribe" xml:space="preserve">
+    <value>Unsubscribe from future comment notification emails to this post.</value>
+  </data>
+  <data name="commentNotificationUnsubscriptionHeader" xml:space="preserve">
+    <value>Comment Notification Subscription</value>
+  </data>
+  <data name="commentNotificationUnsubscriptionText" xml:space="preserve">
+    <value>You have been unsubscribed from email notifications for any future comments to this post.</value>
+  </data>
   <data name="comments" xml:space="preserve">
-    <value>Comments</value>
+    <value>Bình luận</value>
+  </data>
+  <data name="commentsApprovedByAdmin" xml:space="preserve">
+    <value>Manual - only after comment approved by admin will it show up in the blog</value>
   </data>
   <data name="commentsAreClosed" xml:space="preserve">
     <value>Comments are closed</value>
   </data>
+  <data name="commentsAuto" xml:space="preserve">
+    <value>Automatic - rules and filters will decide if comment is spam</value>
+  </data>
+  <data name="commentsBlacklist" xml:space="preserve">
+    <value>Add to black list if at least</value>
+  </data>
+  <data name="commentsBlockOnDelete" xml:space="preserve">
+    <value>Block on delete</value>
+  </data>
+  <data name="commentsPerPage" xml:space="preserve">
+    <value>Comments per page</value>
+  </data>
+  <data name="commentsUnmodApproved" xml:space="preserve">
+    <value>If not moderated, all comments approved by default</value>
+  </data>
+  <data name="commentWaitingModeration" xml:space="preserve">
+    <value>Thank you for the feedback. The comment is now awaiting moderation</value>
+  </data>
   <data name="commentWasSaved" xml:space="preserve">
     <value>The comment was saved. Thank you for the feedback</value>
   </data>
+  <data name="company" xml:space="preserve">
+    <value>Công ty</value>
+  </data>
+  <data name="compressWebResource" xml:space="preserve">
+    <value>Compress WebResource.axd</value>
+  </data>
+  <data name="compressWebResourceDescription" xml:space="preserve">
+    <value>This may break third-party functionality</value>
+  </data>
+  <data name="configuration" xml:space="preserve">
+    <value>Configuration</value>
+  </data>
+  <data name="confirmResetCounters" xml:space="preserve">
+    <value>Are you sure you want to reset all counters to `0`?</value>
+  </data>
   <data name="contact" xml:space="preserve">
-    <value>Contact</value>
+    <value>Liên hệ</value>
   </data>
   <data name="contactForm" xml:space="preserve">
     <value>Contact form</value>
+  </data>
+  <data name="contains" xml:space="preserve">
+    <value>Contains</value>
   </data>
   <data name="controls" xml:space="preserve">
     <value>Controls</value>
   </data>
   <data name="country" xml:space="preserve">
-    <value>Country</value>
+    <value>Quốc gia</value>
   </data>
   <data name="createNewUser" xml:space="preserve">
     <value>Create new user</value>
@@ -225,8 +336,14 @@
   <data name="currentlyRated" xml:space="preserve">
     <value>Currently rated {0} by {1} people</value>
   </data>
+  <data name="custom" xml:space="preserve">
+    <value>Custom</value>
+  </data>
   <data name="date" xml:space="preserve">
     <value>Date</value>
+  </data>
+  <data name="days" xml:space="preserve">
+    <value>days</value>
   </data>
   <data name="defaultFeedOutput" xml:space="preserve">
     <value>Default feed output</value>
@@ -237,17 +354,32 @@
   <data name="delete" xml:space="preserve">
     <value>Delete</value>
   </data>
+  <data name="deleteKeepReplies" xml:space="preserve">
+    <value>Delete this, but keep replies</value>
+  </data>
+  <data name="deletePlusReplies" xml:space="preserve">
+    <value>Delete this and replies</value>
+  </data>
   <data name="description" xml:space="preserve">
     <value>Description</value>
   </data>
   <data name="displayCommentsOnRecentPosts" xml:space="preserve">
     <value>Display comments</value>
   </data>
+  <data name="displayName" xml:space="preserve">
+    <value>Display Name</value>
+  </data>
   <data name="displayRatingsOnRecentPosts" xml:space="preserve">
     <value>Display rating</value>
   </data>
+  <data name="down" xml:space="preserve">
+    <value>Down</value>
+  </data>
   <data name="edit" xml:space="preserve">
     <value>Edit</value>
+  </data>
+  <data name="editor" xml:space="preserve">
+    <value>Editor</value>
   </data>
   <data name="email" xml:space="preserve">
     <value>E-mail</value>
@@ -264,6 +396,12 @@
   <data name="enableCoComments" xml:space="preserve">
     <value>Enable coComments</value>
   </data>
+  <data name="enableCommentNesting" xml:space="preserve">
+    <value>Enable nested comments</value>
+  </data>
+  <data name="enableCommentNestingDescription" xml:space="preserve">
+    <value>This only works if the theme supports it.</value>
+  </data>
   <data name="enableComments" xml:space="preserve">
     <value>Enable comments</value>
   </data>
@@ -275,6 +413,15 @@
   </data>
   <data name="enableCommentsModeration" xml:space="preserve">
     <value>Moderate comments</value>
+  </data>
+  <data name="enabled" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
+  <data name="enableErrorLogging" xml:space="preserve">
+    <value>Enable error logging</value>
+  </data>
+  <data name="enableErrorLoggingDescription" xml:space="preserve">
+    <value>Unhandled errors will be logged to any extension/component subscribed to log notifications.</value>
   </data>
   <data name="enableGravatars" xml:space="preserve">
     <value>Enable Gravatars</value>
@@ -324,11 +471,44 @@
   <data name="enterValidUrl" xml:space="preserve">
     <value>Please enter a valid URL</value>
   </data>
+  <data name="eqls" xml:space="preserve">
+    <value>Equals</value>
+  </data>
   <data name="export" xml:space="preserve">
     <value>Export</value>
   </data>
+  <data name="extensions" xml:space="preserve">
+    <value>Extensions</value>
+  </data>
+  <data name="Feedback" xml:space="preserve">
+    <value>ý kiến phản hồi</value>
+  </data>
+  <data name="filter" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="filterByApml" xml:space="preserve">
+    <value>Filter by APML</value>
+  </data>
+  <data name="filterByApmlDescription" xml:space="preserve">
+    <value>Enter the URL to your website or to your APML document</value>
+  </data>
+  <data name="filterName" xml:space="preserve">
+    <value>Filter Name</value>
+  </data>
+  <data name="filters" xml:space="preserve">
+    <value>Filters</value>
+  </data>
+  <data name="firstName" xml:space="preserve">
+    <value>First Name</value>
+  </data>
   <data name="formMessage" xml:space="preserve">
     <value>Form message</value>
+  </data>
+  <data name="fullName" xml:space="preserve">
+    <value>Full Name</value>
+  </data>
+  <data name="gender" xml:space="preserve">
+    <value>Gender</value>
   </data>
   <data name="goToFrontPage" xml:space="preserve">
     <value>Go to front page</value>
@@ -337,7 +517,7 @@
     <value>www subdomain policy</value>
   </data>
   <data name="home" xml:space="preserve">
-    <value>Home</value>
+    <value>Trang chủ</value>
     <comment>As used for linking to the front-page</comment>
   </data>
   <data name="htmlHeadSection" xml:space="preserve">
@@ -349,11 +529,29 @@
   <data name="import" xml:space="preserve">
     <value>Import</value>
   </data>
+  <data name="inbox" xml:space="preserve">
+    <value>Inbox</value>
+  </data>
+  <data name="industry" xml:space="preserve">
+    <value>Industry</value>
+  </data>
+  <data name="interests" xml:space="preserve">
+    <value>Interests</value>
+  </data>
+  <data name="Intro" xml:space="preserve">
+    <value>Giới thiệu</value>
+  </data>
+  <data name="ip" xml:space="preserve">
+    <value>IP</value>
+  </data>
   <data name="isFrontPage" xml:space="preserve">
     <value>Is front page</value>
   </data>
+  <data name="isPrivate" xml:space="preserve">
+    <value>Riêng tư</value>
+  </data>
   <data name="keywords" xml:space="preserve">
-    <value>Keywords</value>
+    <value>Từ khóa</value>
   </data>
   <data name="language" xml:space="preserve">
     <value>Choose language</value>
@@ -361,29 +559,65 @@
   <data name="languageCode" xml:space="preserve">
     <value>Language code</value>
   </data>
+  <data name="lastName" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
   <data name="latitude" xml:space="preserve">
     <value>Latitude</value>
+  </data>
+  <data name="link" xml:space="preserve">
+    <value>Liên kết</value>
   </data>
   <data name="livePreview" xml:space="preserve">
     <value>Preview</value>
   </data>
+  <data name="login" xml:space="preserve">
+    <value>Đăng nhập</value>
+  </data>
+  <data name="logoff" xml:space="preserve">
+    <value>Đăng xuất</value>
+  </data>
   <data name="longtitude" xml:space="preserve">
     <value>Longtitude</value>
+  </data>
+  <data name="manual" xml:space="preserve">
+    <value>Manual</value>
   </data>
   <data name="maxLengthOfItems" xml:space="preserve">
     <value>Max length of items</value>
   </data>
   <data name="message" xml:space="preserve">
-    <value>Message</value>
+    <value>Tin nhắn</value>
+  </data>
+  <data name="middleName" xml:space="preserve">
+    <value>Middle Name</value>
+  </data>
+  <data name="mistakes" xml:space="preserve">
+    <value>Mistakes</value>
   </data>
   <data name="mobileTheme" xml:space="preserve">
     <value>Mobile theme</value>
   </data>
+  <data name="moderation" xml:space="preserve">
+    <value>Moderation</value>
+  </data>
+  <data name="moderator" xml:space="preserve">
+    <value>Moderator</value>
+  </data>
   <data name="more" xml:space="preserve">
     <value>More</value>
   </data>
+  <data name="move" xml:space="preserve">
+    <value>Move</value>
+  </data>
+  <data name="moveWidgetTo" xml:space="preserve">
+    <value>Move Widget To</value>
+  </data>
   <data name="name" xml:space="preserve">
-    <value>Name</value>
+    <value>Tên</value>
+  </data>
+  <data name="NewEvent" xml:space="preserve">
+    <value>Tin tức và Sự kiện</value>
   </data>
   <data name="nextPost" xml:space="preserve">
     <value>Next post</value>
@@ -403,14 +637,23 @@
   <data name="notRatedYet" xml:space="preserve">
     <value>Not rated yet</value>
   </data>
+  <data name="numberOfCharacters" xml:space="preserve">
+    <value>Number of characters</value>
+  </data>
   <data name="numberOfComments" xml:space="preserve">
     <value>Number of comments</value>
+  </data>
+  <data name="numberOfDaysToKeep" xml:space="preserve">
+    <value>Number of days to keep</value>
   </data>
   <data name="numberOfDisplayedItems" xml:space="preserve">
     <value># of displayed items</value>
   </data>
   <data name="numberOfPosts" xml:space="preserve">
     <value>Number of posts</value>
+  </data>
+  <data name="occupation" xml:space="preserve">
+    <value>Occupation</value>
   </data>
   <data name="page" xml:space="preserve">
     <value>Page</value>
@@ -419,7 +662,19 @@
     <value>Pages</value>
   </data>
   <data name="password" xml:space="preserve">
-    <value>Password</value>
+    <value>Mật khẩu</value>
+  </data>
+  <data name="phoneFax" xml:space="preserve">
+    <value>Phone Fax</value>
+  </data>
+  <data name="phoneMain" xml:space="preserve">
+    <value>Phone Main</value>
+  </data>
+  <data name="phoneMobile" xml:space="preserve">
+    <value>Phone Mobile</value>
+  </data>
+  <data name="photoURL" xml:space="preserve">
+    <value>PhotoURL</value>
   </data>
   <data name="portNumber" xml:space="preserve">
     <value>Port number</value>
@@ -437,7 +692,7 @@
     <value>Posts per page</value>
   </data>
   <data name="posts" xml:space="preserve">
-    <value>Posts</value>
+    <value>Gửi</value>
   </data>
   <data name="postsPerFeed" xml:space="preserve">
     <value>Items shown in feed</value>
@@ -448,14 +703,29 @@
   <data name="previousPosts" xml:space="preserve">
     <value>Previous posts</value>
   </data>
+  <data name="priority" xml:space="preserve">
+    <value>Priority</value>
+  </data>
+  <data name="profile" xml:space="preserve">
+    <value>Profile</value>
+  </data>
+  <data name="profiles" xml:space="preserve">
+    <value>Profiles</value>
+  </data>
   <data name="publish" xml:space="preserve">
     <value>Publish</value>
   </data>
   <data name="raters" xml:space="preserve">
     <value>Raters</value>
   </data>
+  <data name="rateThisXStars" xml:space="preserve">
+    <value>Rate this {0} star{1} out of 5</value>
+  </data>
   <data name="rating" xml:space="preserve">
     <value>Rating</value>
+  </data>
+  <data name="ratingHasBeenRegistered" xml:space="preserve">
+    <value>Your rating has been registered. Thank you!</value>
   </data>
   <data name="receive" xml:space="preserve">
     <value>Receive</value>
@@ -472,26 +742,65 @@
   <data name="referrers" xml:space="preserve">
     <value>Referrers</value>
   </data>
+  <data name="regionState" xml:space="preserve">
+    <value>State/Region</value>
+  </data>
+  <data name="reject" xml:space="preserve">
+    <value>Reject</value>
+  </data>
   <data name="relatedPosts" xml:space="preserve">
     <value>Related posts</value>
   </data>
   <data name="remove" xml:space="preserve">
     <value>Remove</value>
   </data>
+  <data name="replyTo" xml:space="preserve">
+    <value>In reply to</value>
+  </data>
+  <data name="replyToBase" xml:space="preserve">
+    <value>the original post</value>
+  </data>
+  <data name="replyToThis" xml:space="preserve">
+    <value>Reply</value>
+  </data>
+  <data name="reportMistakesToService" xml:space="preserve">
+    <value>Report mistakes back to service</value>
+  </data>
   <data name="required" xml:space="preserve">
-    <value>Required</value>
+    <value>Bắt buộc</value>
+  </data>
+  <data name="requireSslForMetaWeblogApi" xml:space="preserve">
+    <value>Require SSL for MetaWeblog API</value>
+  </data>
+  <data name="requireSslForMetaWeblogApiDescription" xml:space="preserve">
+    <value>Enforce the use of SSL when communicating with the MetaWeblog API</value>
+  </data>
+  <data name="resetCounters" xml:space="preserve">
+    <value>Xóa bộ đếm</value>
+  </data>
+  <data name="restore" xml:space="preserve">
+    <value>Restore</value>
+  </data>
+  <data name="Room" xml:space="preserve">
+    <value>Phòng</value>
+  </data>
+  <data name="rules" xml:space="preserve">
+    <value>Luật</value>
   </data>
   <data name="save" xml:space="preserve">
-    <value>Save</value>
+    <value>Lưu</value>
   </data>
   <data name="saveComment" xml:space="preserve">
     <value>Save comment</value>
   </data>
   <data name="savePage" xml:space="preserve">
-    <value>Save page</value>
+    <value>Lưu Trang</value>
   </data>
   <data name="savePost" xml:space="preserve">
-    <value>Save post</value>
+    <value>Lưu bài gửi</value>
+  </data>
+  <data name="saveProfile" xml:space="preserve">
+    <value>Save Profile</value>
   </data>
   <data name="saveSettings" xml:space="preserve">
     <value>Save settings</value>
@@ -511,14 +820,20 @@
   <data name="searchResultsFor" xml:space="preserve">
     <value>Search results for</value>
   </data>
+  <data name="select" xml:space="preserve">
+    <value>Select</value>
+  </data>
   <data name="selectDay" xml:space="preserve">
     <value>Select day</value>
+  </data>
+  <data name="selectedComments" xml:space="preserve">
+    <value>selected comments</value>
   </data>
   <data name="selectParent" xml:space="preserve">
     <value>Select parent</value>
   </data>
   <data name="send" xml:space="preserve">
-    <value>Send</value>
+    <value>Gửi</value>
   </data>
   <data name="sendCommentEmail" xml:space="preserve">
     <value>Send comment e-mail</value>
@@ -553,11 +868,17 @@
   <data name="showRelatedPosts" xml:space="preserve">
     <value>Show related posts</value>
   </data>
+  <data name="spam" xml:space="preserve">
+    <value>Spam</value>
+  </data>
   <data name="subject" xml:space="preserve">
-    <value>Subject</value>
+    <value>Chủ đề</value>
   </data>
   <data name="subscribe" xml:space="preserve">
-    <value>Subscribe</value>
+    <value>Đăng ký</value>
+  </data>
+  <data name="switchUserProfile" xml:space="preserve">
+    <value>Switch to user profile</value>
   </data>
   <data name="thankYouMessage" xml:space="preserve">
     <value>Thank you message</value>
@@ -583,14 +904,32 @@
   <data name="title" xml:space="preserve">
     <value>Title</value>
   </data>
+  <data name="total" xml:space="preserve">
+    <value>Total</value>
+  </data>
   <data name="trimStylesheet" xml:space="preserve">
     <value>Trim stylesheets</value>
   </data>
   <data name="trimStylesheetDescription" xml:space="preserve">
     <value>Makes all stylesheets of any theme smaller by removing all whitespace at runtime.</value>
   </data>
+  <data name="trustAuthenticated" xml:space="preserve">
+    <value>Trust authenticated authors</value>
+  </data>
   <data name="unapprovedcomments" xml:space="preserve">
     <value>Unapproved Comments</value>
+  </data>
+  <data name="uncategorized" xml:space="preserve">
+    <value>Uncategorized</value>
+  </data>
+  <data name="unmoderated" xml:space="preserve">
+    <value>Unmoderated</value>
+  </data>
+  <data name="up" xml:space="preserve">
+    <value>Up</value>
+  </data>
+  <data name="update" xml:space="preserve">
+    <value>Update</value>
   </data>
   <data name="updateFrequenzy" xml:space="preserve">
     <value>Update frequency (minutes)</value>
@@ -601,14 +940,32 @@
   <data name="uploadImage" xml:space="preserve">
     <value>Upload image</value>
   </data>
+  <data name="useBlogNameInPageTitles" xml:space="preserve">
+    <value>Use blog name in page titles</value>
+  </data>
+  <data name="useBlogNameInPageTitlesDescription" xml:space="preserve">
+    <value>Prefixes the page titles with the name of the blog</value>
+  </data>
+  <data name="useRawHtmlEditor" xml:space="preserve">
+    <value>Use raw HTML editor</value>
+  </data>
   <data name="userName" xml:space="preserve">
-    <value>Username</value>
+    <value>Tên người dùng</value>
+  </data>
+  <data name="userProfiles" xml:space="preserve">
+    <value>User Profile(s)</value>
   </data>
   <data name="users" xml:space="preserve">
     <value>Users</value>
   </data>
+  <data name="view" xml:space="preserve">
+    <value>View</value>
+  </data>
   <data name="website" xml:space="preserve">
     <value>Website</value>
+  </data>
+  <data name="widget" xml:space="preserve">
+    <value>Widget</value>
   </data>
   <data name="willShowGravatar" xml:space="preserve">
     <value>Will show your {0} icon</value>
@@ -619,379 +976,22 @@
   <data name="youAlreadyRated" xml:space="preserve">
     <value>You already rated this post</value>
   </data>
-  <data name="userProfiles" xml:space="preserve">
-    <value>User Profile(s)</value>
-  </data>
-  <data name="view" xml:space="preserve">
-    <value>View</value>
-  </data>
-  <data name="firstName" xml:space="preserve">
-    <value>First Name</value>
-  </data>
-  <data name="aboutMe" xml:space="preserve">
-    <value>About Me</value>
-  </data>
-  <data name="birthday" xml:space="preserve">
-    <value>Birthday</value>
-  </data>
-  <data name="cityTown" xml:space="preserve">
-    <value>City/Town</value>
-  </data>
-  <data name="displayName" xml:space="preserve">
-    <value>Display Name</value>
-  </data>
-  <data name="fullName" xml:space="preserve">
-    <value>Full Name</value>
-  </data>
-  <data name="gender" xml:space="preserve">
-    <value>Gender</value>
-  </data>
-  <data name="industry" xml:space="preserve">
-    <value>Industry</value>
-  </data>
-  <data name="interests" xml:space="preserve">
-    <value>Interests</value>
-  </data>
-  <data name="isPrivate" xml:space="preserve">
-    <value>Is Private</value>
-  </data>
-  <data name="lastName" xml:space="preserve">
-    <value>Last Name</value>
-  </data>
-  <data name="occupation" xml:space="preserve">
-    <value>Occupation</value>
-  </data>
-  <data name="photoURL" xml:space="preserve">
-    <value>PhotoURL</value>
-  </data>
-  <data name="regionState" xml:space="preserve">
-    <value>State/Region</value>
-  </data>
-  <data name="saveProfile" xml:space="preserve">
-    <value>Save Profile</value>
-  </data>
-  <data name="switchUserProfile" xml:space="preserve">
-    <value>Switch to user profile</value>
-  </data>
-  <data name="company" xml:space="preserve">
-    <value>Company</value>
-  </data>
-  <data name="middleName" xml:space="preserve">
-    <value>Middle Name</value>
-  </data>
-  <data name="phoneFax" xml:space="preserve">
-    <value>Phone Fax</value>
-  </data>
-  <data name="phoneMain" xml:space="preserve">
-    <value>Phone Main</value>
-  </data>
-  <data name="phoneMobile" xml:space="preserve">
-    <value>Phone Mobile</value>
-  </data>
-  <data name="profile" xml:space="preserve">
-    <value>Profile</value>
-  </data>
-  <data name="calendar" xml:space="preserve">
-    <value>Calendar</value>
-  </data>
-  <data name="commentWaitingModeration" xml:space="preserve">
-    <value>Thank you for the feedback. The comment is now awaiting moderation</value>
-  </data>
-  <data name="requireSslForMetaWeblogApi" xml:space="preserve">
-    <value>Require SSL for MetaWeblog API</value>
-  </data>
-  <data name="requireSslForMetaWeblogApiDescription" xml:space="preserve">
-    <value>Enforce the use of SSL when communicating with the MetaWeblog API</value>
-  </data>
-  <data name="compressWebResource" xml:space="preserve">
-    <value>Compress WebResource.axd</value>
-  </data>
-  <data name="compressWebResourceDescription" xml:space="preserve">
-    <value>This may break third-party functionality</value>
-  </data>
-  <data name="useBlogNameInPageTitles" xml:space="preserve">
-    <value>Use blog name in page titles</value>
-  </data>
-  <data name="useBlogNameInPageTitlesDescription" xml:space="preserve">
-    <value>Prefixes the page titles with the name of the blog</value>
-  </data>
-  <data name="uncategorized" xml:space="preserve">
-    <value>Uncategorized</value>
-  </data>
-  <data name="cancel" xml:space="preserve">
-    <value>Cancel</value>
-  </data>
-  <data name="filter" xml:space="preserve">
-    <value>Filter</value>
-  </data>
-  <data name="filterByApml" xml:space="preserve">
-    <value>Filter by APML</value>
-  </data>
-  <data name="filterByApmlDescription" xml:space="preserve">
-    <value>Enter the URL to your website or to your APML document</value>
-  </data>
-  <data name="login" xml:space="preserve">
-    <value>Log in</value>
-  </data>
-  <data name="logoff" xml:space="preserve">
-    <value>Log off</value>
-  </data>
-  <data name="useRawHtmlEditor" xml:space="preserve">
-    <value>Use raw HTML editor</value>
-  </data>
-  <data name="enableCommentNesting" xml:space="preserve">
-    <value>Enable nested comments</value>
-  </data>
-  <data name="enableCommentNestingDescription" xml:space="preserve">
-    <value>This only works if the theme supports it.</value>
-  </data>
-  <data name="replyTo" xml:space="preserve">
-    <value>In reply to</value>
-  </data>
-  <data name="replyToBase" xml:space="preserve">
-    <value>the original post</value>
-  </data>
-  <data name="replyToThis" xml:space="preserve">
-    <value>Reply</value>
-  </data>
-  <data name="deleteKeepReplies" xml:space="preserve">
-    <value>Delete this, but keep replies</value>
-  </data>
-  <data name="deletePlusReplies" xml:space="preserve">
-    <value>Delete this and replies</value>
-  </data>
-  <data name="cancelReply" xml:space="preserve">
-    <value>Cancel reply to comment</value>
-  </data>
-  <data name="numberOfCharacters" xml:space="preserve">
-    <value>Number of characters</value>
-  </data>
-  <data name="ratingHasBeenRegistered" xml:space="preserve">
-    <value>Your rating has been registered. Thank you!</value>
-  </data>
-  <data name="rateThisXStars" xml:space="preserve">
-    <value>Rate this {0} star{1} out of 5</value>
-  </data>
-  <data name="move" xml:space="preserve">
-    <value>Move</value>
-  </data>
-  <data name="moveWidgetTo" xml:space="preserve">
-    <value>Move Widget To</value>
-  </data>
-  <data name="link" xml:space="preserve">
-    <value>Link</value>
-  </data>
-  <data name="numberOfDaysToKeep" xml:space="preserve">
-    <value>Number of days to keep</value>
-  </data>
-  <data name="profiles" xml:space="preserve">
-    <value>Profiles</value>
-  </data>
-  <data name="enableErrorLogging" xml:space="preserve">
-    <value>Enable error logging</value>
-  </data>
-  <data name="enableErrorLoggingDescription" xml:space="preserve">
-    <value>Unhandled errors will be logged to any extension/component subscribed to log notifications.</value>
-  </data>
-  <data name="commentNotificationUnsubscriptionHeader" xml:space="preserve">
-    <value>Comment Notification Subscription</value>
-  </data>
-  <data name="commentNotificationUnsubscriptionText" xml:space="preserve">
-    <value>You have been unsubscribed from email notifications for any future comments to this post.</value>
-  </data>
-  <data name="commentNotificationUnsubscribe" xml:space="preserve">
-    <value>Unsubscribe from future comment notification emails to this post.</value>
-  </data>
-  <data name="accuracy" xml:space="preserve">
-    <value>Accuracy</value>
-  </data>
-  <data name="addFilter" xml:space="preserve">
-    <value>Add Filter</value>
-  </data>
-  <data name="addToWhiteList" xml:space="preserve">
-    <value>Add to white list if at least</value>
-  </data>
-  <data name="allow" xml:space="preserve">
-    <value>Allow</value>
-  </data>
-  <data name="alwaysTrust" xml:space="preserve">
-    <value>If user authenticated, always trust</value>
-  </data>
-  <data name="approved" xml:space="preserve">
-    <value>Approved</value>
-  </data>
-  <data name="authorApproved" xml:space="preserve">
-    <value>comments of this author have been approved</value>
-  </data>
-  <data name="authorBlocked" xml:space="preserve">
-    <value>If comment was deleted, always block author</value>
-  </data>
-  <data name="authorRejected" xml:space="preserve">
-    <value>comments of this author have been rejected</value>
-  </data>
-  <data name="block" xml:space="preserve">
-    <value>Block</value>
-  </data>
-  <data name="cheked" xml:space="preserve">
-    <value>Checked</value>
-  </data>
-  <data name="commentsApprovedByAdmin" xml:space="preserve">
-    <value>Manual - only after comment approved by admin will it show up in the blog</value>
-  </data>
-  <data name="commentsAuto" xml:space="preserve">
-    <value>Automatic - rules and filters will decide if comment is spam</value>
-  </data>
-  <data name="commentsBlacklist" xml:space="preserve">
-    <value>Add to black list if at least</value>
-  </data>
-  <data name="commentsBlockOnDelete" xml:space="preserve">
-    <value>Block on delete</value>
-  </data>
-  <data name="commentsPerPage" xml:space="preserve">
-    <value>Comments per page</value>
-  </data>
-  <data name="commentsUnmodApproved" xml:space="preserve">
-    <value>If not moderated, all comments approved by default</value>
-  </data>
-  <data name="confirmResetCounters" xml:space="preserve">
-    <value>Are you sure you want to reset all counters to `0`?</value>
-  </data>
-  <data name="contains" xml:space="preserve">
-    <value>Contains</value>
-  </data>
-  <data name="days" xml:space="preserve">
-    <value>days</value>
-  </data>
-  <data name="down" xml:space="preserve">
-    <value>Down</value>
-  </data>
-  <data name="enabled" xml:space="preserve">
-    <value>Enabled</value>
-  </data>
-  <data name="eqls" xml:space="preserve">
-    <value>Equals</value>
-  </data>
-  <data name="filterName" xml:space="preserve">
-    <value>Filter Name</value>
-  </data>
-  <data name="filters" xml:space="preserve">
-    <value>Filters</value>
-  </data>
-  <data name="ip" xml:space="preserve">
-    <value>IP</value>
-  </data>
-  <data name="mistakes" xml:space="preserve">
-    <value>Mistakes</value>
-  </data>
-  <data name="moderation" xml:space="preserve">
-    <value>Moderation</value>
-  </data>
-  <data name="priority" xml:space="preserve">
-    <value>Priority</value>
-  </data>
-  <data name="reportMistakesToService" xml:space="preserve">
-    <value>Report mistakes back to service</value>
-  </data>
-  <data name="resetCounters" xml:space="preserve">
-    <value>Reset Counters</value>
-  </data>
-  <data name="rules" xml:space="preserve">
-    <value>Rules</value>
-  </data>
-  <data name="spam" xml:space="preserve">
-    <value>Spam</value>
-  </data>
-  <data name="trustAuthenticated" xml:space="preserve">
-    <value>Trust authenticated authors</value>
-  </data>
-  <data name="up" xml:space="preserve">
-    <value>Up</value>
-  </data>
-  <data name="all" xml:space="preserve">
-    <value>All</value>
-  </data>
-  <data name="clear" xml:space="preserve">
-    <value>Clear</value>
-  </data>
-  <data name="moderator" xml:space="preserve">
-    <value>Moderator</value>
-  </data>
-  <data name="select" xml:space="preserve">
-    <value>Select</value>
-  </data>
-  <data name="reject" xml:space="preserve">
-    <value>Reject</value>
-  </data>
-  <data name="restore" xml:space="preserve">
-    <value>Restore</value>
-  </data>
-  <data name="selectedComments" xml:space="preserve">
-    <value>selected comments</value>
-  </data>
-  <data name="editor" xml:space="preserve">
-    <value>Editor</value>
-  </data>
-  <data name="total" xml:space="preserve">
-    <value>Total</value>
-  </data>
-  <data name="update" xml:space="preserve">
-    <value>Update</value>
-  </data>
-  <data name="widget" xml:space="preserve">
-    <value>Widget</value>
-  </data>
-  <data name="configuration" xml:space="preserve">
-    <value>Configuration</value>
-  </data>
-  <data name="inbox" xml:space="preserve">
-    <value>Inbox</value>
-  </data>
-  <data name="manual" xml:space="preserve">
-    <value>Manual</value>
-  </data>
-  <data name="unmoderated" xml:space="preserve">
-    <value>Unmoderated</value>
-  </data>
-  <data name="action" xml:space="preserve">
-    <value>Action</value>
-  </data>
-  <data name="automoderation" xml:space="preserve">
-    <value>Automatic Moderation</value>
-  </data>
-  <data name="custom" xml:space="preserve">
-    <value>Custom</value>
-  </data>
-  <data name="extensions" xml:space="preserve">
-    <value>Extensions</value>
-  </data>
-  <data name="Feedback" xml:space="preserve">
-    <value>Feedback</value>
-  </data>
-  <data name="Intro" xml:space="preserve">
-    <value>Intro</value>
-  </data>
-  <data name="NewEvent" xml:space="preserve">
-    <value>News &amp; Events</value>
-  </data>
-  <data name="Room" xml:space="preserve">
-    <value>Room</value>
-  </data>
   <data name="EmailNewLetter" xml:space="preserve">
-    <value>Enter your e-mail</value>
+    <value>Nhập địa chỉ email</value>
   </data>
   <data name="Gallery" xml:space="preserve">
-    <value>Gallery</value>
+    <value>Thư viện ảnh</value>
   </data>
   <data name="Thanks" xml:space="preserve">
-    <value>Thank you</value>
+    <value>Cảm ơn</value>
   </data>
   <data name="remember" xml:space="preserve">
-    <value>Remember me next time.</value>
+    <value>Ghi nhớ cho lần sau.</value>
   </data>
   <data name="EmailRequired" xml:space="preserve">
-    <value>Please enter an e-mail address</value>
+    <value>Vui lòng nhập địa chỉ email</value>
   </data>
   <data name="contactSubTitle" xml:space="preserve">
-    <value>I will answer the mail as soon as I can.</value>
+    <value>Chúng tôi sẻ sớm trả lời email của bạn</value>
   </data>
 </root>

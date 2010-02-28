@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/themes/thanhlien/site.master" AutoEventWireup="true"
     CodeFile="t-contact.aspx.cs" Inherits="t_contact" %>
-<%@ Import Namespace="BlogEngine.Core" %>
 
+<%@ Import Namespace="BlogEngine.Core" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="cphBody" runat="Server">
     <div class="center">
         <img src='<%=Page.ResolveUrl("themes/thanhlien/images/bg_mid_col.jpg")%>' width="128"
@@ -11,7 +11,8 @@
             <h1>
                 <%=Resources.labels.contact %></h1>
             <div>
-                <%=BlogSettings.Instance.ContactFormMessage %></div>
+      <%=Resources.labels.contactSubTitle.ToString() %>
+            </div>
             <label for="<%=txtName.ClientID %>">
                 <%=Resources.labels.name %></label>
             <asp:TextBox runat="server" ID="txtName" CssClass="field" />
@@ -42,7 +43,7 @@
             </asp:PlaceHolder>
             <br />
             <br />
-            <asp:Button runat="server" ID="btnSend" Text="Send" OnClientClick="return beginSendMessage();"
+            <asp:Button runat="server" ID="btnSend" Text="<%$Resources:labels, send %>" OnClientClick="return beginSendMessage();"
                 ValidationGroup="contact" />
             <asp:Label runat="server" ID="lblStatus" Visible="false">This form does not work at the moment. Sorry for the inconvenience.</asp:Label>
         </div>

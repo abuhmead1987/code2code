@@ -57,10 +57,10 @@ public partial class User_controls_CommentView : UserControl, ICallbackEventHand
         Guid replyToCommentID = String.IsNullOrEmpty(args[8]) ? Guid.Empty : new Guid(args[8]);
         string avatar = args[9];
 
-        string storedCaptcha = hfCaptcha.Value;
+        //string storedCaptcha = hfCaptcha.Value;
 
-        if (sentCaptcha != storedCaptcha)
-            return;
+        //if (sentCaptcha != storedCaptcha)
+        //    return;
 
         Comment comment = new Comment();
         comment.Id = Guid.NewGuid();
@@ -181,24 +181,24 @@ public partial class User_controls_CommentView : UserControl, ICallbackEventHand
             }
 
 
-            if (BlogSettings.Instance.IsCommentsEnabled)
-            {
+            //if (BlogSettings.Instance.IsCommentsEnabled)
+            //{
 
-                if (!Post.IsCommentsEnabled || (BlogSettings.Instance.DaysCommentsAreEnabled > 0 &&
-                   Post.DateCreated.AddDays(BlogSettings.Instance.DaysCommentsAreEnabled) < DateTime.Now.Date))
-                {
-                    phAddComment.Visible = false;
-                    lbCommentsDisabled.Visible = true;
-                }
+            //    if (!Post.IsCommentsEnabled || (BlogSettings.Instance.DaysCommentsAreEnabled > 0 &&
+            //       Post.DateCreated.AddDays(BlogSettings.Instance.DaysCommentsAreEnabled) < DateTime.Now.Date))
+            //    {
+            //        phAddComment.Visible = false;
+            //        lbCommentsDisabled.Visible = true;
+            //    }
 
-                BindCountries();
-                GetCookie();
-                hfCaptcha.Value = Guid.NewGuid().ToString();
-            }
-            else
-            {
-                phAddComment.Visible = false;
-            }
+            //    BindCountries();
+            //    GetCookie();
+            //    hfCaptcha.Value = Guid.NewGuid().ToString();
+            //}
+            //else
+            //{
+            //    phAddComment.Visible = false;
+            //}
             //InititializeCaptcha();
         }
 
@@ -305,42 +305,42 @@ public partial class User_controls_CommentView : UserControl, ICallbackEventHand
     /// Binds the country dropdown list with countries retrieved
     /// from the .NET Framework.
     /// </summary>
-    public void BindCountries()
-    {
-        StringDictionary dic = new StringDictionary();
-        List<string> col = new List<string>();
+    //public void BindCountries()
+    //{
+    //    StringDictionary dic = new StringDictionary();
+    //    List<string> col = new List<string>();
 
-        foreach (CultureInfo ci in CultureInfo.GetCultures(CultureTypes.SpecificCultures))
-        {
-            RegionInfo ri = new RegionInfo(ci.Name);
-            if (!dic.ContainsKey(ri.EnglishName))
-                dic.Add(ri.EnglishName, ri.TwoLetterISORegionName.ToLowerInvariant());
+    //    foreach (CultureInfo ci in CultureInfo.GetCultures(CultureTypes.SpecificCultures))
+    //    {
+    //        RegionInfo ri = new RegionInfo(ci.Name);
+    //        if (!dic.ContainsKey(ri.EnglishName))
+    //            dic.Add(ri.EnglishName, ri.TwoLetterISORegionName.ToLowerInvariant());
 
-            if (!col.Contains(ri.EnglishName))
-                col.Add(ri.EnglishName);
-        }
+    //        if (!col.Contains(ri.EnglishName))
+    //            col.Add(ri.EnglishName);
+    //    }
 
-        // Add custom cultures
-        if (!dic.ContainsValue("bd"))
-        {
-            dic.Add("Bangladesh", "bd");
-            col.Add("Bangladesh");
-        }
+    //    // Add custom cultures
+    //    if (!dic.ContainsValue("bd"))
+    //    {
+    //        dic.Add("Bangladesh", "bd");
+    //        col.Add("Bangladesh");
+    //    }
 
-        col.Sort();
+    //    col.Sort();
 
-        ddlCountry.Items.Add(new ListItem("[Not specified]", ""));
-        foreach (string key in col)
-        {
-            ddlCountry.Items.Add(new ListItem(key, dic[key]));
-        }
+    //    ddlCountry.Items.Add(new ListItem("[Not specified]", ""));
+    //    foreach (string key in col)
+    //    {
+    //        ddlCountry.Items.Add(new ListItem(key, dic[key]));
+    //    }
 
-        if (ddlCountry.SelectedIndex == 0)
-        {
-            ddlCountry.SelectedValue = ResolveRegion().TwoLetterISORegionName.ToLowerInvariant();
-            this.SetFlagImageUrl();
-        }
-    }
+    //    if (ddlCountry.SelectedIndex == 0)
+    //    {
+    //        ddlCountry.SelectedValue = ResolveRegion().TwoLetterISORegionName.ToLowerInvariant();
+    //        this.SetFlagImageUrl();
+    //    }
+    //}
 
     /// <summary>
     /// Resolves the region based on the browser language.
@@ -373,17 +373,17 @@ public partial class User_controls_CommentView : UserControl, ICallbackEventHand
         }
     }
 
-    private void SetFlagImageUrl()
-    {
-        if (!string.IsNullOrEmpty(ddlCountry.SelectedValue))
-        {
-            imgFlag.ImageUrl = Utils.RelativeWebRoot + "pics/flags/" + ddlCountry.SelectedValue + ".png";
-        }
-        else
-        {
-            imgFlag.ImageUrl = Utils.RelativeWebRoot + "pics/pixel.png";
-        }
-    }
+    //private void SetFlagImageUrl()
+    //{
+    //    if (!string.IsNullOrEmpty(ddlCountry.SelectedValue))
+    //    {
+    //        imgFlag.ImageUrl = Utils.RelativeWebRoot + "pics/flags/" + ddlCountry.SelectedValue + ".png";
+    //    }
+    //    else
+    //    {
+    //        imgFlag.ImageUrl = Utils.RelativeWebRoot + "pics/pixel.png";
+    //    }
+    //}
 
     #region Cookies
 
@@ -406,32 +406,32 @@ public partial class User_controls_CommentView : UserControl, ICallbackEventHand
     /// Gets the cookie with visitor information if any is set.
     /// Then fills the contact information fields in the form.
     /// </summary>
-    private void GetCookie()
-    {
-        HttpCookie cookie = Request.Cookies["comment"];
-        try
-        {
-            if (cookie != null)
-            {
-                DefaultName = Server.UrlDecode(cookie.Values["name"]);
-                txtEmail.Text = cookie.Values["email"];
-                txtWebsite.Text = cookie.Values["url"];
-                ddlCountry.SelectedValue = cookie.Values["country"];
-                this.SetFlagImageUrl();
-            }
-            else if (Page.User.Identity.IsAuthenticated)
-            {
-                MembershipUser user = Membership.GetUser();
-                DefaultName = user.UserName;
-                txtEmail.Text = user.Email;
-                txtWebsite.Text = Request.Url.Host;
-            }
-        }
-        catch (Exception)
-        {
-            // Couldn't retrieve info on the visitor/user
-        }
-    }
+    //private void GetCookie()
+    //{
+    //    HttpCookie cookie = Request.Cookies["comment"];
+    //    try
+    //    {
+    //        if (cookie != null)
+    //        {
+    //            DefaultName = Server.UrlDecode(cookie.Values["name"]);
+    //            txtEmail.Text = cookie.Values["email"];
+    //            txtWebsite.Text = cookie.Values["url"];
+    //            ddlCountry.SelectedValue = cookie.Values["country"];
+    //            this.SetFlagImageUrl();
+    //        }
+    //        else if (Page.User.Identity.IsAuthenticated)
+    //        {
+    //            MembershipUser user = Membership.GetUser();
+    //            DefaultName = user.UserName;
+    //            txtEmail.Text = user.Email;
+    //            txtWebsite.Text = Request.Url.Host;
+    //        }
+    //    }
+    //    catch (Exception)
+    //    {
+    //        // Couldn't retrieve info on the visitor/user
+    //    }
+    //}
 
     #endregion
 

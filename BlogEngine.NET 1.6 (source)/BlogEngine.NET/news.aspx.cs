@@ -1,13 +1,13 @@
 ﻿#region Using
 
 using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.Text.RegularExpressions;
 using System.Web;
-using System.Xml;
-using System.Collections.Generic;
-using BlogEngine.Core;
 using System.Web.UI;
+using System.Xml;
+using BlogEngine.Core;
 
 #endregion
 
@@ -260,7 +260,7 @@ public partial class _default : BlogEngine.Core.Web.Controls.BlogBasePage
 	//  if (string.IsNullOrEmpty(day))
 	//  {
 	//    DateTime dateFrom = DateTime.Parse(year + "-" + month + "-01", CultureInfo.InvariantCulture);
-	//    DateTime dateTo = dateFrom.AddMonths(1).AddMilliseconds(-1);
+	//    DateTime dateTo = dateFrom.AddMonths(1).ews(-1);
 	//    PostList1.Posts = Post.GetPostsByDate(dateFrom, dateTo);
 	//    Title = BlogSettings.Instance.Name + " - " + dateFrom.ToString("MMMM yyyy");
 	//  }

@@ -63,7 +63,7 @@ public partial class post : BlogEngine.Core.Web.Controls.BlogBasePage
 					related.Item = this.Post;
 				}
 
-				CommentView1.Post = Post;
+                //CommentView1.Post = Post;
 
 				Page.Title = Server.HtmlEncode(Post.Title);
 				AddMetaKeywords();

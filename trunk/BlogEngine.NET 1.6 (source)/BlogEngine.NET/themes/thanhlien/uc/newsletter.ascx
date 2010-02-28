@@ -9,7 +9,7 @@
     <p class="dangky">
         <asp:TextBox runat="server" ID="txtEmail" Width="158px" />
         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtEmail"
-            ErrorMessage="Please enter an e-mail address" Display="dynamic" ValidationGroup="newsletter" />
+            ErrorMessage="<%$Resources:labels, EmailRequired %>" Display="dynamic" ValidationGroup="newsletter" />
         <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtEmail"
             ErrorMessage="<%$Resources:labels, enterValidEmail %>" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"
             Display="dynamic" ValidationGroup="newsletter" />

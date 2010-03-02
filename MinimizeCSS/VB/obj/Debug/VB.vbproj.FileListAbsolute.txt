@@ -1,0 +1,9 @@
+C:\Temp\MinimizeCSS\VB\bin\Debug\VB.exe
+C:\Temp\MinimizeCSS\VB\bin\Debug\VB.pdb
+C:\Temp\MinimizeCSS\VB\bin\Debug\VB.xml
+C:\Temp\MinimizeCSS\VB\obj\Debug\ResolveAssemblyReference.cache
+C:\Temp\MinimizeCSS\VB\obj\Debug\VB.Resources.resources
+C:\Temp\MinimizeCSS\VB\obj\Debug\VB.vbproj.GenerateResource.Cache
+C:\Temp\MinimizeCSS\VB\obj\Debug\VB.exe
+C:\Temp\MinimizeCSS\VB\obj\Debug\VB.xml
+C:\Temp\MinimizeCSS\VB\obj\Debug\VB.pdb

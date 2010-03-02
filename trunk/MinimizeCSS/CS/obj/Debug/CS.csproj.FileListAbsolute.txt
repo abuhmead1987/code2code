@@ -1,0 +1,5 @@
+C:\Temp\MinimizeCSS\CS\bin\Debug\CS.exe
+C:\Temp\MinimizeCSS\CS\bin\Debug\CS.pdb
+C:\Temp\MinimizeCSS\CS\obj\Debug\ResolveAssemblyReference.cache
+C:\Temp\MinimizeCSS\CS\obj\Debug\CS.exe
+C:\Temp\MinimizeCSS\CS\obj\Debug\CS.pdb

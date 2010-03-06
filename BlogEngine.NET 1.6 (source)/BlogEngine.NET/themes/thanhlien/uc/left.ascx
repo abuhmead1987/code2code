@@ -2,10 +2,10 @@
 <img src='<%=Page.ResolveUrl("~/themes/thanhlien/images/bg_left_col.jpg")%>' width="235"
     height="45" /><a href="#"><img src='<%=Page.ResolveUrl("~/themes/thanhlien/images/arrow_up.gif")%>'
         alt="up" width="19" height="7" class="space_up" border="0" /></a><br />
-<img src='<%=Page.ResolveUrl("~/themes/thanhlien/images/img1.jpg")%>' alt="image"
-    width="167" height="107" class="frame" /><img src='<%=Page.ResolveUrl("~/themes/thanhlien/images/img3.jpg")%>'
+<img src='<%=Page.ResolveUrl("~/themes/thanhlien/images/thanhlien3.jpg")%>' alt="image"
+    width="167" height="107" class="frame" /><img src='<%=Page.ResolveUrl("~/themes/thanhlien/images/thanhlien1.jpg")%>'
         alt="image" width="167" height="107" class="frame" />
-<img src='<%=Page.ResolveUrl("~/themes/thanhlien/images/img1.jpg")%>' alt="image"
+<img src='<%=Page.ResolveUrl("~/themes/thanhlien/images/thanhlien2.jpg")%>' alt="image"
     width="167" height="107" class="frame" /><br />
 <a href="#">
     <img src='<%=Page.ResolveUrl("~/themes/thanhlien/images/arrow_down.gif")%>' alt="down"

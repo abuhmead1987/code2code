@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<faqs>
+  <faq id="1" question="1.Lorem ipsum dolor sit amet, consectetur adipiscing elit tortor in imperdiet placerat?" answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae dolor in quam vestibulum consequat a in lacus. Nulla cursus, tortor in imperdiet placerat, massa lacus sagittis urna, quis tincidunt elit mauris porttitor lorem. Nulla gravida lacinia ornare. Duis nec lorem lacus, a feugiat lacus">
+  </faq>
+  <faq id="2" question="2.Lorem ipsum dolor sit amet, consectetur adipiscing elit." answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae dolor in quam vestibulum consequat a in lacus. Nulla cursus, tortor in imperdiet placerat, massa lacus sagittis urna, quis tincidunt elit mauris porttitor lorem. Nulla gravida lacinia ornare. Duis nec lorem lacus, a feugiat lacus">
+  </faq>
+  <faq id="3" question="3.Lorem ipsum dolor sit amet, consectetur adipiscing elit in quam vestibulum consequat a in lacus?" answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae dolor in quam vestibulum consequat a in lacus. Nulla cursus, tortor in imperdiet placerat, massa lacus sagittis urna, quis tincidunt elit mauris porttitor lorem. Nulla gravida lacinia ornare. Duis nec lorem lacus, a feugiat lacus">
+  </faq>
+  <faq id="4" question="4.Lorem ipsum dolor sit amet, consectetur adipiscing elit." answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae dolor in quam vestibulum consequat a in lacus. Nulla cursus, tortor in imperdiet placerat, massa lacus sagittis urna, quis tincidunt elit mauris porttitor lorem. Nulla gravida lacinia ornare. Duis nec lorem lacus, a feugiat lacus">
+  </faq>
+</faqs>

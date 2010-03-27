@@ -1,0 +1,5 @@
+c:\users\quachnguyen\documents\visual studio 2010\Projects\Stopwatch4.0\CS\bin\Debug\CS.exe
+c:\users\quachnguyen\documents\visual studio 2010\Projects\Stopwatch4.0\CS\bin\Debug\CS.pdb
+c:\users\quachnguyen\documents\visual studio 2010\Projects\Stopwatch4.0\CS\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\quachnguyen\documents\visual studio 2010\Projects\Stopwatch4.0\CS\obj\x86\Debug\CS.exe
+c:\users\quachnguyen\documents\visual studio 2010\Projects\Stopwatch4.0\CS\obj\x86\Debug\CS.pdb

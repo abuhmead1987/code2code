@@ -1,0 +1,10 @@
+c:\users\quachnguyen\documents\visual studio 2010\Projects\Stopwatch4.0\VB\bin\Debug\VB.exe
+c:\users\quachnguyen\documents\visual studio 2010\Projects\Stopwatch4.0\VB\bin\Debug\VB.pdb
+c:\users\quachnguyen\documents\visual studio 2010\Projects\Stopwatch4.0\VB\bin\Debug\VB.xml
+c:\users\quachnguyen\documents\visual studio 2010\Projects\Stopwatch4.0\VB\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\quachnguyen\documents\visual studio 2010\Projects\Stopwatch4.0\VB\obj\x86\Debug\VB.Resources.resources
+c:\users\quachnguyen\documents\visual studio 2010\Projects\Stopwatch4.0\VB\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\quachnguyen\documents\visual studio 2010\Projects\Stopwatch4.0\VB\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\quachnguyen\documents\visual studio 2010\Projects\Stopwatch4.0\VB\obj\x86\Debug\VB.exe
+c:\users\quachnguyen\documents\visual studio 2010\Projects\Stopwatch4.0\VB\obj\x86\Debug\VB.xml
+c:\users\quachnguyen\documents\visual studio 2010\Projects\Stopwatch4.0\VB\obj\x86\Debug\VB.pdb

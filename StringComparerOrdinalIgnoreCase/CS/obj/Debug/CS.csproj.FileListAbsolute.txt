@@ -1,0 +1,5 @@
+C:\Temp\StringComparerOrdinalIgnoreCase\CS\obj\Debug\ResolveAssemblyReference.cache
+C:\Temp\StringComparerOrdinalIgnoreCase\CS\bin\Debug\CS.exe
+C:\Temp\StringComparerOrdinalIgnoreCase\CS\bin\Debug\CS.pdb
+C:\Temp\StringComparerOrdinalIgnoreCase\CS\obj\Debug\CS.exe
+C:\Temp\StringComparerOrdinalIgnoreCase\CS\obj\Debug\CS.pdb

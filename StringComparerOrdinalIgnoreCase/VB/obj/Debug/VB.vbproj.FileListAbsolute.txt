@@ -1,0 +1,9 @@
+C:\Temp\StringComparerOrdinalIgnoreCase\VB\bin\Debug\VB.exe
+C:\Temp\StringComparerOrdinalIgnoreCase\VB\bin\Debug\VB.pdb
+C:\Temp\StringComparerOrdinalIgnoreCase\VB\bin\Debug\VB.xml
+C:\Temp\StringComparerOrdinalIgnoreCase\VB\obj\Debug\ResolveAssemblyReference.cache
+C:\Temp\StringComparerOrdinalIgnoreCase\VB\obj\Debug\VB.Resources.resources
+C:\Temp\StringComparerOrdinalIgnoreCase\VB\obj\Debug\VB.vbproj.GenerateResource.Cache
+C:\Temp\StringComparerOrdinalIgnoreCase\VB\obj\Debug\VB.exe
+C:\Temp\StringComparerOrdinalIgnoreCase\VB\obj\Debug\VB.xml
+C:\Temp\StringComparerOrdinalIgnoreCase\VB\obj\Debug\VB.pdb

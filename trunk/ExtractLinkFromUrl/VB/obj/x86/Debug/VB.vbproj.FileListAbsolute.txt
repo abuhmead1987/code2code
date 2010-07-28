@@ -1,0 +1,10 @@
+C:\ExtractLinkFromUrl\VB\bin\Debug\VB.exe
+C:\ExtractLinkFromUrl\VB\bin\Debug\VB.pdb
+C:\ExtractLinkFromUrl\VB\bin\Debug\VB.xml
+C:\ExtractLinkFromUrl\VB\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\ExtractLinkFromUrl\VB\obj\x86\Debug\VB.Resources.resources
+C:\ExtractLinkFromUrl\VB\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\ExtractLinkFromUrl\VB\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\ExtractLinkFromUrl\VB\obj\x86\Debug\VB.exe
+C:\ExtractLinkFromUrl\VB\obj\x86\Debug\VB.xml
+C:\ExtractLinkFromUrl\VB\obj\x86\Debug\VB.pdb

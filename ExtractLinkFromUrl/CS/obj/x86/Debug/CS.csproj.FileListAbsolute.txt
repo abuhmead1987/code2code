@@ -1,0 +1,5 @@
+C:\ExtractLinkFromUrl\CS\bin\Debug\CS.exe
+C:\ExtractLinkFromUrl\CS\bin\Debug\CS.pdb
+C:\ExtractLinkFromUrl\CS\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\ExtractLinkFromUrl\CS\obj\x86\Debug\CS.exe
+C:\ExtractLinkFromUrl\CS\obj\x86\Debug\CS.pdb

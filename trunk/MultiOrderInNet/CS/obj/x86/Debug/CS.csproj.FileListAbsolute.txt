@@ -3,3 +3,8 @@ C:\MultiOrderInNet\CS\bin\Debug\CS.pdb
 C:\MultiOrderInNet\CS\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\MultiOrderInNet\CS\obj\x86\Debug\CS.exe
 C:\MultiOrderInNet\CS\obj\x86\Debug\CS.pdb
+C:\MultiOrderInNet\MultiOrderInNet\CS\obj\x86\Debug\CS.exe
+C:\MultiOrderInNet\MultiOrderInNet\CS\obj\x86\Debug\CS.pdb
+C:\MultiOrderInNet\MultiOrderInNet\CS\bin\Debug\CS.exe
+C:\MultiOrderInNet\MultiOrderInNet\CS\bin\Debug\CS.pdb
+C:\MultiOrderInNet\MultiOrderInNet\CS\obj\x86\Debug\ResolveAssemblyReference.cache

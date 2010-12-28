@@ -1,0 +1,5 @@
+c:\users\nguyen.quach\documents\visual studio 2010\Projects\ExceptInLinq\CS\bin\Debug\CS.exe
+c:\users\nguyen.quach\documents\visual studio 2010\Projects\ExceptInLinq\CS\bin\Debug\CS.pdb
+c:\users\nguyen.quach\documents\visual studio 2010\Projects\ExceptInLinq\CS\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\nguyen.quach\documents\visual studio 2010\Projects\ExceptInLinq\CS\obj\x86\Debug\CS.exe
+c:\users\nguyen.quach\documents\visual studio 2010\Projects\ExceptInLinq\CS\obj\x86\Debug\CS.pdb

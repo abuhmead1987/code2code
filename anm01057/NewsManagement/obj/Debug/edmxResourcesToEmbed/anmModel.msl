@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ANMModelStoreContainer" CdmEntityContainer="anmEntities">
+    <EntitySetMapping Name="anm_Authors">
+      <EntityTypeMapping TypeName="ANMModel.anm_Authors">
+        <MappingFragment StoreEntitySet="anm_Authors">
+          <ScalarProperty Name="author" ColumnName="author" />
+          <ScalarProperty Name="role" ColumnName="role" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="anm_Categories">
+      <EntityTypeMapping TypeName="ANMModel.anm_Categories">
+        <MappingFragment StoreEntitySet="anm_Categories">
+          <ScalarProperty Name="idcategory" ColumnName="idcategory" />
+          <ScalarProperty Name="category" ColumnName="category" />
+          <ScalarProperty Name="idfather" ColumnName="idfather" />
+          <ScalarProperty Name="ordercat" ColumnName="ordercat" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="idrootcat" ColumnName="idrootcat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="anm_Comments">
+      <EntityTypeMapping TypeName="ANMModel.anm_Comments">
+        <MappingFragment StoreEntitySet="anm_Comments">
+          <ScalarProperty Name="idcomment" ColumnName="idcomment" />
+          <ScalarProperty Name="idnews" ColumnName="idnews" />
+          <ScalarProperty Name="commentator" ColumnName="commentator" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="comment" ColumnName="comment" />
+          <ScalarProperty Name="ip" ColumnName="ip" />
+          <ScalarProperty Name="approved" ColumnName="approved" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="anm_News">
+      <EntityTypeMapping TypeName="ANMModel.anm_News">
+        <MappingFragment StoreEntitySet="anm_News">
+          <ScalarProperty Name="idnews" ColumnName="idnews" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="author" ColumnName="author" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="summary" ColumnName="summary" />
+          <ScalarProperty Name="news" ColumnName="news" />
+          <ScalarProperty Name="idcategory" ColumnName="idcategory" />
+          <ScalarProperty Name="comments" ColumnName="comments" />
+          <ScalarProperty Name="commentcheck" ColumnName="commentcheck" />
+          <ScalarProperty Name="published" ColumnName="published" />
+          <ScalarProperty Name="highlight" ColumnName="highlight" />
+          <ScalarProperty Name="postedby" ColumnName="postedby" />
+          <ScalarProperty Name="sidenews" ColumnName="sidenews" />
+          <ScalarProperty Name="Tags" ColumnName="Tags" />
+          <ScalarProperty Name="homeslide" ColumnName="homeslide" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="anm_Reports">
+      <EntityTypeMapping TypeName="ANMModel.anm_Reports">
+        <MappingFragment StoreEntitySet="anm_Reports">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="idreported" ColumnName="idreported" />
+          <ScalarProperty Name="reason" ColumnName="reason" />
+          <ScalarProperty Name="date" ColumnName="date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="anm_Settings">
+      <EntityTypeMapping TypeName="ANMModel.anm_Settings">
+        <MappingFragment StoreEntitySet="anm_Settings">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="SiteName" ColumnName="SiteName" />
+          <ScalarProperty Name="SiteEmail" ColumnName="SiteEmail" />
+          <ScalarProperty Name="SiteUrl" ColumnName="SiteUrl" />
+          <ScalarProperty Name="Template" ColumnName="Template" />
+          <ScalarProperty Name="TopMenu" ColumnName="TopMenu" />
+          <ScalarProperty Name="SideMenu" ColumnName="SideMenu" />
+          <ScalarProperty Name="SearchMenu" ColumnName="SearchMenu" />
+          <ScalarProperty Name="ArchiveMenu" ColumnName="ArchiveMenu" />
+          <ScalarProperty Name="EmailConfirm" ColumnName="EmailConfirm" />
+          <ScalarProperty Name="MailUser" ColumnName="MailUser" />
+          <ScalarProperty Name="MailPassword" ColumnName="MailPassword" />
+          <ScalarProperty Name="port" ColumnName="port" />
+          <ScalarProperty Name="smtpserver" ColumnName="smtpserver" />
+          <ScalarProperty Name="Banner" ColumnName="Banner" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+          <ScalarProperty Name="HBGColor" ColumnName="HBGColor" />
+          <ScalarProperty Name="BGcolor" ColumnName="BGcolor" />
+          <ScalarProperty Name="BGimage" ColumnName="BGimage" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="NumArticles" ColumnName="NumArticles" />
+          <ScalarProperty Name="ApproveArticles" ColumnName="ApproveArticles" />
+          <ScalarProperty Name="NumComments" ColumnName="NumComments" />
+          <ScalarProperty Name="ApproveComments" ColumnName="ApproveComments" />
+          <ScalarProperty Name="BBCode" ColumnName="BBCode" />
+          <ScalarProperty Name="Copyright" ColumnName="Copyright" />
+          <ScalarProperty Name="ViewNarticles" ColumnName="ViewNarticles" />
+          <ScalarProperty Name="Validator" ColumnName="Validator" />
+          <ScalarProperty Name="LastNews" ColumnName="LastNews" />
+          <ScalarProperty Name="LastComments" ColumnName="LastComments" />
+          <ScalarProperty Name="CaptchaNewUser" ColumnName="CaptchaNewUser" />
+          <ScalarProperty Name="CaptchaComments" ColumnName="CaptchaComments" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="ArchiveType" ColumnName="ArchiveType" />
+          <ScalarProperty Name="CaptchaType" ColumnName="CaptchaType" />
+          <ScalarProperty Name="TagBox" ColumnName="TagBox" />
+          <ScalarProperty Name="Anonymous" ColumnName="Anonymous" />
+          <ScalarProperty Name="OnlineUsers" ColumnName="OnlineUsers" />
+          <ScalarProperty Name="ArtImageWidth" ColumnName="ArtImageWidth" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="anm_Tags">
+      <EntityTypeMapping TypeName="ANMModel.anm_Tags">
+        <MappingFragment StoreEntitySet="anm_Tags">
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="anm_Templates">
+      <EntityTypeMapping TypeName="ANMModel.anm_Templates">
+        <MappingFragment StoreEntitySet="anm_Templates">
+          <ScalarProperty Name="Template" ColumnName="Template" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="author" ColumnName="author" />
+          <ScalarProperty Name="siteauthor" ColumnName="siteauthor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_Applications">
+      <EntityTypeMapping TypeName="ANMModel.aspnet_Applications">
+        <MappingFragment StoreEntitySet="aspnet_Applications">
+          <ScalarProperty Name="ApplicationName" ColumnName="ApplicationName" />
+          <ScalarProperty Name="LoweredApplicationName" ColumnName="LoweredApplicationName" />
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_Membership">
+      <EntityTypeMapping TypeName="ANMModel.aspnet_Membership">
+        <MappingFragment StoreEntitySet="aspnet_Membership">
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="PasswordFormat" ColumnName="PasswordFormat" />
+          <ScalarProperty Name="PasswordSalt" ColumnName="PasswordSalt" />
+          <ScalarProperty Name="MobilePIN" ColumnName="MobilePIN" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="LoweredEmail" ColumnName="LoweredEmail" />
+          <ScalarProperty Name="PasswordQuestion" ColumnName="PasswordQuestion" />
+          <ScalarProperty Name="PasswordAnswer" ColumnName="PasswordAnswer" />
+          <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+          <ScalarProperty Name="IsLockedOut" ColumnName="IsLockedOut" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="LastLoginDate" ColumnName="LastLoginDate" />
+          <ScalarProperty Name="LastPasswordChangedDate" ColumnName="LastPasswordChangedDate" />
+          <ScalarProperty Name="LastLockoutDate" ColumnName="LastLockoutDate" />
+          <ScalarProperty Name="FailedPasswordAttemptCount" ColumnName="FailedPasswordAttemptCount" />
+          <ScalarProperty Name="FailedPasswordAttemptWindowStart" ColumnName="FailedPasswordAttemptWindowStart" />
+          <ScalarProperty Name="FailedPasswordAnswerAttemptCount" ColumnName="FailedPasswordAnswerAttemptCount" />
+          <ScalarProperty Name="FailedPasswordAnswerAttemptWindowStart" ColumnName="FailedPasswordAnswerAttemptWindowStart" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_SchemaVersions">
+      <EntityTypeMapping TypeName="ANMModel.aspnet_SchemaVersions">
+        <MappingFragment StoreEntitySet="aspnet_SchemaVersions">
+          <ScalarProperty Name="Feature" ColumnName="Feature" />
+          <ScalarProperty Name="CompatibleSchemaVersion" ColumnName="CompatibleSchemaVersion" />
+          <ScalarProperty Name="IsCurrentVersion" ColumnName="IsCurrentVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_Users">
+      <EntityTypeMapping TypeName="ANMModel.aspnet_Users">
+        <MappingFragment StoreEntitySet="aspnet_Users">
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="LoweredUserName" ColumnName="LoweredUserName" />
+          <ScalarProperty Name="MobileAlias" ColumnName="MobileAlias" />
+          <ScalarProperty Name="IsAnonymous" ColumnName="IsAnonymous" />
+          <ScalarProperty Name="LastActivityDate" ColumnName="LastActivityDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_aspnet_Applications">
+      <EntityTypeMapping TypeName="ANMModel.vw_aspnet_Applications">
+        <MappingFragment StoreEntitySet="vw_aspnet_Applications">
+          <ScalarProperty Name="ApplicationName" ColumnName="ApplicationName" />
+          <ScalarProperty Name="LoweredApplicationName" ColumnName="LoweredApplicationName" />
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_aspnet_MembershipUsers">
+      <EntityTypeMapping TypeName="ANMModel.vw_aspnet_MembershipUsers">
+        <MappingFragment StoreEntitySet="vw_aspnet_MembershipUsers">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="PasswordFormat" ColumnName="PasswordFormat" />
+          <ScalarProperty Name="MobilePIN" ColumnName="MobilePIN" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="LoweredEmail" ColumnName="LoweredEmail" />
+          <ScalarProperty Name="PasswordQuestion" ColumnName="PasswordQuestion" />
+          <ScalarProperty Name="PasswordAnswer" ColumnName="PasswordAnswer" />
+          <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+          <ScalarProperty Name="IsLockedOut" ColumnName="IsLockedOut" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="LastLoginDate" ColumnName="LastLoginDate" />
+          <ScalarProperty Name="LastPasswordChangedDate" ColumnName="LastPasswordChangedDate" />
+          <ScalarProperty Name="LastLockoutDate" ColumnName="LastLockoutDate" />
+          <ScalarProperty Name="FailedPasswordAttemptCount" ColumnName="FailedPasswordAttemptCount" />
+          <ScalarProperty Name="FailedPasswordAttemptWindowStart" ColumnName="FailedPasswordAttemptWindowStart" />
+          <ScalarProperty Name="FailedPasswordAnswerAttemptCount" ColumnName="FailedPasswordAnswerAttemptCount" />
+          <ScalarProperty Name="FailedPasswordAnswerAttemptWindowStart" ColumnName="FailedPasswordAnswerAttemptWindowStart" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="MobileAlias" ColumnName="MobileAlias" />
+          <ScalarProperty Name="IsAnonymous" ColumnName="IsAnonymous" />
+          <ScalarProperty Name="LastActivityDate" ColumnName="LastActivityDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_aspnet_Users">
+      <EntityTypeMapping TypeName="ANMModel.vw_aspnet_Users">
+        <MappingFragment StoreEntitySet="vw_aspnet_Users">
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="LoweredUserName" ColumnName="LoweredUserName" />
+          <ScalarProperty Name="MobileAlias" ColumnName="MobileAlias" />
+          <ScalarProperty Name="IsAnonymous" ColumnName="IsAnonymous" />
+          <ScalarProperty Name="LastActivityDate" ColumnName="LastActivityDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

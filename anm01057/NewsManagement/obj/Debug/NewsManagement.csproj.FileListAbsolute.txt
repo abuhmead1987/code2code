@@ -1,0 +1,9 @@
+C:\Users\nguyen.quach\Documents\Visual Studio 2010\Projects\anm01057\NewsManagement\bin\NewsManagement.dll
+C:\Users\nguyen.quach\Documents\Visual Studio 2010\Projects\anm01057\NewsManagement\bin\NewsManagement.pdb
+C:\Users\nguyen.quach\Documents\Visual Studio 2010\Projects\anm01057\NewsManagement\bin\EntityFramework.dll
+C:\Users\nguyen.quach\Documents\Visual Studio 2010\Projects\anm01057\NewsManagement\bin\EntityFramework.xml
+C:\Users\nguyen.quach\Documents\Visual Studio 2010\Projects\anm01057\NewsManagement\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\nguyen.quach\Documents\Visual Studio 2010\Projects\anm01057\NewsManagement\obj\Debug\NewsManagement.dll
+C:\Users\nguyen.quach\Documents\Visual Studio 2010\Projects\anm01057\NewsManagement\obj\Debug\NewsManagement.pdb
+C:\Users\nguyen.quach\Documents\Visual Studio 2010\Projects\anm01057\NewsManagement\bin\News.EntityFramework.dll
+C:\Users\nguyen.quach\Documents\Visual Studio 2010\Projects\anm01057\NewsManagement\bin\News.EntityFramework.pdb

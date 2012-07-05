@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ANMModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="anmEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="anm_Authors" EntityType="ANMModel.anm_Authors" />
+    <EntitySet Name="anm_Categories" EntityType="ANMModel.anm_Categories" />
+    <EntitySet Name="anm_Comments" EntityType="ANMModel.anm_Comments" />
+    <EntitySet Name="anm_News" EntityType="ANMModel.anm_News" />
+    <EntitySet Name="anm_Reports" EntityType="ANMModel.anm_Reports" />
+    <EntitySet Name="anm_Settings" EntityType="ANMModel.anm_Settings" />
+    <EntitySet Name="anm_Tags" EntityType="ANMModel.anm_Tags" />
+    <EntitySet Name="anm_Templates" EntityType="ANMModel.anm_Templates" />
+    <EntitySet Name="aspnet_Applications" EntityType="ANMModel.aspnet_Applications" />
+    <EntitySet Name="aspnet_Membership" EntityType="ANMModel.aspnet_Membership" />
+    <EntitySet Name="aspnet_SchemaVersions" EntityType="ANMModel.aspnet_SchemaVersions" />
+    <EntitySet Name="aspnet_Users" EntityType="ANMModel.aspnet_Users" />
+    <EntitySet Name="vw_aspnet_Applications" EntityType="ANMModel.vw_aspnet_Applications" />
+    <EntitySet Name="vw_aspnet_MembershipUsers" EntityType="ANMModel.vw_aspnet_MembershipUsers" />
+    <EntitySet Name="vw_aspnet_Users" EntityType="ANMModel.vw_aspnet_Users" />
+    <AssociationSet Name="FK_anm_News_anm_Categories" Association="ANMModel.FK_anm_News_anm_Categories">
+      <End Role="anm_Categories" EntitySet="anm_Categories" />
+      <End Role="anm_News" EntitySet="anm_News" />
+    </AssociationSet>
+    <AssociationSet Name="FK_anm_Comments_anm_News" Association="ANMModel.FK_anm_Comments_anm_News">
+      <End Role="anm_News" EntitySet="anm_News" />
+      <End Role="anm_Comments" EntitySet="anm_Comments" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Me__Appli__6FE99F9F" Association="ANMModel.FK__aspnet_Me__Appli__6FE99F9F">
+      <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+      <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Us__Appli__71D1E811" Association="ANMModel.FK__aspnet_Us__Appli__71D1E811">
+      <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Me__UserI__70DDC3D8" Association="ANMModel.FK__aspnet_Me__UserI__70DDC3D8">
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+      <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="anm_Authors">
+    <Key>
+      <PropertyRef Name="author" />
+    </Key>
+    <Property Name="author" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="role" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="anm_Categories">
+    <Key>
+      <PropertyRef Name="idcategory" />
+    </Key>
+    <Property Name="idcategory" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="category" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="idfather" Type="Int32" Nullable="false" />
+    <Property Name="ordercat" Type="Int32" Nullable="false" />
+    <Property Name="url" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="idrootcat" Type="Int32" />
+    <NavigationProperty Name="anm_News" Relationship="ANMModel.FK_anm_News_anm_Categories" FromRole="anm_Categories" ToRole="anm_News" />
+  </EntityType>
+  <EntityType Name="anm_Comments">
+    <Key>
+      <PropertyRef Name="idcomment" />
+    </Key>
+    <Property Name="idcomment" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idnews" Type="Int32" Nullable="false" />
+    <Property Name="commentator" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="date" Type="DateTime" Nullable="false" />
+    <Property Name="comment" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ip" Type="String" Nullable="false" MaxLength="16" Unicode="true" FixedLength="false" />
+    <Property Name="approved" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="anm_News" Relationship="ANMModel.FK_anm_Comments_anm_News" FromRole="anm_Comments" ToRole="anm_News" />
+  </EntityType>
+  <EntityType Name="anm_News">
+    <Key>
+      <PropertyRef Name="idnews" />
+    </Key>
+    <Property Name="idnews" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="author" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="date" Type="DateTime" Nullable="false" />
+    <Property Name="image" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="summary" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="news" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="idcategory" Type="Int32" Nullable="false" />
+    <Property Name="comments" Type="Int32" Nullable="false" />
+    <Property Name="commentcheck" Type="Boolean" Nullable="false" />
+    <Property Name="published" Type="Boolean" Nullable="false" />
+    <Property Name="highlight" Type="Boolean" Nullable="false" />
+    <Property Name="postedby" Type="Boolean" Nullable="false" />
+    <Property Name="sidenews" Type="Boolean" Nullable="false" />
+    <Property Name="Tags" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="homeslide" Type="Boolean" />
+    <NavigationProperty Name="anm_Categories" Relationship="ANMModel.FK_anm_News_anm_Categories" FromRole="anm_News" ToRole="anm_Categories" />
+    <NavigationProperty Name="anm_Comments" Relationship="ANMModel.FK_anm_Comments_anm_News" FromRole="anm_News" ToRole="anm_Comments" />
+  </EntityType>
+  <EntityType Name="anm_Reports">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="username" />
+      <PropertyRef Name="idreported" />
+      <PropertyRef Name="reason" />
+      <PropertyRef Name="date" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="username" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="idreported" Type="Int32" Nullable="false" />
+    <Property Name="reason" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="date" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="anm_Settings">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="SiteName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="SiteEmail" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="SiteUrl" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Template" Type="Int32" Nullable="false" />
+    <Property Name="TopMenu" Type="Boolean" Nullable="false" />
+    <Property Name="SideMenu" Type="Boolean" Nullable="false" />
+    <Property Name="SearchMenu" Type="Boolean" Nullable="false" />
+    <Property Name="ArchiveMenu" Type="Boolean" Nullable="false" />
+    <Property Name="EmailConfirm" Type="Boolean" Nullable="false" />
+    <Property Name="MailUser" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="MailPassword" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="port" Type="String" MaxLength="4" Unicode="true" FixedLength="false" />
+    <Property Name="smtpserver" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Banner" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Year" Type="Int32" Nullable="false" />
+    <Property Name="Month" Type="Int32" Nullable="false" />
+    <Property Name="HBGColor" Type="String" Nullable="false" MaxLength="7" Unicode="true" FixedLength="false" />
+    <Property Name="BGcolor" Type="String" Nullable="false" MaxLength="7" Unicode="true" FixedLength="false" />
+    <Property Name="BGimage" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Width" Type="String" Nullable="false" MaxLength="6" Unicode="true" FixedLength="false" />
+    <Property Name="NumArticles" Type="Int32" />
+    <Property Name="ApproveArticles" Type="Boolean" />
+    <Property Name="NumComments" Type="Int32" />
+    <Property Name="ApproveComments" Type="Boolean" />
+    <Property Name="BBCode" Type="Boolean" />
+    <Property Name="Copyright" Type="Boolean" />
+    <Property Name="ViewNarticles" Type="Boolean" />
+    <Property Name="Validator" Type="Boolean" />
+    <Property Name="LastNews" Type="Boolean" />
+    <Property Name="LastComments" Type="Boolean" />
+    <Property Name="CaptchaNewUser" Type="Boolean" />
+    <Property Name="CaptchaComments" Type="Boolean" />
+    <Property Name="Version" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="ArchiveType" Type="Int32" />
+    <Property Name="CaptchaType" Type="String" MaxLength="2" Unicode="true" FixedLength="false" />
+    <Property Name="TagBox" Type="Boolean" />
+    <Property Name="Anonymous" Type="Boolean" />
+    <Property Name="OnlineUsers" Type="Boolean" />
+    <Property Name="ArtImageWidth" Type="Int32" />
+  </EntityType>
+  <EntityType Name="anm_Tags">
+    <Key>
+      <PropertyRef Name="Tag" />
+    </Key>
+    <Property Name="Tag" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Size" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="anm_Templates">
+    <Key>
+      <PropertyRef Name="Template" />
+    </Key>
+    <Property Name="Template" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="author" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="siteauthor" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="aspnet_Applications">
+    <Key>
+      <PropertyRef Name="ApplicationId" />
+    </Key>
+    <Property Name="ApplicationName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="LoweredApplicationName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="aspnet_Membership" Relationship="ANMModel.FK__aspnet_Me__Appli__6FE99F9F" FromRole="aspnet_Applications" ToRole="aspnet_Membership" />
+    <NavigationProperty Name="aspnet_Users" Relationship="ANMModel.FK__aspnet_Us__Appli__71D1E811" FromRole="aspnet_Applications" ToRole="aspnet_Users" />
+  </EntityType>
+  <EntityType Name="aspnet_Membership">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="PasswordFormat" Type="Int32" Nullable="false" />
+    <Property Name="PasswordSalt" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="MobilePIN" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="LoweredEmail" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="PasswordQuestion" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="PasswordAnswer" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="IsApproved" Type="Boolean" Nullable="false" />
+    <Property Name="IsLockedOut" Type="Boolean" Nullable="false" />
+    <Property Name="CreateDate" Type="DateTime" Nullable="false" />
+    <Property Name="LastLoginDate" Type="DateTime" Nullable="false" />
+    <Property Name="LastPasswordChangedDate" Type="DateTime" Nullable="false" />
+    <Property Name="LastLockoutDate" Type="DateTime" Nullable="false" />
+    <Property Name="FailedPasswordAttemptCount" Type="Int32" Nullable="false" />
+    <Property Name="FailedPasswordAttemptWindowStart" Type="DateTime" Nullable="false" />
+    <Property Name="FailedPasswordAnswerAttemptCount" Type="Int32" Nullable="false" />
+    <Property Name="FailedPasswordAnswerAttemptWindowStart" Type="DateTime" Nullable="false" />
+    <Property Name="Comment" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="aspnet_Applications" Relationship="ANMModel.FK__aspnet_Me__Appli__6FE99F9F" FromRole="aspnet_Membership" ToRole="aspnet_Applications" />
+    <NavigationProperty Name="aspnet_Users" Relationship="ANMModel.FK__aspnet_Me__UserI__70DDC3D8" FromRole="aspnet_Membership" ToRole="aspnet_Users" />
+  </EntityType>
+  <EntityType Name="aspnet_SchemaVersions">
+    <Key>
+      <PropertyRef Name="Feature" />
+      <PropertyRef Name="CompatibleSchemaVersion" />
+    </Key>
+    <Property Name="Feature" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="CompatibleSchemaVersion" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="IsCurrentVersion" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="aspnet_Users">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="LoweredUserName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="MobileAlias" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+    <Property Name="IsAnonymous" Type="Boolean" Nullable="false" />
+    <Property Name="LastActivityDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="aspnet_Applications" Relationship="ANMModel.FK__aspnet_Us__Appli__71D1E811" FromRole="aspnet_Users" ToRole="aspnet_Applications" />
+    <NavigationProperty Name="aspnet_Membership" Relationship="ANMModel.FK__aspnet_Me__UserI__70DDC3D8" FromRole="aspnet_Users" ToRole="aspnet_Membership" />
+  </EntityType>
+  <EntityType Name="vw_aspnet_Applications">
+    <Key>
+      <PropertyRef Name="ApplicationName" />
+      <PropertyRef Name="LoweredApplicationName" />
+      <PropertyRef Name="ApplicationId" />
+    </Key>
+    <Property Name="ApplicationName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="LoweredApplicationName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="vw_aspnet_MembershipUsers">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="PasswordFormat" />
+      <PropertyRef Name="IsApproved" />
+      <PropertyRef Name="IsLockedOut" />
+      <PropertyRef Name="CreateDate" />
+      <PropertyRef Name="LastLoginDate" />
+      <PropertyRef Name="LastPasswordChangedDate" />
+      <PropertyRef Name="LastLockoutDate" />
+      <PropertyRef Name="FailedPasswordAttemptCount" />
+      <PropertyRef Name="FailedPasswordAttemptWindowStart" />
+      <PropertyRef Name="FailedPasswordAnswerAttemptCount" />
+      <PropertyRef Name="FailedPasswordAnswerAttemptWindowStart" />
+      <PropertyRef Name="ApplicationId" />
+      <PropertyRef Name="UserName" />
+      <PropertyRef Name="IsAnonymous" />
+      <PropertyRef Name="LastActivityDate" />
+    </Key>
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <Property Name="PasswordFormat" Type="Int32" Nullable="false" />
+    <Property Name="MobilePIN" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="LoweredEmail" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="PasswordQuestion" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="PasswordAnswer" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="IsApproved" Type="Boolean" Nullable="false" />
+    <Property Name="IsLockedOut" Type="Boolean" Nullable="false" />
+    <Property Name="CreateDate" Type="DateTime" Nullable="false" />
+    <Property Name="LastLoginDate" Type="DateTime" Nullable="false" />
+    <Property Name="LastPasswordChangedDate" Type="DateTime" Nullable="false" />
+    <Property Name="LastLockoutDate" Type="DateTime" Nullable="false" />
+    <Property Name="FailedPasswordAttemptCount" Type="Int32" Nullable="false" />
+    <Property Name="FailedPasswordAttemptWindowStart" Type="DateTime" Nullable="false" />
+    <Property Name="FailedPasswordAnswerAttemptCount" Type="Int32" Nullable="false" />
+    <Property Name="FailedPasswordAnswerAttemptWindowStart" Type="DateTime" Nullable="false" />
+    <Property Name="Comment" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="MobileAlias" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+    <Property Name="IsAnonymous" Type="Boolean" Nullable="false" />
+    <Property Name="LastActivityDate" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vw_aspnet_Users">
+    <Key>
+      <PropertyRef Name="ApplicationId" />
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="UserName" />
+      <PropertyRef Name="LoweredUserName" />
+      <PropertyRef Name="IsAnonymous" />
+      <PropertyRef Name="LastActivityDate" />
+    </Key>
+    <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="LoweredUserName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="MobileAlias" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+    <Property Name="IsAnonymous" Type="Boolean" Nullable="false" />
+    <Property Name="LastActivityDate" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_anm_News_anm_Categories">
+    <End Role="anm_Categories" Type="ANMModel.anm_Categories" Multiplicity="1" />
+    <End Role="anm_News" Type="ANMModel.anm_News" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="anm_Categories">
+        <PropertyRef Name="idcategory" />
+      </Principal>
+      <Dependent Role="anm_News">
+        <PropertyRef Name="idcategory" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_anm_Comments_anm_News">
+    <End Role="anm_News" Type="ANMModel.anm_News" Multiplicity="1" />
+    <End Role="anm_Comments" Type="ANMModel.anm_Comments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="anm_News">
+        <PropertyRef Name="idnews" />
+      </Principal>
+      <Dependent Role="anm_Comments">
+        <PropertyRef Name="idnews" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Me__Appli__6FE99F9F">
+    <End Role="aspnet_Applications" Type="ANMModel.aspnet_Applications" Multiplicity="1" />
+    <End Role="aspnet_Membership" Type="ANMModel.aspnet_Membership" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Applications">
+        <PropertyRef Name="ApplicationId" />
+      </Principal>
+      <Dependent Role="aspnet_Membership">
+        <PropertyRef Name="ApplicationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Us__Appli__71D1E811">
+    <End Role="aspnet_Applications" Type="ANMModel.aspnet_Applications" Multiplicity="1" />
+    <End Role="aspnet_Users" Type="ANMModel.aspnet_Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Applications">
+        <PropertyRef Name="ApplicationId" />
+      </Principal>
+      <Dependent Role="aspnet_Users">
+        <PropertyRef Name="ApplicationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Me__UserI__70DDC3D8">
+    <End Role="aspnet_Users" Type="ANMModel.aspnet_Users" Multiplicity="1" />
+    <End Role="aspnet_Membership" Type="ANMModel.aspnet_Membership" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="aspnet_Membership">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,1435 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ANMModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="ANMModelStoreContainer">
+          <EntitySet Name="anm_Authors" EntityType="ANMModel.Store.anm_Authors" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="anm_Categories" EntityType="ANMModel.Store.anm_Categories" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="anm_Comments" EntityType="ANMModel.Store.anm_Comments" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="anm_News" EntityType="ANMModel.Store.anm_News" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="anm_Reports" EntityType="ANMModel.Store.anm_Reports" store:Type="Tables" store:Schema="dbo" store:Name="anm_Reports">
+            <DefiningQuery>SELECT 
+      [anm_Reports].[id] AS [id], 
+      [anm_Reports].[username] AS [username], 
+      [anm_Reports].[idreported] AS [idreported], 
+      [anm_Reports].[reason] AS [reason], 
+      [anm_Reports].[date] AS [date]
+      FROM [dbo].[anm_Reports] AS [anm_Reports]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="anm_Settings" EntityType="ANMModel.Store.anm_Settings" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="anm_Tags" EntityType="ANMModel.Store.anm_Tags" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="anm_Templates" EntityType="ANMModel.Store.anm_Templates" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_Applications" EntityType="ANMModel.Store.aspnet_Applications" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_Membership" EntityType="ANMModel.Store.aspnet_Membership" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_SchemaVersions" EntityType="ANMModel.Store.aspnet_SchemaVersions" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_Users" EntityType="ANMModel.Store.aspnet_Users" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="vw_aspnet_Applications" EntityType="ANMModel.Store.vw_aspnet_Applications" store:Type="Views" store:Schema="dbo" store:Name="vw_aspnet_Applications">
+            <DefiningQuery>SELECT 
+      [vw_aspnet_Applications].[ApplicationName] AS [ApplicationName], 
+      [vw_aspnet_Applications].[LoweredApplicationName] AS [LoweredApplicationName], 
+      [vw_aspnet_Applications].[ApplicationId] AS [ApplicationId], 
+      [vw_aspnet_Applications].[Description] AS [Description]
+      FROM [dbo].[vw_aspnet_Applications] AS [vw_aspnet_Applications]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vw_aspnet_MembershipUsers" EntityType="ANMModel.Store.vw_aspnet_MembershipUsers" store:Type="Views" store:Schema="dbo" store:Name="vw_aspnet_MembershipUsers">
+            <DefiningQuery>SELECT 
+      [vw_aspnet_MembershipUsers].[UserId] AS [UserId], 
+      [vw_aspnet_MembershipUsers].[PasswordFormat] AS [PasswordFormat], 
+      [vw_aspnet_MembershipUsers].[MobilePIN] AS [MobilePIN], 
+      [vw_aspnet_MembershipUsers].[Email] AS [Email], 
+      [vw_aspnet_MembershipUsers].[LoweredEmail] AS [LoweredEmail], 
+      [vw_aspnet_MembershipUsers].[PasswordQuestion] AS [PasswordQuestion], 
+      [vw_aspnet_MembershipUsers].[PasswordAnswer] AS [PasswordAnswer], 
+      [vw_aspnet_MembershipUsers].[IsApproved] AS [IsApproved], 
+      [vw_aspnet_MembershipUsers].[IsLockedOut] AS [IsLockedOut], 
+      [vw_aspnet_MembershipUsers].[CreateDate] AS [CreateDate], 
+      [vw_aspnet_MembershipUsers].[LastLoginDate] AS [LastLoginDate], 
+      [vw_aspnet_MembershipUsers].[LastPasswordChangedDate] AS [LastPasswordChangedDate], 
+      [vw_aspnet_MembershipUsers].[LastLockoutDate] AS [LastLockoutDate], 
+      [vw_aspnet_MembershipUsers].[FailedPasswordAttemptCount] AS [FailedPasswordAttemptCount], 
+      [vw_aspnet_MembershipUsers].[FailedPasswordAttemptWindowStart] AS [FailedPasswordAttemptWindowStart], 
+      [vw_aspnet_MembershipUsers].[FailedPasswordAnswerAttemptCount] AS [FailedPasswordAnswerAttemptCount], 
+      [vw_aspnet_MembershipUsers].[FailedPasswordAnswerAttemptWindowStart] AS [FailedPasswordAnswerAttemptWindowStart], 
+      [vw_aspnet_MembershipUsers].[Comment] AS [Comment], 
+      [vw_aspnet_MembershipUsers].[ApplicationId] AS [ApplicationId], 
+      [vw_aspnet_MembershipUsers].[UserName] AS [UserName], 
+      [vw_aspnet_MembershipUsers].[MobileAlias] AS [MobileAlias], 
+      [vw_aspnet_MembershipUsers].[IsAnonymous] AS [IsAnonymous], 
+      [vw_aspnet_MembershipUsers].[LastActivityDate] AS [LastActivityDate]
+      FROM [dbo].[vw_aspnet_MembershipUsers] AS [vw_aspnet_MembershipUsers]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vw_aspnet_Users" EntityType="ANMModel.Store.vw_aspnet_Users" store:Type="Views" store:Schema="dbo" store:Name="vw_aspnet_Users">
+            <DefiningQuery>SELECT 
+      [vw_aspnet_Users].[ApplicationId] AS [ApplicationId], 
+      [vw_aspnet_Users].[UserId] AS [UserId], 
+      [vw_aspnet_Users].[UserName] AS [UserName], 
+      [vw_aspnet_Users].[LoweredUserName] AS [LoweredUserName], 
+      [vw_aspnet_Users].[MobileAlias] AS [MobileAlias], 
+      [vw_aspnet_Users].[IsAnonymous] AS [IsAnonymous], 
+      [vw_aspnet_Users].[LastActivityDate] AS [LastActivityDate]
+      FROM [dbo].[vw_aspnet_Users] AS [vw_aspnet_Users]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK__aspnet_Me__Appli__6FE99F9F" Association="ANMModel.Store.FK__aspnet_Me__Appli__6FE99F9F">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Me__UserI__70DDC3D8" Association="ANMModel.Store.FK__aspnet_Me__UserI__70DDC3D8">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Us__Appli__71D1E811" Association="ANMModel.Store.FK__aspnet_Us__Appli__71D1E811">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+          </AssociationSet>
+          <AssociationSet Name="FK_anm_Comments_anm_News" Association="ANMModel.Store.FK_anm_Comments_anm_News">
+            <End Role="anm_News" EntitySet="anm_News" />
+            <End Role="anm_Comments" EntitySet="anm_Comments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_anm_News_anm_Categories" Association="ANMModel.Store.FK_anm_News_anm_Categories">
+            <End Role="anm_Categories" EntitySet="anm_Categories" />
+            <End Role="anm_News" EntitySet="anm_News" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="anm_Authors">
+          <Key>
+            <PropertyRef Name="author" />
+          </Key>
+          <Property Name="author" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="role" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="anm_Categories">
+          <Key>
+            <PropertyRef Name="idcategory" />
+          </Key>
+          <Property Name="idcategory" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="category" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="idfather" Type="int" Nullable="false" />
+          <Property Name="ordercat" Type="int" Nullable="false" />
+          <Property Name="url" Type="nvarchar" MaxLength="256" />
+          <Property Name="idrootcat" Type="int" />
+        </EntityType>
+        <EntityType Name="anm_Comments">
+          <Key>
+            <PropertyRef Name="idcomment" />
+          </Key>
+          <Property Name="idcomment" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="idnews" Type="int" Nullable="false" />
+          <Property Name="commentator" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="date" Type="datetime" Nullable="false" />
+          <Property Name="comment" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="ip" Type="nvarchar" Nullable="false" MaxLength="16" />
+          <Property Name="approved" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="anm_News">
+          <Key>
+            <PropertyRef Name="idnews" />
+          </Key>
+          <Property Name="idnews" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="author" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="date" Type="datetime" Nullable="false" />
+          <Property Name="image" Type="nvarchar" MaxLength="256" />
+          <Property Name="summary" Type="nvarchar(max)" />
+          <Property Name="news" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="idcategory" Type="int" Nullable="false" />
+          <Property Name="comments" Type="int" Nullable="false" />
+          <Property Name="commentcheck" Type="bit" Nullable="false" />
+          <Property Name="published" Type="bit" Nullable="false" />
+          <Property Name="highlight" Type="bit" Nullable="false" />
+          <Property Name="postedby" Type="bit" Nullable="false" />
+          <Property Name="sidenews" Type="bit" Nullable="false" />
+          <Property Name="Tags" Type="nvarchar" MaxLength="256" />
+          <Property Name="homeslide" Type="bit" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'dbname157.dbo.anm_Reports' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="anm_Reports">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="username" />
+            <PropertyRef Name="idreported" />
+            <PropertyRef Name="reason" />
+            <PropertyRef Name="date" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="username" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="idreported" Type="int" Nullable="false" />
+          <Property Name="reason" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="date" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="anm_Settings">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="SiteName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="SiteEmail" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="SiteUrl" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="Template" Type="int" Nullable="false" />
+          <Property Name="TopMenu" Type="bit" Nullable="false" />
+          <Property Name="SideMenu" Type="bit" Nullable="false" />
+          <Property Name="SearchMenu" Type="bit" Nullable="false" />
+          <Property Name="ArchiveMenu" Type="bit" Nullable="false" />
+          <Property Name="EmailConfirm" Type="bit" Nullable="false" />
+          <Property Name="MailUser" Type="nvarchar" MaxLength="50" />
+          <Property Name="MailPassword" Type="nvarchar" MaxLength="50" />
+          <Property Name="port" Type="nvarchar" MaxLength="4" />
+          <Property Name="smtpserver" Type="nvarchar" MaxLength="50" />
+          <Property Name="Banner" Type="nvarchar" MaxLength="256" />
+          <Property Name="Year" Type="int" Nullable="false" />
+          <Property Name="Month" Type="int" Nullable="false" />
+          <Property Name="HBGColor" Type="nvarchar" Nullable="false" MaxLength="7" />
+          <Property Name="BGcolor" Type="nvarchar" Nullable="false" MaxLength="7" />
+          <Property Name="BGimage" Type="nvarchar" MaxLength="100" />
+          <Property Name="Width" Type="nvarchar" Nullable="false" MaxLength="6" />
+          <Property Name="NumArticles" Type="int" />
+          <Property Name="ApproveArticles" Type="bit" />
+          <Property Name="NumComments" Type="int" />
+          <Property Name="ApproveComments" Type="bit" />
+          <Property Name="BBCode" Type="bit" />
+          <Property Name="Copyright" Type="bit" />
+          <Property Name="ViewNarticles" Type="bit" />
+          <Property Name="Validator" Type="bit" />
+          <Property Name="LastNews" Type="bit" />
+          <Property Name="LastComments" Type="bit" />
+          <Property Name="CaptchaNewUser" Type="bit" />
+          <Property Name="CaptchaComments" Type="bit" />
+          <Property Name="Version" Type="nvarchar" MaxLength="10" />
+          <Property Name="ArchiveType" Type="int" />
+          <Property Name="CaptchaType" Type="nvarchar" MaxLength="2" />
+          <Property Name="TagBox" Type="bit" />
+          <Property Name="Anonymous" Type="bit" />
+          <Property Name="OnlineUsers" Type="bit" />
+          <Property Name="ArtImageWidth" Type="int" />
+        </EntityType>
+        <EntityType Name="anm_Tags">
+          <Key>
+            <PropertyRef Name="Tag" />
+          </Key>
+          <Property Name="Tag" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Size" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="anm_Templates">
+          <Key>
+            <PropertyRef Name="Template" />
+          </Key>
+          <Property Name="Template" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="nvarchar" MaxLength="100" />
+          <Property Name="author" Type="nvarchar" MaxLength="100" />
+          <Property Name="siteauthor" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="aspnet_Applications">
+          <Key>
+            <PropertyRef Name="ApplicationId" />
+          </Key>
+          <Property Name="ApplicationName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="LoweredApplicationName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" MaxLength="256" />
+        </EntityType>
+        <EntityType Name="aspnet_Membership">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Password" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="PasswordFormat" Type="int" Nullable="false" />
+          <Property Name="PasswordSalt" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="MobilePIN" Type="nvarchar" MaxLength="16" />
+          <Property Name="Email" Type="nvarchar" MaxLength="256" />
+          <Property Name="LoweredEmail" Type="nvarchar" MaxLength="256" />
+          <Property Name="PasswordQuestion" Type="nvarchar" MaxLength="256" />
+          <Property Name="PasswordAnswer" Type="nvarchar" MaxLength="128" />
+          <Property Name="IsApproved" Type="bit" Nullable="false" />
+          <Property Name="IsLockedOut" Type="bit" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="LastLoginDate" Type="datetime" Nullable="false" />
+          <Property Name="LastPasswordChangedDate" Type="datetime" Nullable="false" />
+          <Property Name="LastLockoutDate" Type="datetime" Nullable="false" />
+          <Property Name="FailedPasswordAttemptCount" Type="int" Nullable="false" />
+          <Property Name="FailedPasswordAttemptWindowStart" Type="datetime" Nullable="false" />
+          <Property Name="FailedPasswordAnswerAttemptCount" Type="int" Nullable="false" />
+          <Property Name="FailedPasswordAnswerAttemptWindowStart" Type="datetime" Nullable="false" />
+          <Property Name="Comment" Type="ntext" />
+        </EntityType>
+        <EntityType Name="aspnet_SchemaVersions">
+          <Key>
+            <PropertyRef Name="Feature" />
+            <PropertyRef Name="CompatibleSchemaVersion" />
+          </Key>
+          <Property Name="Feature" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="CompatibleSchemaVersion" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="IsCurrentVersion" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="aspnet_Users">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="LoweredUserName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="MobileAlias" Type="nvarchar" MaxLength="16" />
+          <Property Name="IsAnonymous" Type="bit" Nullable="false" />
+          <Property Name="LastActivityDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'dbname157.dbo.vw_aspnet_Applications' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="vw_aspnet_Applications">
+          <Key>
+            <PropertyRef Name="ApplicationName" />
+            <PropertyRef Name="LoweredApplicationName" />
+            <PropertyRef Name="ApplicationId" />
+          </Key>
+          <Property Name="ApplicationName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="LoweredApplicationName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" MaxLength="256" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'dbname157.dbo.vw_aspnet_MembershipUsers' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="vw_aspnet_MembershipUsers">
+          <Key>
+            <PropertyRef Name="UserId" />
+            <PropertyRef Name="PasswordFormat" />
+            <PropertyRef Name="IsApproved" />
+            <PropertyRef Name="IsLockedOut" />
+            <PropertyRef Name="CreateDate" />
+            <PropertyRef Name="LastLoginDate" />
+            <PropertyRef Name="LastPasswordChangedDate" />
+            <PropertyRef Name="LastLockoutDate" />
+            <PropertyRef Name="FailedPasswordAttemptCount" />
+            <PropertyRef Name="FailedPasswordAttemptWindowStart" />
+            <PropertyRef Name="FailedPasswordAnswerAttemptCount" />
+            <PropertyRef Name="FailedPasswordAnswerAttemptWindowStart" />
+            <PropertyRef Name="ApplicationId" />
+            <PropertyRef Name="UserName" />
+            <PropertyRef Name="IsAnonymous" />
+            <PropertyRef Name="LastActivityDate" />
+          </Key>
+          <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PasswordFormat" Type="int" Nullable="false" />
+          <Property Name="MobilePIN" Type="nvarchar" MaxLength="16" />
+          <Property Name="Email" Type="nvarchar" MaxLength="256" />
+          <Property Name="LoweredEmail" Type="nvarchar" MaxLength="256" />
+          <Property Name="PasswordQuestion" Type="nvarchar" MaxLength="256" />
+          <Property Name="PasswordAnswer" Type="nvarchar" MaxLength="128" />
+          <Property Name="IsApproved" Type="bit" Nullable="false" />
+          <Property Name="IsLockedOut" Type="bit" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="LastLoginDate" Type="datetime" Nullable="false" />
+          <Property Name="LastPasswordChangedDate" Type="datetime" Nullable="false" />
+          <Property Name="LastLockoutDate" Type="datetime" Nullable="false" />
+          <Property Name="FailedPasswordAttemptCount" Type="int" Nullable="false" />
+          <Property Name="FailedPasswordAttemptWindowStart" Type="datetime" Nullable="false" />
+          <Property Name="FailedPasswordAnswerAttemptCount" Type="int" Nullable="false" />
+          <Property Name="FailedPasswordAnswerAttemptWindowStart" Type="datetime" Nullable="false" />
+          <Property Name="Comment" Type="ntext" />
+          <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="MobileAlias" Type="nvarchar" MaxLength="16" />
+          <Property Name="IsAnonymous" Type="bit" Nullable="false" />
+          <Property Name="LastActivityDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'dbname157.dbo.vw_aspnet_Users' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="vw_aspnet_Users">
+          <Key>
+            <PropertyRef Name="ApplicationId" />
+            <PropertyRef Name="UserId" />
+            <PropertyRef Name="UserName" />
+            <PropertyRef Name="LoweredUserName" />
+            <PropertyRef Name="IsAnonymous" />
+            <PropertyRef Name="LastActivityDate" />
+          </Key>
+          <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="LoweredUserName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="MobileAlias" Type="nvarchar" MaxLength="16" />
+          <Property Name="IsAnonymous" Type="bit" Nullable="false" />
+          <Property Name="LastActivityDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__aspnet_Me__Appli__6FE99F9F">
+          <End Role="aspnet_Applications" Type="ANMModel.Store.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Membership" Type="ANMModel.Store.aspnet_Membership" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Membership">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Me__UserI__70DDC3D8">
+          <End Role="aspnet_Users" Type="ANMModel.Store.aspnet_Users" Multiplicity="1" />
+          <End Role="aspnet_Membership" Type="ANMModel.Store.aspnet_Membership" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="aspnet_Membership">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Us__Appli__71D1E811">
+          <End Role="aspnet_Applications" Type="ANMModel.Store.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Users" Type="ANMModel.Store.aspnet_Users" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Users">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_anm_Comments_anm_News">
+          <End Role="anm_News" Type="ANMModel.Store.anm_News" Multiplicity="1" />
+          <End Role="anm_Comments" Type="ANMModel.Store.anm_Comments" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="anm_News">
+              <PropertyRef Name="idnews" />
+            </Principal>
+            <Dependent Role="anm_Comments">
+              <PropertyRef Name="idnews" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_anm_News_anm_Categories">
+          <End Role="anm_Categories" Type="ANMModel.Store.anm_Categories" Multiplicity="1" />
+          <End Role="anm_News" Type="ANMModel.Store.anm_News" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="anm_Categories">
+              <PropertyRef Name="idcategory" />
+            </Principal>
+            <Dependent Role="anm_News">
+              <PropertyRef Name="idcategory" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="anm_AllowComments" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="idnews" Type="int" Mode="In" />
+        </Function>
+        <Function Name="anm_ApproveComment" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="idcomment" Type="int" Mode="In" />
+          <Parameter Name="approved" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="anm_ApproveNews" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="idnews" Type="int" Mode="In" />
+        </Function>
+        <Function Name="anm_archiveAllNewsByCatDate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="year" Type="int" Mode="In" />
+          <Parameter Name="month" Type="int" Mode="In" />
+          <Parameter Name="idcategory" Type="int" Mode="In" />
+        </Function>
+        <Function Name="anm_archiveAllNewsByDate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="year" Type="int" Mode="In" />
+          <Parameter Name="month" Type="int" Mode="In" />
+        </Function>
+        <Function Name="anm_DeleteAuthor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="author" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="anm_DeleteCategory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="idcategory" Type="int" Mode="In" />
+        </Function>
+        <Function Name="anm_DeleteNews" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="idnews" Type="int" Mode="In" />
+        </Function>
+        <Function Name="anm_DeleteReport" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="anm_DeleteTag" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Tag" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="anm_getCategories" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="anm_getCategoriesById" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="idcategory" Type="int" Mode="In" />
+        </Function>
+        <Function Name="anm_getComment" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="idcomment" Type="int" Mode="In" />
+        </Function>
+        <Function Name="anm_GetComments" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="anm_GetCommentsAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="anm_GetCommentsByIdn" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="idnews" Type="int" Mode="In" />
+        </Function>
+        <Function Name="anm_getMainCategories" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="anm_getNews" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="anm_getNewsByAuthorPaged" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="author" Type="nvarchar" Mode="In" />
+          <Parameter Name="startRowIndex" Type="int" Mode="In" />
+          <Parameter Name="maximumRows" Type="int" Mode="In" />
+        </Function>
+        <Function Name="anm_getNewsById" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="idnews" Type="int" Mode="In" />
+        </Function>
+        <Function Name="anm_getNewsByTagPaged" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="tag" Type="nvarchar" Mode="In" />
+          <Parameter Name="startRowIndex" Type="int" Mode="In" />
+          <Parameter Name="maximumRows" Type="int" Mode="In" />
+        </Function>
+        <Function Name="anm_getNewsToPublish" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="anm_GetPCommentsByIdnPaged" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="idnews" Type="int" Mode="In" />
+          <Parameter Name="startRowIndex" Type="int" Mode="In" />
+          <Parameter Name="maximumRows" Type="int" Mode="In" />
+        </Function>
+        <Function Name="anm_getReports" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="anm_GetRole" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="author" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="anm_getRss" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="anm_GetRssByCat" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="idcategory" Type="int" Mode="In" />
+        </Function>
+        <Function Name="anm_GetRssComments" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="idn" Type="int" Mode="In" />
+        </Function>
+        <Function Name="anm_GetSettings" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="anm_getSonCategories" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="idcategory" Type="int" Mode="In" />
+        </Function>
+        <Function Name="anm_getTags" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="anm_GetTemplateById" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Template" Type="int" Mode="In" />
+        </Function>
+        <Function Name="anm_getTemplates" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="anm_GetUserNames" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="anm_IncreaseComments" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="idnews" Type="int" Mode="In" />
+          <Parameter Name="comments" Type="int" Mode="In" />
+        </Function>
+        <Function Name="anm_InsertArticle" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="title" Type="nvarchar" Mode="In" />
+          <Parameter Name="author" Type="nvarchar" Mode="In" />
+          <Parameter Name="image" Type="nvarchar" Mode="In" />
+          <Parameter Name="summary" Type="ntext" Mode="In" />
+          <Parameter Name="news" Type="ntext" Mode="In" />
+          <Parameter Name="idcategory" Type="int" Mode="In" />
+          <Parameter Name="comments" Type="int" Mode="In" />
+          <Parameter Name="commentcheck" Type="bit" Mode="In" />
+          <Parameter Name="published" Type="bit" Mode="In" />
+          <Parameter Name="highlight" Type="bit" Mode="In" />
+          <Parameter Name="sidenews" Type="bit" Mode="In" />
+          <Parameter Name="postedby" Type="bit" Mode="In" />
+          <Parameter Name="tags" Type="nvarchar" Mode="In" />
+          <Parameter Name="homeslide" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="anm_InsertAuthor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="author" Type="nvarchar" Mode="In" />
+          <Parameter Name="role" Type="int" Mode="In" />
+        </Function>
+        <Function Name="anm_InsertCategory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="category" Type="nvarchar" Mode="In" />
+          <Parameter Name="idfather" Type="int" Mode="In" />
+          <Parameter Name="ordercat" Type="int" Mode="In" />
+          <Parameter Name="idrootcat" Type="int" Mode="In" />
+        </Function>
+        <Function Name="anm_InsertComment" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="idnews" Type="int" Mode="In" />
+          <Parameter Name="commentator" Type="nvarchar" Mode="In" />
+          <Parameter Name="comment" Type="ntext" Mode="In" />
+          <Parameter Name="ip" Type="nvarchar" Mode="In" />
+          <Parameter Name="approved" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="anm_InsertReport" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="username" Type="nvarchar" Mode="In" />
+          <Parameter Name="idreported" Type="int" Mode="In" />
+          <Parameter Name="reason" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="date" Type="datetime" Mode="In" />
+        </Function>
+        <Function Name="anm_InsertTag" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="tag" Type="nvarchar" Mode="In" />
+          <Parameter Name="size" Type="int" Mode="In" />
+        </Function>
+        <Function Name="anm_InsertTemplate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="name" Type="nvarchar" Mode="In" />
+          <Parameter Name="author" Type="nvarchar" Mode="In" />
+          <Parameter Name="siteauthor" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="anm_LastComments" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="anm_SearchNewsbyCatPaged" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="title" Type="nvarchar" Mode="In" />
+          <Parameter Name="idcategory" Type="int" Mode="In" />
+          <Parameter Name="startRowIndex" Type="int" Mode="In" />
+          <Parameter Name="maximumRows" Type="int" Mode="In" />
+        </Function>
+        <Function Name="anm_SearchNewsPaged" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="title" Type="nvarchar" Mode="In" />
+          <Parameter Name="startRowIndex" Type="int" Mode="In" />
+          <Parameter Name="maximumRows" Type="int" Mode="In" />
+        </Function>
+        <Function Name="anm_SelectAuthor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="anm_SelectCategory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="anm_showAllNews" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="highlight" Type="bit" Mode="In" />
+          <Parameter Name="sidenews" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="anm_showAllNewsByCat" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="idcategory" Type="int" Mode="In" />
+          <Parameter Name="highlight" Type="bit" Mode="In" />
+          <Parameter Name="sidenews" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="anm_showAllNewsByCatDate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="year" Type="int" Mode="In" />
+          <Parameter Name="month" Type="int" Mode="In" />
+          <Parameter Name="idcategory" Type="int" Mode="In" />
+          <Parameter Name="highlight" Type="bit" Mode="In" />
+          <Parameter Name="sidenews" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="anm_showAllNewsByCatDatePaged" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="year" Type="int" Mode="In" />
+          <Parameter Name="month" Type="int" Mode="In" />
+          <Parameter Name="idcategory" Type="int" Mode="In" />
+          <Parameter Name="highlight" Type="bit" Mode="In" />
+          <Parameter Name="sidenews" Type="bit" Mode="In" />
+          <Parameter Name="startRowIndex" Type="int" Mode="In" />
+          <Parameter Name="maximumRows" Type="int" Mode="In" />
+        </Function>
+        <Function Name="anm_showAllNewsByCatPaged" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="idcategory" Type="int" Mode="In" />
+          <Parameter Name="highlight" Type="bit" Mode="In" />
+          <Parameter Name="sidenews" Type="bit" Mode="In" />
+          <Parameter Name="startRowIndex" Type="int" Mode="In" />
+          <Parameter Name="maximumRows" Type="int" Mode="In" />
+        </Function>
+        <Function Name="anm_showAllNewsByDate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="year" Type="int" Mode="In" />
+          <Parameter Name="month" Type="int" Mode="In" />
+          <Parameter Name="highlight" Type="bit" Mode="In" />
+          <Parameter Name="sidenews" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="anm_showAllNewsByDatePaged" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="year" Type="int" Mode="In" />
+          <Parameter Name="month" Type="int" Mode="In" />
+          <Parameter Name="highlight" Type="bit" Mode="In" />
+          <Parameter Name="sidenews" Type="bit" Mode="In" />
+          <Parameter Name="startRowIndex" Type="int" Mode="In" />
+          <Parameter Name="maximumRows" Type="int" Mode="In" />
+        </Function>
+        <Function Name="anm_showAllNewsPaged" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="highlight" Type="bit" Mode="In" />
+          <Parameter Name="sidenews" Type="bit" Mode="In" />
+          <Parameter Name="startRowIndex" Type="int" Mode="In" />
+          <Parameter Name="maximumRows" Type="int" Mode="In" />
+        </Function>
+        <Function Name="anm_showSlideshowNews" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="anm_UpdateArticle" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="idnews" Type="int" Mode="In" />
+          <Parameter Name="title" Type="nvarchar" Mode="In" />
+          <Parameter Name="image" Type="nvarchar" Mode="In" />
+          <Parameter Name="summary" Type="ntext" Mode="In" />
+          <Parameter Name="news" Type="ntext" Mode="In" />
+          <Parameter Name="idcategory" Type="int" Mode="In" />
+          <Parameter Name="commentcheck" Type="bit" Mode="In" />
+          <Parameter Name="published" Type="bit" Mode="In" />
+          <Parameter Name="highlight" Type="bit" Mode="In" />
+          <Parameter Name="sidenews" Type="bit" Mode="In" />
+          <Parameter Name="postedby" Type="bit" Mode="In" />
+          <Parameter Name="date" Type="datetime" Mode="In" />
+          <Parameter Name="tags" Type="nvarchar" Mode="In" />
+          <Parameter Name="homeslide" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="anm_UpdateCategory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="category" Type="nvarchar" Mode="In" />
+          <Parameter Name="idcategory" Type="int" Mode="In" />
+          <Parameter Name="ordercat" Type="int" Mode="In" />
+          <Parameter Name="url" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="anm_UpdateRole" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="author" Type="nvarchar" Mode="In" />
+          <Parameter Name="role" Type="int" Mode="In" />
+        </Function>
+        <Function Name="anm_UpdateTag" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="tag" Type="nvarchar" Mode="In" />
+          <Parameter Name="size" Type="int" Mode="In" />
+        </Function>
+        <Function Name="anm_UpdateTemplate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="name" Type="nvarchar" Mode="In" />
+          <Parameter Name="author" Type="nvarchar" Mode="In" />
+          <Parameter Name="siteauthor" Type="nvarchar" Mode="In" />
+          <Parameter Name="Template" Type="int" Mode="In" />
+        </Function>
+        <Function Name="aspnet_AnyDataInTables" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="TablesToCheck" Type="int" Mode="In" />
+        </Function>
+        <Function Name="aspnet_Applications_CreateApplication" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ApplicationName" Type="nvarchar" Mode="In" />
+          <Parameter Name="ApplicationId" Type="uniqueidentifier" Mode="InOut" />
+        </Function>
+        <Function Name="aspnet_CheckSchemaVersion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Feature" Type="nvarchar" Mode="In" />
+          <Parameter Name="CompatibleSchemaVersion" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="aspnet_Membership_ChangePasswordQuestionAndAnswer" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ApplicationName" Type="nvarchar" Mode="In" />
+          <Parameter Name="UserName" Type="nvarchar" Mode="In" />
+          <Parameter Name="NewPasswordQuestion" Type="nvarchar" Mode="In" />
+          <Parameter Name="NewPasswordAnswer" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="aspnet_Membership_CreateUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ApplicationName" Type="nvarchar" Mode="In" />
+          <Parameter Name="UserName" Type="nvarchar" Mode="In" />
+          <Parameter Name="Password" Type="nvarchar" Mode="In" />
+          <Parameter Name="PasswordSalt" Type="nvarchar" Mode="In" />
+          <Parameter Name="Email" Type="nvarchar" Mode="In" />
+          <Parameter Name="PasswordQuestion" Type="nvarchar" Mode="In" />
+          <Parameter Name="PasswordAnswer" Type="nvarchar" Mode="In" />
+          <Parameter Name="IsApproved" Type="bit" Mode="In" />
+          <Parameter Name="CurrentTimeUtc" Type="datetime" Mode="In" />
+          <Parameter Name="CreateDate" Type="datetime" Mode="In" />
+          <Parameter Name="UniqueEmail" Type="int" Mode="In" />
+          <Parameter Name="PasswordFormat" Type="int" Mode="In" />
+          <Parameter Name="UserId" Type="uniqueidentifier" Mode="InOut" />
+        </Function>
+        <Function Name="aspnet_Membership_FindUsersByEmail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ApplicationName" Type="nvarchar" Mode="In" />
+          <Parameter Name="EmailToMatch" Type="nvarchar" Mode="In" />
+          <Parameter Name="PageIndex" Type="int" Mode="In" />
+          <Parameter Name="PageSize" Type="int" Mode="In" />
+        </Function>
+        <Function Name="aspnet_Membership_FindUsersByName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ApplicationName" Type="nvarchar" Mode="In" />
+          <Parameter Name="UserNameToMatch" Type="nvarchar" Mode="In" />
+          <Parameter Name="PageIndex" Type="int" Mode="In" />
+          <Parameter Name="PageSize" Type="int" Mode="In" />
+        </Function>
+        <Function Name="aspnet_Membership_GetAllUsers" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ApplicationName" Type="nvarchar" Mode="In" />
+          <Parameter Name="PageIndex" Type="int" Mode="In" />
+          <Parameter Name="PageSize" Type="int" Mode="In" />
+        </Function>
+        <Function Name="aspnet_Membership_GetNumberOfUsersOnline" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ApplicationName" Type="nvarchar" Mode="In" />
+          <Parameter Name="MinutesSinceLastInActive" Type="int" Mode="In" />
+          <Parameter Name="CurrentTimeUtc" Type="datetime" Mode="In" />
+        </Function>
+        <Function Name="aspnet_Membership_GetPassword" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ApplicationName" Type="nvarchar" Mode="In" />
+          <Parameter Name="UserName" Type="nvarchar" Mode="In" />
+          <Parameter Name="MaxInvalidPasswordAttempts" Type="int" Mode="In" />
+          <Parameter Name="PasswordAttemptWindow" Type="int" Mode="In" />
+          <Parameter Name="CurrentTimeUtc" Type="datetime" Mode="In" />
+          <Parameter Name="PasswordAnswer" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="aspnet_Membership_GetPasswordWithFormat" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ApplicationName" Type="nvarchar" Mode="In" />
+          <Parameter Name="UserName" Type="nvarchar" Mode="In" />
+          <Parameter Name="UpdateLastLoginActivityDate" Type="bit" Mode="In" />
+          <Parameter Name="CurrentTimeUtc" Type="datetime" Mode="In" />
+        </Function>
+        <Function Name="aspnet_Membership_GetUserByEmail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ApplicationName" Type="nvarchar" Mode="In" />
+          <Parameter Name="Email" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="aspnet_Membership_GetUserByName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ApplicationName" Type="nvarchar" Mode="In" />
+          <Parameter Name="UserName" Type="nvarchar" Mode="In" />
+          <Parameter Name="CurrentTimeUtc" Type="datetime" Mode="In" />
+          <Parameter Name="UpdateLastActivity" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="aspnet_Membership_GetUserByUserId" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserId" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="CurrentTimeUtc" Type="datetime" Mode="In" />
+          <Parameter Name="UpdateLastActivity" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="aspnet_Membership_ResetPassword" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ApplicationName" Type="nvarchar" Mode="In" />
+          <Parameter Name="UserName" Type="nvarchar" Mode="In" />
+          <Parameter Name="NewPassword" Type="nvarchar" Mode="In" />
+          <Parameter Name="MaxInvalidPasswordAttempts" Type="int" Mode="In" />
+          <Parameter Name="PasswordAttemptWindow" Type="int" Mode="In" />
+          <Parameter Name="PasswordSalt" Type="nvarchar" Mode="In" />
+          <Parameter Name="CurrentTimeUtc" Type="datetime" Mode="In" />
+          <Parameter Name="PasswordFormat" Type="int" Mode="In" />
+          <Parameter Name="PasswordAnswer" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="aspnet_Membership_SetPassword" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ApplicationName" Type="nvarchar" Mode="In" />
+          <Parameter Name="UserName" Type="nvarchar" Mode="In" />
+          <Parameter Name="NewPassword" Type="nvarchar" Mode="In" />
+          <Parameter Name="PasswordSalt" Type="nvarchar" Mode="In" />
+          <Parameter Name="CurrentTimeUtc" Type="datetime" Mode="In" />
+          <Parameter Name="PasswordFormat" Type="int" Mode="In" />
+        </Function>
+        <Function Name="aspnet_Membership_UnlockUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ApplicationName" Type="nvarchar" Mode="In" />
+          <Parameter Name="UserName" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="aspnet_Membership_UpdateUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ApplicationName" Type="nvarchar" Mode="In" />
+          <Parameter Name="UserName" Type="nvarchar" Mode="In" />
+          <Parameter Name="Email" Type="nvarchar" Mode="In" />
+          <Parameter Name="Comment" Type="ntext" Mode="In" />
+          <Parameter Name="IsApproved" Type="bit" Mode="In" />
+          <Parameter Name="LastLoginDate" Type="datetime" Mode="In" />
+          <Parameter Name="LastActivityDate" Type="datetime" Mode="In" />
+          <Parameter Name="UniqueEmail" Type="int" Mode="In" />
+          <Parameter Name="CurrentTimeUtc" Type="datetime" Mode="In" />
+        </Function>
+        <Function Name="aspnet_Membership_UpdateUserInfo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ApplicationName" Type="nvarchar" Mode="In" />
+          <Parameter Name="UserName" Type="nvarchar" Mode="In" />
+          <Parameter Name="IsPasswordCorrect" Type="bit" Mode="In" />
+          <Parameter Name="UpdateLastLoginActivityDate" Type="bit" Mode="In" />
+          <Parameter Name="MaxInvalidPasswordAttempts" Type="int" Mode="In" />
+          <Parameter Name="PasswordAttemptWindow" Type="int" Mode="In" />
+          <Parameter Name="CurrentTimeUtc" Type="datetime" Mode="In" />
+          <Parameter Name="LastLoginDate" Type="datetime" Mode="In" />
+          <Parameter Name="LastActivityDate" Type="datetime" Mode="In" />
+        </Function>
+        <Function Name="aspnet_RegisterSchemaVersion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Feature" Type="nvarchar" Mode="In" />
+          <Parameter Name="CompatibleSchemaVersion" Type="nvarchar" Mode="In" />
+          <Parameter Name="IsCurrentVersion" Type="bit" Mode="In" />
+          <Parameter Name="RemoveIncompatibleSchema" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="aspnet_Setup_RemoveAllRoleMembers" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="name" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="aspnet_Setup_RestorePermissions" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="name" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="aspnet_UnRegisterSchemaVersion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Feature" Type="nvarchar" Mode="In" />
+          <Parameter Name="CompatibleSchemaVersion" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="aspnet_Users_CreateUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ApplicationId" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="UserName" Type="nvarchar" Mode="In" />
+          <Parameter Name="IsUserAnonymous" Type="bit" Mode="In" />
+          <Parameter Name="LastActivityDate" Type="datetime" Mode="In" />
+          <Parameter Name="UserId" Type="uniqueidentifier" Mode="InOut" />
+        </Function>
+        <Function Name="aspnet_Users_DeleteUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ApplicationName" Type="nvarchar" Mode="In" />
+          <Parameter Name="UserName" Type="nvarchar" Mode="In" />
+          <Parameter Name="TablesToDeleteFrom" Type="int" Mode="In" />
+          <Parameter Name="NumTablesDeletedFrom" Type="int" Mode="InOut" />
+        </Function>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ANMModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="anmEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="anm_Authors" EntityType="ANMModel.anm_Authors" />
+          <EntitySet Name="anm_Categories" EntityType="ANMModel.anm_Categories" />
+          <EntitySet Name="anm_Comments" EntityType="ANMModel.anm_Comments" />
+          <EntitySet Name="anm_News" EntityType="ANMModel.anm_News" />
+          <EntitySet Name="anm_Reports" EntityType="ANMModel.anm_Reports" />
+          <EntitySet Name="anm_Settings" EntityType="ANMModel.anm_Settings" />
+          <EntitySet Name="anm_Tags" EntityType="ANMModel.anm_Tags" />
+          <EntitySet Name="anm_Templates" EntityType="ANMModel.anm_Templates" />
+          <EntitySet Name="aspnet_Applications" EntityType="ANMModel.aspnet_Applications" />
+          <EntitySet Name="aspnet_Membership" EntityType="ANMModel.aspnet_Membership" />
+          <EntitySet Name="aspnet_SchemaVersions" EntityType="ANMModel.aspnet_SchemaVersions" />
+          <EntitySet Name="aspnet_Users" EntityType="ANMModel.aspnet_Users" />
+          <EntitySet Name="vw_aspnet_Applications" EntityType="ANMModel.vw_aspnet_Applications" />
+          <EntitySet Name="vw_aspnet_MembershipUsers" EntityType="ANMModel.vw_aspnet_MembershipUsers" />
+          <EntitySet Name="vw_aspnet_Users" EntityType="ANMModel.vw_aspnet_Users" />
+          <AssociationSet Name="FK_anm_News_anm_Categories" Association="ANMModel.FK_anm_News_anm_Categories">
+            <End Role="anm_Categories" EntitySet="anm_Categories" />
+            <End Role="anm_News" EntitySet="anm_News" />
+          </AssociationSet>
+          <AssociationSet Name="FK_anm_Comments_anm_News" Association="ANMModel.FK_anm_Comments_anm_News">
+            <End Role="anm_News" EntitySet="anm_News" />
+            <End Role="anm_Comments" EntitySet="anm_Comments" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Me__Appli__6FE99F9F" Association="ANMModel.FK__aspnet_Me__Appli__6FE99F9F">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Us__Appli__71D1E811" Association="ANMModel.FK__aspnet_Us__Appli__71D1E811">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Me__UserI__70DDC3D8" Association="ANMModel.FK__aspnet_Me__UserI__70DDC3D8">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="anm_Authors">
+          <Key>
+            <PropertyRef Name="author" />
+          </Key>
+          <Property Name="author" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="role" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="anm_Categories">
+          <Key>
+            <PropertyRef Name="idcategory" />
+          </Key>
+          <Property Name="idcategory" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="category" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="idfather" Type="Int32" Nullable="false" />
+          <Property Name="ordercat" Type="Int32" Nullable="false" />
+          <Property Name="url" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="idrootcat" Type="Int32" />
+          <NavigationProperty Name="anm_News" Relationship="ANMModel.FK_anm_News_anm_Categories" FromRole="anm_Categories" ToRole="anm_News" />
+        </EntityType>
+        <EntityType Name="anm_Comments">
+          <Key>
+            <PropertyRef Name="idcomment" />
+          </Key>
+          <Property Name="idcomment" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="idnews" Type="Int32" Nullable="false" />
+          <Property Name="commentator" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="date" Type="DateTime" Nullable="false" />
+          <Property Name="comment" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="ip" Type="String" Nullable="false" MaxLength="16" Unicode="true" FixedLength="false" />
+          <Property Name="approved" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="anm_News" Relationship="ANMModel.FK_anm_Comments_anm_News" FromRole="anm_Comments" ToRole="anm_News" />
+        </EntityType>
+        <EntityType Name="anm_News">
+          <Key>
+            <PropertyRef Name="idnews" />
+          </Key>
+          <Property Name="idnews" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="author" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="date" Type="DateTime" Nullable="false" />
+          <Property Name="image" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="summary" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="news" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="idcategory" Type="Int32" Nullable="false" />
+          <Property Name="comments" Type="Int32" Nullable="false" />
+          <Property Name="commentcheck" Type="Boolean" Nullable="false" />
+          <Property Name="published" Type="Boolean" Nullable="false" />
+          <Property Name="highlight" Type="Boolean" Nullable="false" />
+          <Property Name="postedby" Type="Boolean" Nullable="false" />
+          <Property Name="sidenews" Type="Boolean" Nullable="false" />
+          <Property Name="Tags" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="homeslide" Type="Boolean" />
+          <NavigationProperty Name="anm_Categories" Relationship="ANMModel.FK_anm_News_anm_Categories" FromRole="anm_News" ToRole="anm_Categories" />
+          <NavigationProperty Name="anm_Comments" Relationship="ANMModel.FK_anm_Comments_anm_News" FromRole="anm_News" ToRole="anm_Comments" />
+        </EntityType>
+        <EntityType Name="anm_Reports">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="username" />
+            <PropertyRef Name="idreported" />
+            <PropertyRef Name="reason" />
+            <PropertyRef Name="date" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="username" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="idreported" Type="Int32" Nullable="false" />
+          <Property Name="reason" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="date" Type="DateTime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="anm_Settings">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="SiteName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="SiteEmail" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="SiteUrl" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="Template" Type="Int32" Nullable="false" />
+          <Property Name="TopMenu" Type="Boolean" Nullable="false" />
+          <Property Name="SideMenu" Type="Boolean" Nullable="false" />
+          <Property Name="SearchMenu" Type="Boolean" Nullable="false" />
+          <Property Name="ArchiveMenu" Type="Boolean" Nullable="false" />
+          <Property Name="EmailConfirm" Type="Boolean" Nullable="false" />
+          <Property Name="MailUser" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="MailPassword" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="port" Type="String" MaxLength="4" Unicode="true" FixedLength="false" />
+          <Property Name="smtpserver" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Banner" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="Year" Type="Int32" Nullable="false" />
+          <Property Name="Month" Type="Int32" Nullable="false" />
+          <Property Name="HBGColor" Type="String" Nullable="false" MaxLength="7" Unicode="true" FixedLength="false" />
+          <Property Name="BGcolor" Type="String" Nullable="false" MaxLength="7" Unicode="true" FixedLength="false" />
+          <Property Name="BGimage" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Width" Type="String" Nullable="false" MaxLength="6" Unicode="true" FixedLength="false" />
+          <Property Name="NumArticles" Type="Int32" />
+          <Property Name="ApproveArticles" Type="Boolean" />
+          <Property Name="NumComments" Type="Int32" />
+          <Property Name="ApproveComments" Type="Boolean" />
+          <Property Name="BBCode" Type="Boolean" />
+          <Property Name="Copyright" Type="Boolean" />
+          <Property Name="ViewNarticles" Type="Boolean" />
+          <Property Name="Validator" Type="Boolean" />
+          <Property Name="LastNews" Type="Boolean" />
+          <Property Name="LastComments" Type="Boolean" />
+          <Property Name="CaptchaNewUser" Type="Boolean" />
+          <Property Name="CaptchaComments" Type="Boolean" />
+          <Property Name="Version" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="ArchiveType" Type="Int32" />
+          <Property Name="CaptchaType" Type="String" MaxLength="2" Unicode="true" FixedLength="false" />
+          <Property Name="TagBox" Type="Boolean" />
+          <Property Name="Anonymous" Type="Boolean" />
+          <Property Name="OnlineUsers" Type="Boolean" />
+          <Property Name="ArtImageWidth" Type="Int32" />
+        </EntityType>
+        <EntityType Name="anm_Tags">
+          <Key>
+            <PropertyRef Name="Tag" />
+          </Key>
+          <Property Name="Tag" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Size" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="anm_Templates">
+          <Key>
+            <PropertyRef Name="Template" />
+          </Key>
+          <Property Name="Template" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="author" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="siteauthor" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="aspnet_Applications">
+          <Key>
+            <PropertyRef Name="ApplicationId" />
+          </Key>
+          <Property Name="ApplicationName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="LoweredApplicationName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="aspnet_Membership" Relationship="ANMModel.FK__aspnet_Me__Appli__6FE99F9F" FromRole="aspnet_Applications" ToRole="aspnet_Membership" />
+          <NavigationProperty Name="aspnet_Users" Relationship="ANMModel.FK__aspnet_Us__Appli__71D1E811" FromRole="aspnet_Applications" ToRole="aspnet_Users" />
+        </EntityType>
+        <EntityType Name="aspnet_Membership">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+          <Property Name="UserId" Type="Guid" Nullable="false" />
+          <Property Name="Password" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="PasswordFormat" Type="Int32" Nullable="false" />
+          <Property Name="PasswordSalt" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="MobilePIN" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+          <Property Name="Email" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="LoweredEmail" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="PasswordQuestion" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="PasswordAnswer" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="IsApproved" Type="Boolean" Nullable="false" />
+          <Property Name="IsLockedOut" Type="Boolean" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" />
+          <Property Name="LastLoginDate" Type="DateTime" Nullable="false" />
+          <Property Name="LastPasswordChangedDate" Type="DateTime" Nullable="false" />
+          <Property Name="LastLockoutDate" Type="DateTime" Nullable="false" />
+          <Property Name="FailedPasswordAttemptCount" Type="Int32" Nullable="false" />
+          <Property Name="FailedPasswordAttemptWindowStart" Type="DateTime" Nullable="false" />
+          <Property Name="FailedPasswordAnswerAttemptCount" Type="Int32" Nullable="false" />
+          <Property Name="FailedPasswordAnswerAttemptWindowStart" Type="DateTime" Nullable="false" />
+          <Property Name="Comment" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="aspnet_Applications" Relationship="ANMModel.FK__aspnet_Me__Appli__6FE99F9F" FromRole="aspnet_Membership" ToRole="aspnet_Applications" />
+          <NavigationProperty Name="aspnet_Users" Relationship="ANMModel.FK__aspnet_Me__UserI__70DDC3D8" FromRole="aspnet_Membership" ToRole="aspnet_Users" />
+        </EntityType>
+        <EntityType Name="aspnet_SchemaVersions">
+          <Key>
+            <PropertyRef Name="Feature" />
+            <PropertyRef Name="CompatibleSchemaVersion" />
+          </Key>
+          <Property Name="Feature" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="CompatibleSchemaVersion" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="IsCurrentVersion" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="aspnet_Users">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+          <Property Name="UserId" Type="Guid" Nullable="false" />
+          <Property Name="UserName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="LoweredUserName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="MobileAlias" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+          <Property Name="IsAnonymous" Type="Boolean" Nullable="false" />
+          <Property Name="LastActivityDate" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="aspnet_Applications" Relationship="ANMModel.FK__aspnet_Us__Appli__71D1E811" FromRole="aspnet_Users" ToRole="aspnet_Applications" />
+          <NavigationProperty Name="aspnet_Membership" Relationship="ANMModel.FK__aspnet_Me__UserI__70DDC3D8" FromRole="aspnet_Users" ToRole="aspnet_Membership" />
+        </EntityType>
+        <EntityType Name="vw_aspnet_Applications">
+          <Key>
+            <PropertyRef Name="ApplicationName" />
+            <PropertyRef Name="LoweredApplicationName" />
+            <PropertyRef Name="ApplicationId" />
+          </Key>
+          <Property Name="ApplicationName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="LoweredApplicationName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="vw_aspnet_MembershipUsers">
+          <Key>
+            <PropertyRef Name="UserId" />
+            <PropertyRef Name="PasswordFormat" />
+            <PropertyRef Name="IsApproved" />
+            <PropertyRef Name="IsLockedOut" />
+            <PropertyRef Name="CreateDate" />
+            <PropertyRef Name="LastLoginDate" />
+            <PropertyRef Name="LastPasswordChangedDate" />
+            <PropertyRef Name="LastLockoutDate" />
+            <PropertyRef Name="FailedPasswordAttemptCount" />
+            <PropertyRef Name="FailedPasswordAttemptWindowStart" />
+            <PropertyRef Name="FailedPasswordAnswerAttemptCount" />
+            <PropertyRef Name="FailedPasswordAnswerAttemptWindowStart" />
+            <PropertyRef Name="ApplicationId" />
+            <PropertyRef Name="UserName" />
+            <PropertyRef Name="IsAnonymous" />
+            <PropertyRef Name="LastActivityDate" />
+          </Key>
+          <Property Name="UserId" Type="Guid" Nullable="false" />
+          <Property Name="PasswordFormat" Type="Int32" Nullable="false" />
+          <Property Name="MobilePIN" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+          <Property Name="Email" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="LoweredEmail" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="PasswordQuestion" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="PasswordAnswer" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="IsApproved" Type="Boolean" Nullable="false" />
+          <Property Name="IsLockedOut" Type="Boolean" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" />
+          <Property Name="LastLoginDate" Type="DateTime" Nullable="false" />
+          <Property Name="LastPasswordChangedDate" Type="DateTime" Nullable="false" />
+          <Property Name="LastLockoutDate" Type="DateTime" Nullable="false" />
+          <Property Name="FailedPasswordAttemptCount" Type="Int32" Nullable="false" />
+          <Property Name="FailedPasswordAttemptWindowStart" Type="DateTime" Nullable="false" />
+          <Property Name="FailedPasswordAnswerAttemptCount" Type="Int32" Nullable="false" />
+          <Property Name="FailedPasswordAnswerAttemptWindowStart" Type="DateTime" Nullable="false" />
+          <Property Name="Comment" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+          <Property Name="UserName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="MobileAlias" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+          <Property Name="IsAnonymous" Type="Boolean" Nullable="false" />
+          <Property Name="LastActivityDate" Type="DateTime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="vw_aspnet_Users">
+          <Key>
+            <PropertyRef Name="ApplicationId" />
+            <PropertyRef Name="UserId" />
+            <PropertyRef Name="UserName" />
+            <PropertyRef Name="LoweredUserName" />
+            <PropertyRef Name="IsAnonymous" />
+            <PropertyRef Name="LastActivityDate" />
+          </Key>
+          <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+          <Property Name="UserId" Type="Guid" Nullable="false" />
+          <Property Name="UserName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="LoweredUserName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="MobileAlias" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+          <Property Name="IsAnonymous" Type="Boolean" Nullable="false" />
+          <Property Name="LastActivityDate" Type="DateTime" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_anm_News_anm_Categories">
+          <End Role="anm_Categories" Type="ANMModel.anm_Categories" Multiplicity="1" />
+          <End Role="anm_News" Type="ANMModel.anm_News" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="anm_Categories">
+              <PropertyRef Name="idcategory" />
+            </Principal>
+            <Dependent Role="anm_News">
+              <PropertyRef Name="idcategory" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_anm_Comments_anm_News">
+          <End Role="anm_News" Type="ANMModel.anm_News" Multiplicity="1" />
+          <End Role="anm_Comments" Type="ANMModel.anm_Comments" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="anm_News">
+              <PropertyRef Name="idnews" />
+            </Principal>
+            <Dependent Role="anm_Comments">
+              <PropertyRef Name="idnews" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Me__Appli__6FE99F9F">
+          <End Role="aspnet_Applications" Type="ANMModel.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Membership" Type="ANMModel.aspnet_Membership" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Membership">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Us__Appli__71D1E811">
+          <End Role="aspnet_Applications" Type="ANMModel.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Users" Type="ANMModel.aspnet_Users" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Users">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Me__UserI__70DDC3D8">
+          <End Role="aspnet_Users" Type="ANMModel.aspnet_Users" Multiplicity="1" />
+          <End Role="aspnet_Membership" Type="ANMModel.aspnet_Membership" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="aspnet_Membership">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ANMModelStoreContainer" CdmEntityContainer="anmEntities">
+          <EntitySetMapping Name="anm_Authors"><EntityTypeMapping TypeName="ANMModel.anm_Authors"><MappingFragment StoreEntitySet="anm_Authors">
+            <ScalarProperty Name="author" ColumnName="author" />
+            <ScalarProperty Name="role" ColumnName="role" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="anm_Categories"><EntityTypeMapping TypeName="ANMModel.anm_Categories"><MappingFragment StoreEntitySet="anm_Categories">
+            <ScalarProperty Name="idcategory" ColumnName="idcategory" />
+            <ScalarProperty Name="category" ColumnName="category" />
+            <ScalarProperty Name="idfather" ColumnName="idfather" />
+            <ScalarProperty Name="ordercat" ColumnName="ordercat" />
+            <ScalarProperty Name="url" ColumnName="url" />
+            <ScalarProperty Name="idrootcat" ColumnName="idrootcat" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="anm_Comments"><EntityTypeMapping TypeName="ANMModel.anm_Comments"><MappingFragment StoreEntitySet="anm_Comments">
+            <ScalarProperty Name="idcomment" ColumnName="idcomment" />
+            <ScalarProperty Name="idnews" ColumnName="idnews" />
+            <ScalarProperty Name="commentator" ColumnName="commentator" />
+            <ScalarProperty Name="date" ColumnName="date" />
+            <ScalarProperty Name="comment" ColumnName="comment" />
+            <ScalarProperty Name="ip" ColumnName="ip" />
+            <ScalarProperty Name="approved" ColumnName="approved" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="anm_News"><EntityTypeMapping TypeName="ANMModel.anm_News"><MappingFragment StoreEntitySet="anm_News">
+            <ScalarProperty Name="idnews" ColumnName="idnews" />
+            <ScalarProperty Name="title" ColumnName="title" />
+            <ScalarProperty Name="author" ColumnName="author" />
+            <ScalarProperty Name="date" ColumnName="date" />
+            <ScalarProperty Name="image" ColumnName="image" />
+            <ScalarProperty Name="summary" ColumnName="summary" />
+            <ScalarProperty Name="news" ColumnName="news" />
+            <ScalarProperty Name="idcategory" ColumnName="idcategory" />
+            <ScalarProperty Name="comments" ColumnName="comments" />
+            <ScalarProperty Name="commentcheck" ColumnName="commentcheck" />
+            <ScalarProperty Name="published" ColumnName="published" />
+            <ScalarProperty Name="highlight" ColumnName="highlight" />
+            <ScalarProperty Name="postedby" ColumnName="postedby" />
+            <ScalarProperty Name="sidenews" ColumnName="sidenews" />
+            <ScalarProperty Name="Tags" ColumnName="Tags" />
+            <ScalarProperty Name="homeslide" ColumnName="homeslide" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="anm_Reports"><EntityTypeMapping TypeName="ANMModel.anm_Reports"><MappingFragment StoreEntitySet="anm_Reports">
+            <ScalarProperty Name="id" ColumnName="id" />
+            <ScalarProperty Name="username" ColumnName="username" />
+            <ScalarProperty Name="idreported" ColumnName="idreported" />
+            <ScalarProperty Name="reason" ColumnName="reason" />
+            <ScalarProperty Name="date" ColumnName="date" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="anm_Settings"><EntityTypeMapping TypeName="ANMModel.anm_Settings"><MappingFragment StoreEntitySet="anm_Settings">
+            <ScalarProperty Name="id" ColumnName="id" />
+            <ScalarProperty Name="SiteName" ColumnName="SiteName" />
+            <ScalarProperty Name="SiteEmail" ColumnName="SiteEmail" />
+            <ScalarProperty Name="SiteUrl" ColumnName="SiteUrl" />
+            <ScalarProperty Name="Template" ColumnName="Template" />
+            <ScalarProperty Name="TopMenu" ColumnName="TopMenu" />
+            <ScalarProperty Name="SideMenu" ColumnName="SideMenu" />
+            <ScalarProperty Name="SearchMenu" ColumnName="SearchMenu" />
+            <ScalarProperty Name="ArchiveMenu" ColumnName="ArchiveMenu" />
+            <ScalarProperty Name="EmailConfirm" ColumnName="EmailConfirm" />
+            <ScalarProperty Name="MailUser" ColumnName="MailUser" />
+            <ScalarProperty Name="MailPassword" ColumnName="MailPassword" />
+            <ScalarProperty Name="port" ColumnName="port" />
+            <ScalarProperty Name="smtpserver" ColumnName="smtpserver" />
+            <ScalarProperty Name="Banner" ColumnName="Banner" />
+            <ScalarProperty Name="Year" ColumnName="Year" />
+            <ScalarProperty Name="Month" ColumnName="Month" />
+            <ScalarProperty Name="HBGColor" ColumnName="HBGColor" />
+            <ScalarProperty Name="BGcolor" ColumnName="BGcolor" />
+            <ScalarProperty Name="BGimage" ColumnName="BGimage" />
+            <ScalarProperty Name="Width" ColumnName="Width" />
+            <ScalarProperty Name="NumArticles" ColumnName="NumArticles" />
+            <ScalarProperty Name="ApproveArticles" ColumnName="ApproveArticles" />
+            <ScalarProperty Name="NumComments" ColumnName="NumComments" />
+            <ScalarProperty Name="ApproveComments" ColumnName="ApproveComments" />
+            <ScalarProperty Name="BBCode" ColumnName="BBCode" />
+            <ScalarProperty Name="Copyright" ColumnName="Copyright" />
+            <ScalarProperty Name="ViewNarticles" ColumnName="ViewNarticles" />
+            <ScalarProperty Name="Validator" ColumnName="Validator" />
+            <ScalarProperty Name="LastNews" ColumnName="LastNews" />
+            <ScalarProperty Name="LastComments" ColumnName="LastComments" />
+            <ScalarProperty Name="CaptchaNewUser" ColumnName="CaptchaNewUser" />
+            <ScalarProperty Name="CaptchaComments" ColumnName="CaptchaComments" />
+            <ScalarProperty Name="Version" ColumnName="Version" />
+            <ScalarProperty Name="ArchiveType" ColumnName="ArchiveType" />
+            <ScalarProperty Name="CaptchaType" ColumnName="CaptchaType" />
+            <ScalarProperty Name="TagBox" ColumnName="TagBox" />
+            <ScalarProperty Name="Anonymous" ColumnName="Anonymous" />
+            <ScalarProperty Name="OnlineUsers" ColumnName="OnlineUsers" />
+            <ScalarProperty Name="ArtImageWidth" ColumnName="ArtImageWidth" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="anm_Tags"><EntityTypeMapping TypeName="ANMModel.anm_Tags"><MappingFragment StoreEntitySet="anm_Tags">
+            <ScalarProperty Name="Tag" ColumnName="Tag" />
+            <ScalarProperty Name="Size" ColumnName="Size" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="anm_Templates"><EntityTypeMapping TypeName="ANMModel.anm_Templates"><MappingFragment StoreEntitySet="anm_Templates">
+            <ScalarProperty Name="Template" ColumnName="Template" />
+            <ScalarProperty Name="name" ColumnName="name" />
+            <ScalarProperty Name="author" ColumnName="author" />
+            <ScalarProperty Name="siteauthor" ColumnName="siteauthor" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="aspnet_Applications"><EntityTypeMapping TypeName="ANMModel.aspnet_Applications"><MappingFragment StoreEntitySet="aspnet_Applications">
+            <ScalarProperty Name="ApplicationName" ColumnName="ApplicationName" />
+            <ScalarProperty Name="LoweredApplicationName" ColumnName="LoweredApplicationName" />
+            <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+            <ScalarProperty Name="Description" ColumnName="Description" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="aspnet_Membership"><EntityTypeMapping TypeName="ANMModel.aspnet_Membership"><MappingFragment StoreEntitySet="aspnet_Membership">
+            <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+            <ScalarProperty Name="UserId" ColumnName="UserId" />
+            <ScalarProperty Name="Password" ColumnName="Password" />
+            <ScalarProperty Name="PasswordFormat" ColumnName="PasswordFormat" />
+            <ScalarProperty Name="PasswordSalt" ColumnName="PasswordSalt" />
+            <ScalarProperty Name="MobilePIN" ColumnName="MobilePIN" />
+            <ScalarProperty Name="Email" ColumnName="Email" />
+            <ScalarProperty Name="LoweredEmail" ColumnName="LoweredEmail" />
+            <ScalarProperty Name="PasswordQuestion" ColumnName="PasswordQuestion" />
+            <ScalarProperty Name="PasswordAnswer" ColumnName="PasswordAnswer" />
+            <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+            <ScalarProperty Name="IsLockedOut" ColumnName="IsLockedOut" />
+            <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+            <ScalarProperty Name="LastLoginDate" ColumnName="LastLoginDate" />
+            <ScalarProperty Name="LastPasswordChangedDate" ColumnName="LastPasswordChangedDate" />
+            <ScalarProperty Name="LastLockoutDate" ColumnName="LastLockoutDate" />
+            <ScalarProperty Name="FailedPasswordAttemptCount" ColumnName="FailedPasswordAttemptCount" />
+            <ScalarProperty Name="FailedPasswordAttemptWindowStart" ColumnName="FailedPasswordAttemptWindowStart" />
+            <ScalarProperty Name="FailedPasswordAnswerAttemptCount" ColumnName="FailedPasswordAnswerAttemptCount" />
+            <ScalarProperty Name="FailedPasswordAnswerAttemptWindowStart" ColumnName="FailedPasswordAnswerAttemptWindowStart" />
+            <ScalarProperty Name="Comment" ColumnName="Comment" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="aspnet_SchemaVersions"><EntityTypeMapping TypeName="ANMModel.aspnet_SchemaVersions"><MappingFragment StoreEntitySet="aspnet_SchemaVersions">
+            <ScalarProperty Name="Feature" ColumnName="Feature" />
+            <ScalarProperty Name="CompatibleSchemaVersion" ColumnName="CompatibleSchemaVersion" />
+            <ScalarProperty Name="IsCurrentVersion" ColumnName="IsCurrentVersion" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="aspnet_Users"><EntityTypeMapping TypeName="ANMModel.aspnet_Users"><MappingFragment StoreEntitySet="aspnet_Users">
+            <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+            <ScalarProperty Name="UserId" ColumnName="UserId" />
+            <ScalarProperty Name="UserName" ColumnName="UserName" />
+            <ScalarProperty Name="LoweredUserName" ColumnName="LoweredUserName" />
+            <ScalarProperty Name="MobileAlias" ColumnName="MobileAlias" />
+            <ScalarProperty Name="IsAnonymous" ColumnName="IsAnonymous" />
+            <ScalarProperty Name="LastActivityDate" ColumnName="LastActivityDate" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="vw_aspnet_Applications"><EntityTypeMapping TypeName="ANMModel.vw_aspnet_Applications"><MappingFragment StoreEntitySet="vw_aspnet_Applications">
+            <ScalarProperty Name="ApplicationName" ColumnName="ApplicationName" />
+            <ScalarProperty Name="LoweredApplicationName" ColumnName="LoweredApplicationName" />
+            <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+            <ScalarProperty Name="Description" ColumnName="Description" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="vw_aspnet_MembershipUsers"><EntityTypeMapping TypeName="ANMModel.vw_aspnet_MembershipUsers"><MappingFragment StoreEntitySet="vw_aspnet_MembershipUsers">
+            <ScalarProperty Name="UserId" ColumnName="UserId" />
+            <ScalarProperty Name="PasswordFormat" ColumnName="PasswordFormat" />
+            <ScalarProperty Name="MobilePIN" ColumnName="MobilePIN" />
+            <ScalarProperty Name="Email" ColumnName="Email" />
+            <ScalarProperty Name="LoweredEmail" ColumnName="LoweredEmail" />
+            <ScalarProperty Name="PasswordQuestion" ColumnName="PasswordQuestion" />
+            <ScalarProperty Name="PasswordAnswer" ColumnName="PasswordAnswer" />
+            <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+            <ScalarProperty Name="IsLockedOut" ColumnName="IsLockedOut" />
+            <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+            <ScalarProperty Name="LastLoginDate" ColumnName="LastLoginDate" />
+            <ScalarProperty Name="LastPasswordChangedDate" ColumnName="LastPasswordChangedDate" />
+            <ScalarProperty Name="LastLockoutDate" ColumnName="LastLockoutDate" />
+            <ScalarProperty Name="FailedPasswordAttemptCount" ColumnName="FailedPasswordAttemptCount" />
+            <ScalarProperty Name="FailedPasswordAttemptWindowStart" ColumnName="FailedPasswordAttemptWindowStart" />
+            <ScalarProperty Name="FailedPasswordAnswerAttemptCount" ColumnName="FailedPasswordAnswerAttemptCount" />
+            <ScalarProperty Name="FailedPasswordAnswerAttemptWindowStart" ColumnName="FailedPasswordAnswerAttemptWindowStart" />
+            <ScalarProperty Name="Comment" ColumnName="Comment" />
+            <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+            <ScalarProperty Name="UserName" ColumnName="UserName" />
+            <ScalarProperty Name="MobileAlias" ColumnName="MobileAlias" />
+            <ScalarProperty Name="IsAnonymous" ColumnName="IsAnonymous" />
+            <ScalarProperty Name="LastActivityDate" ColumnName="LastActivityDate" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="vw_aspnet_Users"><EntityTypeMapping TypeName="ANMModel.vw_aspnet_Users"><MappingFragment StoreEntitySet="vw_aspnet_Users">
+            <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+            <ScalarProperty Name="UserId" ColumnName="UserId" />
+            <ScalarProperty Name="UserName" ColumnName="UserName" />
+            <ScalarProperty Name="LoweredUserName" ColumnName="LoweredUserName" />
+            <ScalarProperty Name="MobileAlias" ColumnName="MobileAlias" />
+            <ScalarProperty Name="IsAnonymous" ColumnName="IsAnonymous" />
+            <ScalarProperty Name="LastActivityDate" ColumnName="LastActivityDate" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="anmModel">
+        <EntityTypeShape EntityType="ANMModel.anm_Authors" Width="1.5" PointX="0.75" PointY="0.75" Height="1.4033821614583331" IsExpanded="true" />
+        <EntityTypeShape EntityType="ANMModel.anm_Categories" Width="1.5" PointX="7.75" PointY="2.125" Height="2.364889322916667" IsExpanded="true" />
+        <EntityTypeShape EntityType="ANMModel.anm_Comments" Width="1.5" PointX="12.25" PointY="2" Height="2.5571907552083317" IsExpanded="true" />
+        <EntityTypeShape EntityType="ANMModel.anm_News" Width="1.5" PointX="10" PointY="1" Height="4.480205078125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ANMModel.anm_Reports" Width="1.5" PointX="2.75" PointY="0.75" Height="1.9802864583333317" IsExpanded="true" />
+        <EntityTypeShape EntityType="ANMModel.anm_Settings" Width="1.5" PointX="7.75" PointY="6.75" Height="8.7108365885416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="ANMModel.anm_Tags" Width="1.5" PointX="2.75" PointY="3.75" Height="1.4033821614583317" IsExpanded="true" />
+        <EntityTypeShape EntityType="ANMModel.anm_Templates" Width="1.5" PointX="4.75" PointY="0.75" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="ANMModel.aspnet_Applications" Width="1.5" PointX="0.75" PointY="4.625" Height="2.1725878906249996" IsExpanded="true" />
+        <EntityTypeShape EntityType="ANMModel.aspnet_Membership" Width="1.5" PointX="5.25" PointY="6.25" Height="5.4417122395833317" IsExpanded="true" />
+        <EntityTypeShape EntityType="ANMModel.aspnet_SchemaVersions" Width="1.5" PointX="4.75" PointY="3.75" Height="1.5956835937500031" IsExpanded="true" />
+        <EntityTypeShape EntityType="ANMModel.aspnet_Users" Width="1.5" PointX="3" PointY="10.5" Height="2.7494921875000031" IsExpanded="true" />
+        <EntityTypeShape EntityType="ANMModel.vw_aspnet_Applications" Width="1.5" PointX="0.75" PointY="7.75" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="ANMModel.vw_aspnet_MembershipUsers" Width="1.5" PointX="9.75" PointY="6.75" Height="5.4417122395833388" IsExpanded="true" />
+        <EntityTypeShape EntityType="ANMModel.vw_aspnet_Users" Width="1.5" PointX="11.75" PointY="6.75" Height="2.3648893229166674" IsExpanded="true" />
+        <AssociationConnector Association="ANMModel.FK_anm_News_anm_Categories" ManuallyRouted="false">
+          <ConnectorPoint PointX="9.25" PointY="3.3074446614583337" />
+          <ConnectorPoint PointX="10" PointY="3.3074446614583337" />
+        </AssociationConnector>
+        <AssociationConnector Association="ANMModel.FK_anm_Comments_anm_News" ManuallyRouted="false">
+          <ConnectorPoint PointX="11.5" PointY="3.2785953776041659" />
+          <ConnectorPoint PointX="12.25" PointY="3.2785953776041659" />
+        </AssociationConnector>
+        <AssociationConnector Association="ANMModel.FK__aspnet_Me__Appli__6FE99F9F" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="6.5237939453125" />
+          <ConnectorPoint PointX="4.322916666666667" PointY="6.5237939453124989" />
+          <ConnectorPoint PointX="4.489583333333333" PointY="6.5237939453125" />
+          <ConnectorPoint PointX="5.25" PointY="6.5237939453125" />
+        </AssociationConnector>
+        <AssociationConnector Association="ANMModel.FK__aspnet_Us__Appli__71D1E811" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="5.838585553385415" />
+          <ConnectorPoint PointX="4.40625" PointY="5.838585553385415" />
+          <ConnectorPoint PointX="4.40625" PointY="10.5" />
+        </AssociationConnector>
+        <AssociationConnector Association="ANMModel.FK__aspnet_Me__UserI__70DDC3D8" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="11.095856119791666" />
+          <ConnectorPoint PointX="5.25" PointY="11.095856119791666" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{85B50387-6C07-4E2D-9658-737C65E0E071}</ProjectGuid>
+    <ProjectGuid>{38A61571-827E-4068-873C-EEB018D83BD4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>News.EntityFramework</RootNamespace>
-    <AssemblyName>News.EntityFramework</AssemblyName>
+    <RootNamespace>Library</RootNamespace>
+    <AssemblyName>Library</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -32,10 +32,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Data.Entity" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,19 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="anmModel.Designer.cs">
-      <DependentUpon>anmModel.edmx</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <Compile Include="Models\Contact.cs" />
+    <Compile Include="Email.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="anmModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>anmModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
+    <ProjectReference Include="..\News.EntityFramework\News.EntityFramework.csproj">
+      <Project>{85B50387-6C07-4E2D-9658-737C65E0E071}</Project>
+      <Name>News.EntityFramework</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

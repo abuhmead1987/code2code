@@ -5,14 +5,14 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "anm01057", "D:\Open Source\
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		Debug.AspNetCompiler.VirtualPath = "/anm01057"
-		Debug.AspNetCompiler.PhysicalPath = "D:\Open Source\anm01057\"
+		Debug.AspNetCompiler.PhysicalPath = "..\Open Source\anm01057\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\anm01057\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/anm01057"
-		Release.AspNetCompiler.PhysicalPath = "D:\Open Source\anm01057\"
+		Release.AspNetCompiler.PhysicalPath = "..\Open Source\anm01057\"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\anm01057\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
@@ -24,6 +24,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsManagement", "NewsManagement\NewsManagement.csproj", "{8F488D2A-598B-4051-A50D-3321CDEE98FF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "News.EntityFramework", "News.EntityFramework\News.EntityFramework.csproj", "{85B50387-6C07-4E2D-9658-737C65E0E071}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library", "Library\Library.csproj", "{38A61571-827E-4068-873C-EEB018D83BD4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +45,10 @@ Global
 		{85B50387-6C07-4E2D-9658-737C65E0E071}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{85B50387-6C07-4E2D-9658-737C65E0E071}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{85B50387-6C07-4E2D-9658-737C65E0E071}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38A61571-827E-4068-873C-EEB018D83BD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38A61571-827E-4068-873C-EEB018D83BD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38A61571-827E-4068-873C-EEB018D83BD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38A61571-827E-4068-873C-EEB018D83BD4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -76,6 +76,7 @@
     <Compile Include="Helper\ImageHelper.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\CategoryModel.cs" />
+    <Compile Include="Models\ContactViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -124,6 +125,7 @@
     <Content Include="Scripts\modernizr-1.7.js" />
     <Content Include="Scripts\modernizr-1.7.min.js" />
     <Content Include="UserUpload\424243_376203369062668_100000190244791_1702595_812431198_n.jpg" />
+    <Content Include="Views\Home\Contact.aspx" />
     <Content Include="Views\Home\Edit.aspx" />
     <Content Include="Views\Home\View.aspx" />
     <Content Include="Views\News\Create.aspx" />
@@ -172,6 +174,10 @@
     <Content Include="Areas\Admin\Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Library\Library.csproj">
+      <Project>{38A61571-827E-4068-873C-EEB018D83BD4}</Project>
+      <Name>Library</Name>
+    </ProjectReference>
     <ProjectReference Include="..\News.EntityFramework\News.EntityFramework.csproj">
       <Project>{85B50387-6C07-4E2D-9658-737C65E0E071}</Project>
       <Name>News.EntityFramework</Name>

@@ -1,0 +1,8 @@
+D:\anm01057\Library\obj\Debug\ResolveAssemblyReference.cache
+D:\anm01057\Library\bin\Debug\Library.dll.config
+D:\anm01057\Library\bin\Debug\Library.dll
+D:\anm01057\Library\bin\Debug\Library.pdb
+D:\anm01057\Library\bin\Debug\News.EntityFramework.dll
+D:\anm01057\Library\bin\Debug\News.EntityFramework.pdb
+D:\anm01057\Library\obj\Debug\Library.dll
+D:\anm01057\Library\obj\Debug\Library.pdb

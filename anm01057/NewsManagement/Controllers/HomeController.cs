@@ -4,6 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Data;
+using NewsManagement.Models;
+using News.EntityFramework.Models;
+using Library;
 
 namespace NewsManagement.Controllers
 {
@@ -45,6 +48,30 @@ namespace NewsManagement.Controllers
         public ActionResult About()
         {
             return View();
+        }
+
+        public ActionResult Contact()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Contact(ContactViewModel contactVM)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(contactVM);
+            }
+
+            var contact = new Contact
+            {
+                From = contactVM.From,
+                Subject = contactVM.Subject,
+                Message = contactVM.Message
+            };
+
+            new Email().Send(contact);
+
+            return RedirectToAction("ContactConfirm");
         }
     }
 }

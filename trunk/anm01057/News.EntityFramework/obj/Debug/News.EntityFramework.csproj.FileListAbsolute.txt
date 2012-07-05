@@ -1,0 +1,6 @@
+C:\Users\nguyen.quach\Documents\Visual Studio 2010\Projects\anm01057\News.EntityFramework\bin\Debug\News.EntityFramework.dll.config
+C:\Users\nguyen.quach\Documents\Visual Studio 2010\Projects\anm01057\News.EntityFramework\bin\Debug\News.EntityFramework.dll
+C:\Users\nguyen.quach\Documents\Visual Studio 2010\Projects\anm01057\News.EntityFramework\bin\Debug\News.EntityFramework.pdb
+C:\Users\nguyen.quach\Documents\Visual Studio 2010\Projects\anm01057\News.EntityFramework\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\nguyen.quach\Documents\Visual Studio 2010\Projects\anm01057\News.EntityFramework\obj\Debug\News.EntityFramework.dll
+C:\Users\nguyen.quach\Documents\Visual Studio 2010\Projects\anm01057\News.EntityFramework\obj\Debug\News.EntityFramework.pdb

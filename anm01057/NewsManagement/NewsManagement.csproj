@@ -67,6 +67,7 @@
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\CategoryController.cs" />
     <Compile Include="Areas\Admin\Controllers\IndexController.cs" />
+    <Compile Include="Areas\Admin\Controllers\TagController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NewsController.cs" />
@@ -86,6 +87,11 @@
     <Content Include="Areas\Admin\Views\Category\Edit.aspx" />
     <Content Include="Areas\Admin\Views\Category\Index.aspx" />
     <Content Include="Areas\Admin\Views\Index\Index.aspx" />
+    <Content Include="Areas\Admin\Views\Tag\Create.aspx" />
+    <Content Include="Areas\Admin\Views\Tag\Delete.aspx" />
+    <Content Include="Areas\Admin\Views\Tag\Details.aspx" />
+    <Content Include="Areas\Admin\Views\Tag\Edit.aspx" />
+    <Content Include="Areas\Admin\Views\Tag\Index.aspx" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />

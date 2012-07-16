@@ -1,0 +1,18 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="AdminMenu.ascx.cs" Inherits="Controls_AdminMenu" %>
+<%@ Register src="SearchMenu.ascx" tagname="SearchMenu" tagprefix="uc1" %>
+            <div style="background-color:#E5E5E5; float:right; width:15%; padding:5px; border: dotted 2px #E5E5E5">            
+                <div style="margin:0 auto; text-align:center; background-color:#f1f1f1;border:1px solid;border-color: #ccc;">----- <asp:label ID="lb1" Font-Bold="true" runat="server" Text="<%$ Resources:language, Menu%>" /> -----</div><hr />
+                - <asp:HyperLink ID="HLmenu1" Font-Size="16px" Font-Bold="true" Text="<%$ Resources:language, Articles%>" runat="server"></asp:HyperLink> -<br />
+                <asp:HyperLink ID="HLa1" Text="<%$ Resources:language, List%>" runat="server"></asp:HyperLink> - <asp:HyperLink ID="HLa2" Font-Bold="true" Text="<%$ Resources:language, New%>" runat="server"></asp:HyperLink> - <asp:HyperLink ID="HLa3" Text="<%$ Resources:language, Approve%>" runat="server"></asp:HyperLink><asp:Label ID="HLa3n" runat="server"></asp:Label> - <asp:HyperLink ID="HLa4" Text="<%$ Resources:language, Settings%>" runat="server"></asp:HyperLink><br /><hr />
+                - <asp:HyperLink ID="HLmenu2" Font-Size="16px" Font-Bold="true" Text="<%$ Resources:language, Comments%>" runat="server"></asp:HyperLink> -<br />
+                <asp:HyperLink ID="HLc1" Text="<%$ Resources:language, List%>" runat="server"></asp:HyperLink> - <asp:HyperLink ID="HLc2" Text="<%$ Resources:language, Approve%>" runat="server"></asp:HyperLink><asp:Label ID="HLc2n" runat="server"></asp:Label> - <asp:HyperLink ID="HLc4" Text="<%$ Resources:language, Reported%>" runat="server"></asp:HyperLink><asp:Label ID="HLc4n" runat="server"></asp:Label> - <asp:HyperLink ID="HLc3" Text="<%$ Resources:language, Settings%>" runat="server"></asp:HyperLink><br /><hr />
+                - <asp:HyperLink ID="HLmenu3" Font-Size="16px" Font-Bold="true" Text="<%$ Resources:language, Categories%>" runat="server"></asp:HyperLink> -<br />
+                <asp:HyperLink ID="Hlca1" Text="<%$ Resources:language, List%>" runat="server"></asp:HyperLink> - <asp:HyperLink ID="Hlca2" Text="<%$ Resources:language, New%>" runat="server"></asp:HyperLink> - <asp:HyperLink ID="Hlca3" Text="<%$ Resources:language, Settings%>" runat="server"></asp:HyperLink><br /><hr />
+                - <asp:HyperLink ID="HLmenu4" Font-Size="16px" Font-Bold="true" Text="<%$ Resources:language, Users%>" runat="server"></asp:HyperLink> -<br />
+                <asp:HyperLink ID="Hlau1" Text="<%$ Resources:language, List%>" runat="server"></asp:HyperLink> - <asp:HyperLink ID="Hlau2" Text="<%$ Resources:language, Authors%>" runat="server"></asp:HyperLink><br /><hr />
+                - <asp:HyperLink ID="HLmenu5" Font-Size="16px" Font-Bold="true" Text="<%$ Resources:language, SiteSettings%>" runat="server"></asp:HyperLink> -<br />
+                <asp:HyperLink ID="Hls1" Text="<%$ Resources:language, SiteInfo%>" runat="server"></asp:HyperLink> - <asp:HyperLink ID="Hls2" Text="<%$ Resources:language, SiteLayout%>" runat="server"></asp:HyperLink> - <asp:HyperLink ID="Hls4" Text="<%$ Resources:language, TagBox%>" runat="server"></asp:HyperLink> - <asp:HyperLink ID="Hls3" Text="<%$ Resources:language, Templates%>" runat="server"></asp:HyperLink><br /><hr />
+                <asp:Label ID="lblerror" runat="server" ForeColor="Red" Visible="false"></asp:Label><br />
+                <asp:Label ID="lblversion" runat="server"></asp:Label><br /><br />
+                <uc1:SearchMenu ID="SearchMenu1" runat="server" />
+            </div>

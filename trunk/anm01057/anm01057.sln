@@ -1,31 +1,33 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "anm01057", "D:\Open Source\anm01057\", "{4D1762EC-FAE3-4553-A986-9A302A1E3CB2}"
-	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
-		Debug.AspNetCompiler.VirtualPath = "/anm01057"
-		Debug.AspNetCompiler.PhysicalPath = "..\Open Source\anm01057\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\anm01057\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/anm01057"
-		Release.AspNetCompiler.PhysicalPath = "..\Open Source\anm01057\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\anm01057\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "5975"
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsManagement", "NewsManagement\NewsManagement.csproj", "{8F488D2A-598B-4051-A50D-3321CDEE98FF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "News.EntityFramework", "News.EntityFramework\News.EntityFramework.csproj", "{85B50387-6C07-4E2D-9658-737C65E0E071}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library", "Library\Library.csproj", "{38A61571-827E-4068-873C-EEB018D83BD4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentaion", "Presentaion", "{E20F0A5E-064D-400E-8520-AB8878280551}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "website", "website\", "{DEF8D7B8-1E1D-41D9-886D-AF508600F18C}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/website"
+		Debug.AspNetCompiler.PhysicalPath = "website\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\website\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/website"
+		Release.AspNetCompiler.PhysicalPath = "website\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\website\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "7296"
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,10 +35,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4D1762EC-FAE3-4553-A986-9A302A1E3CB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4D1762EC-FAE3-4553-A986-9A302A1E3CB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4D1762EC-FAE3-4553-A986-9A302A1E3CB2}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{4D1762EC-FAE3-4553-A986-9A302A1E3CB2}.Release|Any CPU.Build.0 = Debug|Any CPU
 		{8F488D2A-598B-4051-A50D-3321CDEE98FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8F488D2A-598B-4051-A50D-3321CDEE98FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F488D2A-598B-4051-A50D-3321CDEE98FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -49,8 +47,15 @@ Global
 		{38A61571-827E-4068-873C-EEB018D83BD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38A61571-827E-4068-873C-EEB018D83BD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38A61571-827E-4068-873C-EEB018D83BD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEF8D7B8-1E1D-41D9-886D-AF508600F18C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEF8D7B8-1E1D-41D9-886D-AF508600F18C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEF8D7B8-1E1D-41D9-886D-AF508600F18C}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEF8D7B8-1E1D-41D9-886D-AF508600F18C}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DEF8D7B8-1E1D-41D9-886D-AF508600F18C} = {E20F0A5E-064D-400E-8520-AB8878280551}
 	EndGlobalSection
 EndGlobal

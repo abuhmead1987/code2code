@@ -1,0 +1,49 @@
+------------------------------------------------------------------------------------------------------------
+---------------------------------------------[New Installation]---------------------------------------------
+------------------------------------------------------------------------------------------------------------
+AllNewsManager.NET Installation
+
+
+Prerequisites:
+
+Web Server: Windows XP/Vista/Windows 7/Windows Server 2003/2008 with ASP.NET 3.5 or newer and IIS 7.0 or newer
+Database Server: SQL Server 2005/2008
+
+Check you have the host name and credentials with DBO access to the database.
+
+
+Installation:
+
+Create a folder on the Web Server (for example: c:\Anm). IIS has to have Full Control permissions. On the Security tab check that the appropriate account has Full Control permissions to the folder (for Windows XP is the ASPNET account and for other Windows editions is the NETWORK SERVICE account).
+
+
+Download the INSTALL package (the zip file) from the Download page on AllNewsManager.NET. Extract the contents of the ZIP file to your folder (C:\Anm).
+
+
+Now you need to configure AllNewsManager so it can connect to your database. Open C:\Anm\web.config with Notepad and set the correct connection string (find in web.config <connectionStrings>).
+
+If you are using SQLExpress:
+<add name="anmcs" connectionString="Data Source=.\SQLEXPRESS;Initial Catalog=dbname;Integrated Security=True" providerName="System.Data.SqlClient"/>
+If you are using SqlServer:
+<add name="anmcs" connectionString="Server=servername;Database=dbname;uid=dbpsw;pwd=dbpsw;" providerName="System.Data.SqlClient"/>
+
+
+Launch the IIS Management Console (Start > Control Panel > Administrative Tools). Create a new Virtual Directory named “anm” pointing to the C:\Anm folder (you can choose to name your Virtual Directory something else)
+
+
+The final step is to launch the AllNewsManager wizard. Launch your preferred web browser and navigate to http://localhost/Anm/install.aspx (adjust the URL if you named the Virtual Directory in a different way).
+
+
+
+-----------------------------------------------------------------------------------------------------------
+-------------------------------------------------[Upgrade]-------------------------------------------------
+-----------------------------------------------------------------------------------------------------------
+
+
+Make a Backup of your site.
+
+Unzip zip file. Open web.config: change connectionStrings and your mailSettings (you can copy it from the old web.config).
+
+Delete all files in bin folder and Copy all the unzipped files into your site directory.
+
+Launch your preferred web browser and navigate to http://localhost/Anm/install.aspx (adjust the URL if you named the Virtual Directory in a different way). Click the button to upgrade.

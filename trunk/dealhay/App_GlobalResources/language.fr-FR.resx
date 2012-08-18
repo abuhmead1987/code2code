@@ -1,0 +1,1101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AdminPage" xml:space="preserve">
+    <value>Admin Page</value>
+  </data>
+  <data name="and" xml:space="preserve">
+    <value>et</value>
+  </data>
+  <data name="by" xml:space="preserve">
+    <value>des</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Catégorie</value>
+  </data>
+  <data name="charactersleft" xml:space="preserve">
+    <value>caractères.</value>
+  </data>
+  <data name="commentlength" xml:space="preserve">
+    <value>Votre commentaire ne peut pas avoir plus de 2000 caractères</value>
+  </data>
+  <data name="Comments" xml:space="preserve">
+    <value>Commentaires</value>
+  </data>
+  <data name="CommentSent" xml:space="preserve">
+    <value>Commentaire envoyé. Un administrateur doit l'approuver.</value>
+  </data>
+  <data name="ContactUs" xml:space="preserve">
+    <value>Contactez-nous</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Modifier</value>
+  </data>
+  <data name="fullsize" xml:space="preserve">
+    <value>Cliquez pour pleine dimension</value>
+  </data>
+  <data name="Generateimage" xml:space="preserve">
+    <value>Générer une nouvelle image</value>
+  </data>
+  <data name="insertcomment" xml:space="preserve">
+    <value>insérer un commentaire</value>
+  </data>
+  <data name="Leavecomment" xml:space="preserve">
+    <value>Laissez un commentaire</value>
+  </data>
+  <data name="login" xml:space="preserve">
+    <value>connectez-vous</value>
+  </data>
+  <data name="ManageComments" xml:space="preserve">
+    <value>Gérer les commentaires</value>
+  </data>
+  <data name="Menu" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="MyProfile" xml:space="preserve">
+    <value>Mon profil</value>
+  </data>
+  <data name="on" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Postedby" xml:space="preserve">
+    <value>Rédigé par</value>
+  </data>
+  <data name="PostedByAllArticles" xml:space="preserve">
+    <value>Tous les articles publiés par</value>
+  </data>
+  <data name="Quote" xml:space="preserve">
+    <value>Citer</value>
+  </data>
+  <data name="Readfullarticle" xml:space="preserve">
+    <value>Lire l'article complet</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Inscrivez-vous</value>
+  </data>
+  <data name="RelatedToAllArticles" xml:space="preserve">
+    <value>Tous les articles liés à la</value>
+  </data>
+  <data name="searchsite" xml:space="preserve">
+    <value>recherche dans le site ...</value>
+  </data>
+  <data name="SendComm" xml:space="preserve">
+    <value>Envoyer un commentaire</value>
+  </data>
+  <data name="Sendcomment" xml:space="preserve">
+    <value>Pour envoyer un commentaire, vous devez</value>
+  </data>
+  <data name="Typeletters" xml:space="preserve">
+    <value>Tapez les lettres de l'image:</value>
+  </data>
+  <data name="Typeletterserror" xml:space="preserve">
+    <value>Le texte n'est pas correct. Pour envoyer un message,vous devez écrire le texte de l'image dans la zone de texte</value>
+  </data>
+  <data name="AddArticle" xml:space="preserve">
+    <value>Ajouter un article / Nouvelles</value>
+  </data>
+  <data name="AddArticleNews" xml:space="preserve">
+    <value>Ajouter un article / Nouvelles</value>
+  </data>
+  <data name="Addcategory" xml:space="preserve">
+    <value>Ajouter une catégorie</value>
+  </data>
+  <data name="AllowComments" xml:space="preserve">
+    <value>Autoriser les commentaires?</value>
+  </data>
+  <data name="Approve" xml:space="preserve">
+    <value>Approuver</value>
+  </data>
+  <data name="ApproveArt" xml:space="preserve">
+    <value>- Approuver les articles?</value>
+  </data>
+  <data name="ApproveArtexp" xml:space="preserve">
+    <value>Tous les articles seront approuvés par un admin</value>
+  </data>
+  <data name="Approveartpublish" xml:space="preserve">
+    <value>Approuver articles pour publication.</value>
+  </data>
+  <data name="Approved" xml:space="preserve">
+    <value>Approuvé</value>
+  </data>
+  <data name="Apr" xml:space="preserve">
+    <value>Avr</value>
+  </data>
+  <data name="April" xml:space="preserve">
+    <value>Avril</value>
+  </data>
+  <data name="Archives" xml:space="preserve">
+    <value>Archives</value>
+  </data>
+  <data name="ArticleNews" xml:space="preserve">
+    <value>Article / Nouvelles</value>
+  </data>
+  <data name="Articles" xml:space="preserve">
+    <value>Articles</value>
+  </data>
+  <data name="Aug" xml:space="preserve">
+    <value>Aoû</value>
+  </data>
+  <data name="August" xml:space="preserve">
+    <value>Août</value>
+  </data>
+  <data name="Author" xml:space="preserve">
+    <value>Auteur</value>
+  </data>
+  <data name="Authors" xml:space="preserve">
+    <value>Auteurs</value>
+  </data>
+  <data name="Categories" xml:space="preserve">
+    <value>Catégories</value>
+  </data>
+  <data name="Comment" xml:space="preserve">
+    <value>Commentaire</value>
+  </data>
+  <data name="CommentsAllowed" xml:space="preserve">
+    <value>Commentaires autorisés?</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="Dec" xml:space="preserve">
+    <value>Déc</value>
+  </data>
+  <data name="December" xml:space="preserve">
+    <value>Décembre</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Supprimer</value>
+  </data>
+  <data name="DisApprove" xml:space="preserve">
+    <value>Désapprouver</value>
+  </data>
+  <data name="Feb" xml:space="preserve">
+    <value>Fév</value>
+  </data>
+  <data name="February" xml:space="preserve">
+    <value>Février</value>
+  </data>
+  <data name="Highlight" xml:space="preserve">
+    <value>mettre en évidence?</value>
+  </data>
+  <data name="Highlighted" xml:space="preserve">
+    <value>Highlighted?</value>
+  </data>
+  <data name="HomePageSlideShow" xml:space="preserve">
+    <value>HomePage SlideShow ?</value>
+  </data>
+  <data name="Image" xml:space="preserve">
+    <value>Imagen</value>
+  </data>
+  <data name="ImageFormat" xml:space="preserve">
+    <value>Vous ne pouvez utiliser ce format: .jpg . jpeg .gif .png .bmp .psd</value>
+  </data>
+  <data name="InsertArticle" xml:space="preserve">
+    <value>Insérer un article/Nouvelles</value>
+  </data>
+  <data name="Insertatitle" xml:space="preserve">
+    <value>Insérer un titre</value>
+  </data>
+  <data name="Insertnumber5100" xml:space="preserve">
+    <value>Insérez un nombre entre 5 et 100</value>
+  </data>
+  <data name="Jan" xml:space="preserve">
+    <value>Jan</value>
+  </data>
+  <data name="January" xml:space="preserve">
+    <value>Janvier</value>
+  </data>
+  <data name="Jul" xml:space="preserve">
+    <value>Jui</value>
+  </data>
+  <data name="July" xml:space="preserve">
+    <value>Juillet</value>
+  </data>
+  <data name="Jun" xml:space="preserve">
+    <value>Jui</value>
+  </data>
+  <data name="June" xml:space="preserve">
+    <value>Juin</value>
+  </data>
+  <data name="LastArticles" xml:space="preserve">
+    <value>Derniers Articles</value>
+  </data>
+  <data name="LastComments" xml:space="preserve">
+    <value>Derniers Commentaires</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>Liste</value>
+  </data>
+  <data name="Mar" xml:space="preserve">
+    <value>Mar</value>
+  </data>
+  <data name="March" xml:space="preserve">
+    <value>Mars</value>
+  </data>
+  <data name="May" xml:space="preserve">
+    <value>Mai</value>
+  </data>
+  <data name="May2" xml:space="preserve">
+    <value>Mai</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>Nouveau</value>
+  </data>
+  <data name="NewArticle" xml:space="preserve">
+    <value>Nouvel article</value>
+  </data>
+  <data name="noarticlesapproved" xml:space="preserve">
+    <value>Il n'y a aucun élément à approuver</value>
+  </data>
+  <data name="nocomments" xml:space="preserve">
+    <value>Il n'y a aucun commentaire pour approuver</value>
+  </data>
+  <data name="nopermission" xml:space="preserve">
+    <value>Vous n'avez pas la permission d'accéder à cette page.</value>
+  </data>
+  <data name="NoRecentArticles" xml:space="preserve">
+    <value>Aucun article récent</value>
+  </data>
+  <data name="NoRecentComments" xml:space="preserve">
+    <value>Aucun commentaire récent</value>
+  </data>
+  <data name="Nov" xml:space="preserve">
+    <value>Nov</value>
+  </data>
+  <data name="November" xml:space="preserve">
+    <value>Novembre</value>
+  </data>
+  <data name="NumberofArticles" xml:space="preserve">
+    <value>- Nombre d'articles:</value>
+  </data>
+  <data name="NumberofArticlesexp" xml:space="preserve">
+    <value>Le nombre d'articles affichés par page.</value>
+  </data>
+  <data name="Oct" xml:space="preserve">
+    <value>Oct</value>
+  </data>
+  <data name="October" xml:space="preserve">
+    <value>Octobre</value>
+  </data>
+  <data name="Optional" xml:space="preserve">
+    <value>Facultatif</value>
+  </data>
+  <data name="or" xml:space="preserve">
+    <value>ou</value>
+  </data>
+  <data name="Pagegenerated" xml:space="preserve">
+    <value>Page générée dans le</value>
+  </data>
+  <data name="SaveSettings" xml:space="preserve">
+    <value>Enregistrer les paramètres</value>
+  </data>
+  <data name="seconds" xml:space="preserve">
+    <value>secondes</value>
+  </data>
+  <data name="Selectcategory" xml:space="preserve">
+    <value>Sélectionnez une catégorie</value>
+  </data>
+  <data name="SelectMonth" xml:space="preserve">
+    <value>Sélectionnez un mois:</value>
+  </data>
+  <data name="Sep" xml:space="preserve">
+    <value>Sep</value>
+  </data>
+  <data name="September" xml:space="preserve">
+    <value>Septembre</value>
+  </data>
+  <data name="SetasaSideNews" xml:space="preserve">
+    <value>Définir comme Side News ?</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Paramètres</value>
+  </data>
+  <data name="SideNews" xml:space="preserve">
+    <value>Side News?</value>
+  </data>
+  <data name="SiteInfo" xml:space="preserve">
+    <value>Site Info</value>
+  </data>
+  <data name="SiteLayout" xml:space="preserve">
+    <value>Site Layout</value>
+  </data>
+  <data name="SiteSettings" xml:space="preserve">
+    <value>Paramètres du site</value>
+  </data>
+  <data name="Subscribe" xml:space="preserve">
+    <value>Souscrire</value>
+  </data>
+  <data name="Summary" xml:space="preserve">
+    <value>Sommaire</value>
+  </data>
+  <data name="TagBox" xml:space="preserve">
+    <value>Tag Box</value>
+  </data>
+  <data name="Tags" xml:space="preserve">
+    <value>Tags:</value>
+  </data>
+  <data name="Tagscommas" xml:space="preserve">
+    <value>(Entre les tag séparées par des virgules)</value>
+  </data>
+  <data name="Templates" xml:space="preserve">
+    <value>Templates</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Titre</value>
+  </data>
+  <data name="Users" xml:space="preserve">
+    <value>Utilisateurs</value>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>Voir</value>
+  </data>
+  <data name="ViewComments" xml:space="preserve">
+    <value>Voir les commentaires</value>
+  </data>
+  <data name="ViewCopyrightOnImage" xml:space="preserve">
+    <value>- Après Copyright sur l'image?</value>
+  </data>
+  <data name="ViewCopyrightOnImageexp" xml:space="preserve">
+    <value>toutes les images téléchargées affichera le nom du site.</value>
+  </data>
+  <data name="ViewNews" xml:space="preserve">
+    <value>Voir Nouvelles</value>
+  </data>
+  <data name="Viewpostedby" xml:space="preserve">
+    <value>Voir Rédigé par?</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Ajouter</value>
+  </data>
+  <data name="AddAuthor" xml:space="preserve">
+    <value>Ajouter Auteur</value>
+  </data>
+  <data name="AdminEmail" xml:space="preserve">
+    <value>- Email Admin:</value>
+  </data>
+  <data name="ApproveCom" xml:space="preserve">
+    <value>- Approuver Commentaires?</value>
+  </data>
+  <data name="ApproveComexp" xml:space="preserve">
+    <value>If selected, all new comments have to be approved by an admin.</value>
+  </data>
+  <data name="ApproveUser" xml:space="preserve">
+    <value>Approuver l'utilisateur</value>
+  </data>
+  <data name="bannerinfo" xml:space="preserve">
+    <value>Le banner sera affichée en haut de chaque page</value>
+  </data>
+  <data name="BannerResizeHeight" xml:space="preserve">
+    <value>et / ou Height:</value>
+  </data>
+  <data name="BannerResizeWidth" xml:space="preserve">
+    <value>Set Banner Resize Width:</value>
+  </data>
+  <data name="Categoryname" xml:space="preserve">
+    <value>Nom de la catégorie:</value>
+  </data>
+  <data name="ChangeEmail" xml:space="preserve">
+    <value>Changer email</value>
+  </data>
+  <data name="Changeemailforuser" xml:space="preserve">
+    <value>Changer email de l'utilisateur:</value>
+  </data>
+  <data name="ChangeFather" xml:space="preserve">
+    <value>Changer père</value>
+  </data>
+  <data name="ChooseAuthor" xml:space="preserve">
+    <value>Choisissez Auteur:</value>
+  </data>
+  <data name="ChooseFat" xml:space="preserve">
+    <value>Choisissez 'Père':</value>
+  </data>
+  <data name="ChooseFatherCat" xml:space="preserve">
+    <value>Choisissez Parent Category:</value>
+  </data>
+  <data name="ChooseRole" xml:space="preserve">
+    <value>Choisissez rôle:</value>
+  </data>
+  <data name="Choosetype" xml:space="preserve">
+    <value>Choisissez le type -</value>
+  </data>
+  <data name="CreateDate" xml:space="preserve">
+    <value>Date de création</value>
+  </data>
+  <data name="DeleteUser" xml:space="preserve">
+    <value>Supprimer l'utilisateur</value>
+  </data>
+  <data name="Dropdown" xml:space="preserve">
+    <value>Dropdown</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="EnableArchiveMenu" xml:space="preserve">
+    <value>- Activer ArchiveMenu?</value>
+  </data>
+  <data name="EnableBBCode" xml:space="preserve">
+    <value>- Activer BBCode editor?</value>
+  </data>
+  <data name="EnableBBCodeexp" xml:space="preserve">
+    <value>éditeur de BBCODE sera disponible lorsque vous soumettez un commentaire</value>
+  </data>
+  <data name="EnableComCaptcha" xml:space="preserve">
+    <value>- Activer Comments Captcha ?</value>
+  </data>
+  <data name="EnableComCaptchaexp" xml:space="preserve">
+    <value>Tous les utilisateurs doivent entrer un code de confirmation avant de poster un commentaire.</value>
+  </data>
+  <data name="EnableEmailConfirmation" xml:space="preserve">
+    <value>- Activer Email Confirmation ?</value>
+  </data>
+  <data name="EnableEmailConfirmationexp" xml:space="preserve">
+    <value>les nouveaux utilisateurs recevront un e-mail pour confirmer l'enregistrement.</value>
+  </data>
+  <data name="EnableLABox" xml:space="preserve">
+    <value>- Activer Derniers articles ?</value>
+  </data>
+  <data name="EnableLABoxexp" xml:space="preserve">
+    <value>Derniers articles seront affichés sur la barre latérale.</value>
+  </data>
+  <data name="EnableLCBox" xml:space="preserve">
+    <value>- Activer les derniers commentaires ?</value>
+  </data>
+  <data name="EnableLCBoxexp" xml:space="preserve">
+    <value>les derniers articles commentés par les utilisateurs</value>
+  </data>
+  <data name="EnableRegCaptcha" xml:space="preserve">
+    <value>- Activer Registration Captcha ?</value>
+  </data>
+  <data name="EnableRegCaptchaexp" xml:space="preserve">
+    <value>Avez tous les nouveaux utilisateurs de confirmer une image de sécurité.</value>
+  </data>
+  <data name="EnableSearch" xml:space="preserve">
+    <value>- Activer la recherche?</value>
+  </data>
+  <data name="EnableSearchexp" xml:space="preserve">
+    <value>la recherche sera affiché en haut de la barre latérale</value>
+  </data>
+  <data name="EnableSideMenu" xml:space="preserve">
+    <value>- Activer SideMenu ?</value>
+  </data>
+  <data name="EnableSideMenuexp" xml:space="preserve">
+    <value>le menu latéral avec un link vers les principales catégories.</value>
+  </data>
+  <data name="EnableTagBox" xml:space="preserve">
+    <value>- Activer Tag Box ?</value>
+  </data>
+  <data name="EnableTopBanner" xml:space="preserve">
+    <value>- Activer TopBanner ?</value>
+  </data>
+  <data name="EnableTopMenu" xml:space="preserve">
+    <value>- Activer TopMenu ?</value>
+  </data>
+  <data name="EnableTopMenuexp" xml:space="preserve">
+    <value>le menu horizontal en haut de la page</value>
+  </data>
+  <data name="EnableValidators" xml:space="preserve">
+    <value>- Activer validateurs ?</value>
+  </data>
+  <data name="EnableValidatorsexp" xml:space="preserve">
+    <value>Boutons de validation (xhtml, css, rss) sera montré à la fin de la barre latérale</value>
+  </data>
+  <data name="Father" xml:space="preserve">
+    <value>Père</value>
+  </data>
+  <data name="Generatenewpassword" xml:space="preserve">
+    <value>Générer un nouveau  mot de passe</value>
+  </data>
+  <data name="Insertemail" xml:space="preserve">
+    <value>Insérer une adresse email valide</value>
+  </data>
+  <data name="InsertNewImage" xml:space="preserve">
+    <value>Insérez une nouvelle image</value>
+  </data>
+  <data name="Insertvalidheigth" xml:space="preserve">
+    <value>Insérer une hauteur valide.</value>
+  </data>
+  <data name="Insertvalidwidth" xml:space="preserve">
+    <value>Insérer une largeur valide.</value>
+  </data>
+  <data name="Isasubcat" xml:space="preserve">
+    <value>Est une sous-catégorie?</value>
+  </data>
+  <data name="LastActivity" xml:space="preserve">
+    <value>Dernière_activité</value>
+  </data>
+  <data name="leaveblanknores" xml:space="preserve">
+    <value>(Laissez en blanc pour ne pas redimensionner)</value>
+  </data>
+  <data name="NumberComments" xml:space="preserve">
+    <value>- Nombre de commentaires:</value>
+  </data>
+  <data name="NumberCommentsexp" xml:space="preserve">
+    <value>Le nombre de commentaires affichés par page.</value>
+  </data>
+  <data name="order" xml:space="preserve">
+    <value>Trier</value>
+  </data>
+  <data name="Passwordemail" xml:space="preserve">
+    <value>mot de passe e-mail</value>
+  </data>
+  <data name="port" xml:space="preserve">
+    <value>port</value>
+  </data>
+  <data name="Publish" xml:space="preserve">
+    <value>Publier?</value>
+  </data>
+  <data name="PublisherPerm" xml:space="preserve">
+    <value>ne peut créer de nouveaux articles et d'approuver les commentaires</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Retirer</value>
+  </data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>Champ obligatoire</value>
+  </data>
+  <data name="RequiredFieldCat" xml:space="preserve">
+    <value>Champ obligatoire: Nom de la catégorie</value>
+  </data>
+  <data name="role" xml:space="preserve">
+    <value>rôle</value>
+  </data>
+  <data name="SetupMainCat" xml:space="preserve">
+    <value>Configurer en tant que catégorie principale</value>
+  </data>
+  <data name="Simple" xml:space="preserve">
+    <value>Simple</value>
+  </data>
+  <data name="SiteName" xml:space="preserve">
+    <value>- Nom du site:</value>
+  </data>
+  <data name="SiteUrl" xml:space="preserve">
+    <value>- Url du site:</value>
+  </data>
+  <data name="smtpserver" xml:space="preserve">
+    <value>smtpserver</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Mise à jour</value>
+  </data>
+  <data name="url" xml:space="preserve">
+    <value>url</value>
+  </data>
+  <data name="Useremail" xml:space="preserve">
+    <value>e-mail de l'utilisateur</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>UserName</value>
+  </data>
+  <data name="Viewnumberart" xml:space="preserve">
+    <value>- Voir le nombre d'articles?</value>
+  </data>
+  <data name="Viewnumberartexp" xml:space="preserve">
+    <value>Près d'un mois (dans le menu des archives) sera montré le nombre d'articles connexes.</value>
+  </data>
+  <data name="Activated" xml:space="preserve">
+    <value>Activée</value>
+  </data>
+  <data name="AddTagbox" xml:space="preserve">
+    <value>Ajouter Tag</value>
+  </data>
+  <data name="AddTemplate" xml:space="preserve">
+    <value>Ajouter un Template</value>
+  </data>
+  <data name="Article" xml:space="preserve">
+    <value>Article</value>
+  </data>
+  <data name="asperc" xml:space="preserve">
+    <value>en %</value>
+  </data>
+  <data name="aspx" xml:space="preserve">
+    <value>en px</value>
+  </data>
+  <data name="AuthorSite" xml:space="preserve">
+    <value>Site de l'auteur:</value>
+  </data>
+  <data name="cannotchoosesamecat" xml:space="preserve">
+    <value>Vous ne pouvez pas choisir la même catégorie.</value>
+  </data>
+  <data name="cannotdeleteadmin" xml:space="preserve">
+    <value>Vous ne pouvez pas annuler l'utilisateur Admin</value>
+  </data>
+  <data name="cannotdeleteart" xml:space="preserve">
+    <value>Vous ne pouvez pas annuler cet article, car il ya des commentaires qui lui sont associés.</value>
+  </data>
+  <data name="cannotdeletecat" xml:space="preserve">
+    <value>Vous ne pouvez pas annuler cette catégorie, car il n'y a pas d'articles ou de sous-catégories qui lui sont associés.</value>
+  </data>
+  <data name="cannotremove" xml:space="preserve">
+    <value>Vous ne pouvez pas supprimer</value>
+  </data>
+  <data name="CategoryUpdated" xml:space="preserve">
+    <value>Mise à jour catégorie</value>
+  </data>
+  <data name="Checknewtemp" xml:space="preserve">
+    <value>Vérifiez nouveaux templates à télécharger</value>
+  </data>
+  <data name="chooseanothercat" xml:space="preserve">
+    <value>Vous devez choisir une autre catégorie.</value>
+  </data>
+  <data name="ChooseBGColor" xml:space="preserve">
+    <value>- Choisissez background color:</value>
+  </data>
+  <data name="ChooseHeadBG" xml:space="preserve">
+    <value>- Choisissez Header BGColor:</value>
+  </data>
+  <data name="ChooseSiteWidth" xml:space="preserve">
+    <value>- Choisissez Largeur du site:</value>
+  </data>
+  <data name="ChooseTemplate" xml:space="preserve">
+    <value>- Template:</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>Confirmer</value>
+  </data>
+  <data name="confirmdeleteacc" xml:space="preserve">
+    <value>confirmer ??? (le compte ne peut être réactivé)</value>
+  </data>
+  <data name="confirmtemplate" xml:space="preserve">
+    <value>Cliquez sur le bouton pour confirmer, le template sera utilisé dans le site.</value>
+  </data>
+  <data name="contactadminerror" xml:space="preserve">
+    <value>S'il vous plaît contacter l'administrateur si ce message persiste.</value>
+  </data>
+  <data name="ContactPage" xml:space="preserve">
+    <value>Contact Page</value>
+  </data>
+  <data name="deleteuserreq" xml:space="preserve">
+    <value>Avant de supprimer l'utilisateur de les auteurs</value>
+  </data>
+  <data name="error" xml:space="preserve">
+    <value>Il y avait une erreur.</value>
+  </data>
+  <data name="GoBack" xml:space="preserve">
+    <value>Aller Retour</value>
+  </data>
+  <data name="Hi" xml:space="preserve">
+    <value>Salut</value>
+  </data>
+  <data name="Insertsize940" xml:space="preserve">
+    <value>Insérer une taille comprise entre 9 et 40</value>
+  </data>
+  <data name="InsertTag" xml:space="preserve">
+    <value>Insérer Tag</value>
+  </data>
+  <data name="inserttaghere" xml:space="preserve">
+    <value>Insérer Tag ici</value>
+  </data>
+  <data name="InsertvalidDate" xml:space="preserve">
+    <value>Insérer une date valide.</value>
+  </data>
+  <data name="loginsendmsg" xml:space="preserve">
+    <value>Vous devez être connecté pour envoyer un message.</value>
+  </data>
+  <data name="Messagesent" xml:space="preserve">
+    <value>Message envoyé.</value>
+  </data>
+  <data name="modifyaccmsg" xml:space="preserve">
+    <value>Sur cette page vous pouvez modifier votre account.</value>
+  </data>
+  <data name="Msgfromuser" xml:space="preserve">
+    <value>Message de l'utilisateur</value>
+  </data>
+  <data name="msglimit" xml:space="preserve">
+    <value>Message ne peut pas avoir plus de 1000 caractères.</value>
+  </data>
+  <data name="msglimitcontact" xml:space="preserve">
+    <value>Message (1000 caractères au maximum)</value>
+  </data>
+  <data name="MyAccount" xml:space="preserve">
+    <value>Mon Account</value>
+  </data>
+  <data name="name" xml:space="preserve">
+    <value>nom</value>
+  </data>
+  <data name="newpswgenby" xml:space="preserve">
+    <value>Nouveau  mot de passe généré par</value>
+  </data>
+  <data name="newpswgenerated" xml:space="preserve">
+    <value>Un nouveau  mot de passe a été généré par le système</value>
+  </data>
+  <data name="newpswsent" xml:space="preserve">
+    <value>Un nouveau mot de passe a été généré et envoyé.</value>
+  </data>
+  <data name="nopermupdwebconf" xml:space="preserve">
+    <value>n'avez pas la permission de mettre à jour le fichier web.config. Mettre à jour manuellement la section SMTP du web.config</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Mot de passe</value>
+  </data>
+  <data name="removed" xml:space="preserve">
+    <value>retiré.</value>
+  </data>
+  <data name="SecurityQuestion" xml:space="preserve">
+    <value>Question de sécurité</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>Envoyer</value>
+  </data>
+  <data name="siteauthor" xml:space="preserve">
+    <value>site de l'auteur</value>
+  </data>
+  <data name="Size" xml:space="preserve">
+    <value>Taille</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>Sujet</value>
+  </data>
+  <data name="Tag" xml:space="preserve">
+    <value>Tag</value>
+  </data>
+  <data name="Template" xml:space="preserve">
+    <value>Template</value>
+  </data>
+  <data name="Templatename" xml:space="preserve">
+    <value>Nom du Template:</value>
+  </data>
+  <data name="UploadFile" xml:space="preserve">
+    <value>Transmettre un fichier:</value>
+  </data>
+  <data name="Useralrapproved" xml:space="preserve">
+    <value>Utilisateur déjà approuvés.</value>
+  </data>
+  <data name="Userapproved" xml:space="preserve">
+    <value>Utilisateur approuvé.</value>
+  </data>
+  <data name="Userdeleted" xml:space="preserve">
+    <value>Utilisateur supprimé.</value>
+  </data>
+  <data name="yetMainCat" xml:space="preserve">
+    <value>Il est encore à la catégorie principale.</value>
+  </data>
+  <data name="AccountInformation" xml:space="preserve">
+    <value>Informations de Account</value>
+  </data>
+  <data name="ActivateAccount" xml:space="preserve">
+    <value>Activez votre Account</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Annuler</value>
+  </data>
+  <data name="Changemailadd" xml:space="preserve">
+    <value>Changer votre adresse email:</value>
+  </data>
+  <data name="ChangeQA" xml:space="preserve">
+    <value>Changer votre sécurité en questions et réponses:</value>
+  </data>
+  <data name="ChangeQAbtn" xml:space="preserve">
+    <value>Changer Question and Answer</value>
+  </data>
+  <data name="checkemail" xml:space="preserve">
+    <value>Consultez votre email pour activer votre account</value>
+  </data>
+  <data name="DeleteAcc" xml:space="preserve">
+    <value>Supprimer Account</value>
+  </data>
+  <data name="DeleteAccount" xml:space="preserve">
+    <value>Supprimer votre Account:</value>
+  </data>
+  <data name="DeleteMe" xml:space="preserve">
+    <value>Supprimer Me</value>
+  </data>
+  <data name="Emailupdated" xml:space="preserve">
+    <value>Email updated.</value>
+  </data>
+  <data name="Emailused" xml:space="preserve">
+    <value>Un autre account utilisé par email.</value>
+  </data>
+  <data name="followlink" xml:space="preserve">
+    <value>S'il vous plaît cliquer sur ce link pour activer:</value>
+  </data>
+  <data name="ForgotPsw" xml:space="preserve">
+    <value>J'ai oublié mon  mot de passe</value>
+  </data>
+  <data name="Incorrectpassword" xml:space="preserve">
+    <value>mot de passe incorrect</value>
+  </data>
+  <data name="linknowork" xml:space="preserve">
+    <value>Si le lien ne fonctionne pas, copiez cette url dans votre browser:</value>
+  </data>
+  <data name="Loginerror" xml:space="preserve">
+    <value>L'utilisateur n'existe pas.</value>
+  </data>
+  <data name="needtoactivateacc" xml:space="preserve">
+    <value>Votre account n'a pas été activé, vérifiez votre email et confirmer l'inscription</value>
+  </data>
+  <data name="NewAnswer" xml:space="preserve">
+    <value>Security Response Nouveau:</value>
+  </data>
+  <data name="NewQA" xml:space="preserve">
+    <value>Question de sécurité:</value>
+  </data>
+  <data name="NewUser" xml:space="preserve">
+    <value>Nouvel utilisateur?</value>
+  </data>
+  <data name="Registerhere" xml:space="preserve">
+    <value>Inscrivez-vous ici</value>
+  </data>
+  <data name="RegisterPage" xml:space="preserve">
+    <value>Inscrivez-Page</value>
+  </data>
+  <data name="Registrationcompleted" xml:space="preserve">
+    <value>D'inscription dûment rempli.</value>
+  </data>
+  <data name="Resultsfor" xml:space="preserve">
+    <value>Résultats pour:</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Rechercher</value>
+  </data>
+  <data name="SecurityImage" xml:space="preserve">
+    <value>Image de sécurité:</value>
+  </data>
+  <data name="Thankaccount" xml:space="preserve">
+    <value>Merci pour la création de votre account.</value>
+  </data>
+  <data name="YourPsw" xml:space="preserve">
+    <value>Votre mot de passe actuel:</value>
+  </data>
+  <data name="EnableEmailConfirmationexp2" xml:space="preserve">
+    <value>Insérer les informations SMTP correcte</value>
+  </data>
+  <data name="Share" xml:space="preserve">
+    <value>Partager</value>
+  </data>
+  <data name="wrote" xml:space="preserve">
+    <value>écrit</value>
+  </data>
+  <data name="NewerEntries" xml:space="preserve">
+    <value>--- Entrées les plus récents ---</value>
+  </data>
+  <data name="OlderEntries" xml:space="preserve">
+    <value>--- Entrées âgées ---</value>
+  </data>
+  <data name="EnableAnonymous" xml:space="preserve">
+    <value>- Activer les commentaires anonymes ?</value>
+  </data>
+  <data name="OnlineUsers" xml:space="preserve">
+    <value>Utilisateurs en ligne</value>
+  </data>
+  <data name="Members" xml:space="preserve">
+    <value>Membres</value>
+  </data>
+  <data name="OnlineNow" xml:space="preserve">
+    <value>En ligne maintenant</value>
+  </data>
+  <data name="TotalUsers" xml:space="preserve">
+    <value>Nombre total d'utilisateurs</value>
+  </data>
+  <data name="Visitors" xml:space="preserve">
+    <value>Visiteurs</value>
+  </data>
+  <data name="EnableOnlineUsers" xml:space="preserve">
+    <value>- Enable Users Online Box ?</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="ChooseArtImageWidth" xml:space="preserve">
+    <value>- Choisissez la largeur de l'image pour les articles</value>
+  </data>
+  <data name="FileUploaded" xml:space="preserve">
+    <value>File Uploaded</value>
+  </data>
+  <data name="DeleteAvatar" xml:space="preserve">
+    <value>Supprimer Avatar</value>
+  </data>
+  <data name="AvatarDeleted" xml:space="preserve">
+    <value>Avatar supprimé</value>
+  </data>
+  <data name="TypeletterserrorReg" xml:space="preserve">
+    <value>Le texte n'est pas correct.</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>Mois</value>
+  </data>
+  <data name="Year" xml:space="preserve">
+    <value>Année</value>
+  </data>
+  <data name="Filterbycat" xml:space="preserve">
+    <value>Filtrer par catégorie</value>
+  </data>
+  <data name="ChangeMonth" xml:space="preserve">
+    <value>Changer mois</value>
+  </data>
+  <data name="ContentArchive" xml:space="preserve">
+    <value>Content Archive</value>
+  </data>
+  <data name="RelatedContent" xml:space="preserve">
+    <value>Contenu associés:</value>
+  </data>
+  <data name="In" xml:space="preserve">
+    <value>en</value>
+  </data>
+  <data name="Page" xml:space="preserve">
+    <value>page</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>Tous les</value>
+  </data>
+  <data name="Youarehere" xml:space="preserve">
+    <value>Vous êtes ici:</value>
+  </data>
+  <data name="Of" xml:space="preserve">
+    <value>des</value>
+  </data>
+  <data name="today" xml:space="preserve">
+    <value>aujourd'hui</value>
+  </data>
+  <data name="yesterday" xml:space="preserve">
+    <value>hier</value>
+  </data>
+  <data name="ago" xml:space="preserve">
+    <value>ago</value>
+  </data>
+  <data name="days" xml:space="preserve">
+    <value>days</value>
+  </data>
+  <data name="hour" xml:space="preserve">
+    <value>hour</value>
+  </data>
+  <data name="hours" xml:space="preserve">
+    <value>hours</value>
+  </data>
+  <data name="minute" xml:space="preserve">
+    <value>minute</value>
+  </data>
+  <data name="minutes" xml:space="preserve">
+    <value>minutes</value>
+  </data>
+  <data name="second" xml:space="preserve">
+    <value>second</value>
+  </data>
+  <data name="report" xml:space="preserve">
+    <value>Signaler</value>
+  </data>
+  <data name="Reason" xml:space="preserve">
+    <value>Raison</value>
+  </data>
+  <data name="Reported" xml:space="preserve">
+    <value>Reported</value>
+  </data>
+  <data name="AllComments" xml:space="preserve">
+    <value>All Comments</value>
+  </data>
+</root>

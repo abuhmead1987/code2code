@@ -1,0 +1,233 @@
+﻿body
+{
+	font-family:Tahoma;
+	font-size:11px;
+	text-align:justify;
+	margin:0px;
+	padding:0px;
+	background-color:#678FC2;
+}
+.PageHeader
+{
+	background-image:url('/Tshirt/Images/pageHeader.jpg');
+	background-repeat:no-repeat;
+	background-color:#ffffff;
+	width:979px;
+	height:43px;
+	float:left;
+	padding-left:25px;
+	padding-top:18px;
+}
+.CssThanhToan
+{
+	float: left; color: #3D3C3C; font-family: Arial; font-size: 12px; margin: 10px 0px 0px 40px;
+}
+.InformationCustomer
+{
+	float:left;
+	width:425px;
+	height:30px;
+	background-image:url('/Tshirt/Images/bgTopInfomationInput.gif');	
+	margin:5px 0px 0px 0px;
+}
+.TitleCaptionInput
+{
+	float:left;
+	font-family:Arial;
+	font-size:12px;
+	color:#D91A5D;
+	text-transform:uppercase;
+	margin:9px 0px 0px 5px;
+}
+.RTopLeft
+{
+	float:left;
+	width:12px;
+	height:42px;
+	background-image:url('/Tshirt/Images/top-left.gif');	
+}
+.RTopLogo
+{
+	float:left;
+	width:225px;
+	height:42px;
+	background-image:url('/Tshirt/Images/ribbonText.gif');	
+}
+.RTopCenter
+{
+	float:left;
+	width:690px;
+	height:42px;
+	background-image:url('/Tshirt/Images/top-center.gif');
+	text-align:right;
+	font-size:11px;
+	padding-top:15px;
+	padding-right:10px;
+	font-weight:bold;
+}
+.RTopRight
+{
+	float:left;
+	width:12px;
+	height:42px;
+	background-image:url('/Tshirt/Images/top-right.gif');	
+}
+.clear 
+{
+	clear:both;
+}
+.MenuBar
+{
+	background-image:url('/Tshirt/Images/pageBody.jpg');
+	background-repeat:repeat-y;
+	width:979px;
+	float:left;
+	padding-left:25px;
+	padding-bottom:25px;
+}
+.filterHeader {
+	background-image:url('/Tshirt/Images/dgFooter.gif');
+	height:20px;
+	vertical-align:middle;
+}
+.PageBody
+{
+	background-image:url('/Tshirt/Images/pageBody.jpg');
+	background-repeat:repeat-y;
+	width:1004px;
+	float:left;
+	padding-left:0px;
+}
+.PageBottom
+{
+	background-image:url('/Tshirt/Images/pageBottom.jpg');
+	width:1004px;
+	height:31px;
+	float:left;
+}
+.TextboxSearch {
+	FONT-SIZE: 11px;
+	COLOR: #4372CB;
+	BACKGROUND-REPEAT: repeat-x;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	BACKGROUND-COLOR: #ffffff;
+	width: 300px;
+	BORDER-RIGHT:#84A5CE 1px solid;
+	BORDER-TOP:#84A5CE 1px solid;
+	BORDER-LEFT:#C1D2E7 1px solid;
+	BORDER-BOTTOM:#C1D2E7 1px solid;
+}
+
+.Button {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #11449E;
+	background-image: url('/Tshirt/Images/button-bg.png');
+	background-repeat: repeat-x;
+	border: 1px solid #BFA277;
+	height: 19px;
+}
+.Dropdown
+{
+	font-size:11px;
+	width: 305px;
+	background-color: #FFFFFF;	
+}
+.filterBox
+{
+	border:solid 1px gray;
+	padding:5px;
+	width:450px;
+	margin:5px;
+	background-image:url('/Tshirt/Images/filterBg.gif');
+	background-repeat:repeat-x;
+	background-color:#CBDAEF;
+	color:#4C4C4C;	
+	float:left;
+}
+.dgFooter {
+	background-image:url('/Tshirt/Images/dgHeader.gif');
+	height:18px;
+	background-color:#D3DCE9;
+}
+
+.dgPager {
+	background-image:url('/Tshirt/Images/dgPager.gif');
+	height:19px;
+}
+.dgGrid
+{
+	border:solid 1px #D0D7E5;
+}
+.TableFitter
+{
+	float:left;
+	margin-top:20px;
+}
+.dgHeader
+{
+	color:#304880;
+	font-weight:bold;
+	padding-left:2px;
+}
+tr.dgItem:hover, tr.dgItem.over td, tr.dgAltItem:hover, tr.dgAltItem.over td
+{ 
+	background-image:url('/Tshirt/Images/dgHeaderOver.gif');
+}
+tr.dgHeader {
+	background-image:url('/Tshirt/Images/dgHeader.gif');
+	height:18px;
+}
+.FieldTD
+{
+	width:150px;
+}
+.errorMessage
+{
+	font-size: 12pt;
+	font-weight: bold;
+	color: Red;
+}
+.FieldCaption
+{
+	font-family: Tahoma, Arial;
+	font-size: 10pt;
+}
+.Textbox {
+	FONT-SIZE: 11px;
+	COLOR: #4372CB;
+	BACKGROUND-REPEAT: repeat-x;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	BACKGROUND-COLOR: #ffffff;
+	width: 500px;
+	BORDER-RIGHT:#84A5CE 1px solid;
+	BORDER-TOP:#84A5CE 1px solid;
+	BORDER-LEFT:#C1D2E7 1px solid;
+	BORDER-BOTTOM:#C1D2E7 1px solid;
+}
+.RadTextbox {
+	FONT-SIZE: 11px;
+	COLOR: #4372CB;
+	BACKGROUND-REPEAT: repeat-x;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	BACKGROUND-COLOR: #ffffff;
+	width: 650px;
+	BORDER-RIGHT:#84A5CE 1px solid;
+	BORDER-TOP:#84A5CE 1px solid;
+	BORDER-LEFT:#C1D2E7 1px solid;
+	BORDER-BOTTOM:#C1D2E7 1px solid;
+}
+.TopicList
+{
+	float:left;
+	margin-left:25px;
+	border:solid 1px black;
+	width:170px;
+}
+.TopficLeft
+{
+	float:left;
+	margin-left:25px;
+	width:580px;
+	height:20px;	
+}

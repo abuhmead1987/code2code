@@ -1,0 +1,101 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPageAdmin.master.cs"
+    Inherits="PGFine.Amincp.MP.MasterPageAdmin" %>
+
+<%@ Register Assembly="RadMenu.Net2" Namespace="Telerik.WebControls" TagPrefix="radM" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Trang Quản Lý Thông Tin Dữ Liệu Admin !</title>
+    <link href="../Css/CssAdmin.css" rel="stylesheet" type="text/css" />
+    <script src="../Amincp/js/jquery-1.8.0.min.js" type="text/javascript"></script>
+    <script src="../Amincp/js/jquery.ui.datepicker.js" type="text/javascript"></script>
+    <script src="../Amincp/js/jquery-ui-1.8.23.custom.min.js" type="text/javascript"></script>
+    <link href="../Css/ui-lightness/jquery-ui-1.8.23.custom.css" rel="stylesheet" type="text/css" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <div class="PageHeader">
+        <div class="RTopLeft">
+        </div>
+        <div class="RTopLogo">
+        </div>
+        <div class="RTopCenter">
+            <asp:Label ID="Label1" runat="server" Text="Xin Chào bạn Admin!"></asp:Label>
+        </div>
+        <div class="RTopRight">
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+    <%--tạo menu cho admin--%>
+    <div class="MenuBar">
+        <radM:RadMenu ID="RadMenu1" runat="server" Skin="Office2007" Font-Names="Arial" Font-Size="12pt">
+            <Items>
+                <radM:RadMenuItem ID="RadMenuItem5" runat="server" Text="Hệ Thống">
+                    <Items>
+                        <radM:RadMenuItem ID="RadMenuItem7" runat="server" Text="Đổi mật khẩu" NavigateUrl="~/Amincp/ChangcePassWord.aspx">
+                        </radM:RadMenuItem>
+                        <radM:RadMenuItem ID="RadMenuItem8" runat="server" Text="Thoát" NavigateUrl="~/Amincp/LogOut.aspx">
+                        </radM:RadMenuItem>
+                    </Items>
+                </radM:RadMenuItem>
+                <radM:RadMenuItem ID="RadMenuItem1" runat="server" Text="Chuyên mục/Chủ đề" NavigateUrl="~/Amincp/ManagerTopFicList.aspx">
+                    <Items>
+                        <radM:RadMenuItem ID="RadMenuItem2" runat="server" Text="Danh sách" NavigateUrl="~/Amincp/ManagerTopFicList.aspx">
+                        </radM:RadMenuItem>
+                        <radM:RadMenuItem ID="RadMenuItem3" runat="server" Text="Thêm mới/Chỉnh sửa" NavigateUrl="~/Amincp/ManagerTopFicEditor.aspx?Flag=Insert">
+                        </radM:RadMenuItem>
+                    </Items>
+                </radM:RadMenuItem>
+                <radM:RadMenuItem ID="RadMenuItem4" runat="server" Text="Tin tức" NavigateUrl="~/Amincp/ManagerNews.aspx">
+                    <Items>
+                        <radM:RadMenuItem ID="RadMenuItem6" runat="server" Text="Tin tức" NavigateUrl="~/Amincp/ManagerNews.aspx">
+                        </radM:RadMenuItem>
+                    </Items>
+                </radM:RadMenuItem>
+                <radM:RadMenuItem runat="server" Text="Sản phẩm">
+                    <Items>
+                        <radM:RadMenuItem runat="server" Text="Loại sản phẩm" NavigateUrl="~/Amincp/ManagerTypeProduct.aspx">
+                        </radM:RadMenuItem>
+                        <radM:RadMenuItem runat="server" Text="Sản phẩm" NavigateUrl="~/Amincp/ManagerProduct.aspx">
+                        </radM:RadMenuItem>
+                    </Items>
+                </radM:RadMenuItem>
+                <radM:RadMenuItem ID="RadMenuItem11" runat="server" Text="Giỏ hàng" NavigateUrl="~/Amincp/ManagerCardList.aspx">
+                </radM:RadMenuItem>
+                <radM:RadMenuItem ID="RadMenuItem12" runat="server" Text="Bản đồ" NavigateUrl="~/Amincp/ManagerGoogleMap.aspx">
+                </radM:RadMenuItem>
+                <radM:RadMenuItem ID="RadMenuItem9" runat="server" Text="Liên hệ" NavigateUrl="~/Amincp/ManagerContact.aspx">
+                </radM:RadMenuItem>
+                <radM:RadMenuItem ID="RadMenuItem10" runat="server" Text="Thoát" NavigateUrl="~/Amincp/LogOut.aspx">
+                </radM:RadMenuItem>
+                <%-- <radM:RadMenuItem runat="server" Text="Giới thiệu công ty" NavigateUrl="~/Amincp/ManagerAboutUs.aspx">
+                </radM:RadMenuItem>               
+                <radM:RadMenuItem runat="server" Text="Chương trình giảng dạy" NavigateUrl="~/Amincp/AdminManagerSubject.aspx">
+                </radM:RadMenuItem>
+                <radM:RadMenuItem runat="server" Text="Cố Vấn" NavigateUrl="~/Amincp/ManagerAdvisors.aspx">
+                </radM:RadMenuItem>
+                <radM:RadMenuItem runat="server" Text="Giảng viên" NavigateUrl="~/Amincp/ManagerTrainers.aspx">
+                </radM:RadMenuItem>
+                --%>
+            </Items>
+        </radM:RadMenu>
+    </div>
+    <div class="clear">
+    </div>
+    <div class="PageBody">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div class="clear">
+    </div>
+    <div class="PageBottom">
+    </div>
+    </form>
+</body>
+</html>

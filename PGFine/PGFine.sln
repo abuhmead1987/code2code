@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PGFine", "PGFine\PGFine.csproj", "{73F40E5C-1A65-4910-95C4-544CBC397976}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DB", "DB\DB.csproj", "{F03AF526-F146-4BF2-AAE0-B3B880FDE8B2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73F40E5C-1A65-4910-95C4-544CBC397976}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73F40E5C-1A65-4910-95C4-544CBC397976}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73F40E5C-1A65-4910-95C4-544CBC397976}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73F40E5C-1A65-4910-95C4-544CBC397976}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F03AF526-F146-4BF2-AAE0-B3B880FDE8B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F03AF526-F146-4BF2-AAE0-B3B880FDE8B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F03AF526-F146-4BF2-AAE0-B3B880FDE8B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F03AF526-F146-4BF2-AAE0-B3B880FDE8B2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,7 @@
+<%@ Register TagPrefix="radG" Namespace="Telerik.WebControls" Assembly="RadGrid.Net2" %>
+<radG:RadGrid CssClass="RadGrid" runat="server" AllowPaging="True" AllowSorting="True" PageSize="15" ShowFooter="True" Width="725px" Gridlines="none" BorderWidth="1px">
+	<PagerStyle Mode="NumericPages" CssClass="GridPager" Height="16px"></PagerStyle>
+	<HeaderStyle Height="36px" CssClass="GridHeader" ForeColor="#ffffff"></HeaderStyle>
+	<ItemStyle Height="24px" CssClass="GridRow"></ItemStyle>
+	<AlternatingItemStyle Height="24px" CssClass="GridAltRow"></AlternatingItemStyle>
+</radG:RadGrid>

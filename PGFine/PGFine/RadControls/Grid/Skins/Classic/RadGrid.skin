@@ -1,0 +1,18 @@
+<%@ Register TagPrefix="radG" Namespace="Telerik.WebControls" Assembly="RadGrid.Net2" %>
+<radG:RadGrid CssClass="RadGrid" GridLines="Both" runat="server">
+    <GroupPanel>
+        <PanelItemsStyle CssClass="GroupPanelItems" />
+        <PanelStyle CssClass="GroupPanel" />
+    </GroupPanel>
+    <HeaderStyle CssClass="GridHeader" />
+    <FooterStyle CssClass="GridFooter" />
+    <GroupHeaderItemStyle CssClass="GroupHeader" />
+    <PagerStyle Mode="NumericPages" CssClass="GridPager" />
+    <ItemStyle CssClass="GridRow" />
+    <AlternatingItemStyle CssClass="GridRow" />
+    <MasterTableView CssClass="MasterTable">
+        <RowIndicatorColumn>
+            <ItemStyle CssClass="ResizeItem"></ItemStyle>
+        </RowIndicatorColumn>
+    </MasterTableView>
+</radG:RadGrid>

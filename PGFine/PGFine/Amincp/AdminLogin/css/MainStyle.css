@@ -1,0 +1,73 @@
+﻿.MasterDiv
+{
+	width:1004px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+.clear 
+{
+	clear:both;
+}
+.PageHeader
+{
+	background-image:url(../Images/pageHeader.jpg);
+	background-repeat:no-repeat;
+	background-color:#ffffff;
+	width:979px;
+	height:43px;
+	float:left;
+	padding-left:25px;
+	padding-top:18px;
+}
+
+.PageBody
+{
+	background-image:url(../Images/pageBody.jpg);
+	background-repeat:repeat-y;
+	width:1004px;
+	float:left;
+	padding-left:0px;
+}
+
+.MenuBar
+{
+	background-image:url(../Images/pageBody.jpg);
+	background-repeat:repeat-y;
+	width:979px;
+	float:left;
+	padding-left:25px;
+}
+
+.PageBottom
+{
+	background-image:url(../Images/pageBottom.jpg);
+	width:1004px;
+	height:31px;
+	float:left;
+}
+
+.RTopLeft
+{
+	background-image:url(../Images/top-left.gif);
+	width:12px;
+	height:42px;
+}
+.RTopCenter
+{
+	background-image:url(../Images/top-center.gif);
+}
+
+.RTopLogo
+{
+	background-image:url(../Images/ribbonText.gif);
+	width:225px;
+	height:42px;
+}
+.RTopRight
+{
+	background-image:url(../Images/top-right.gif);
+	width:12px;
+	height:42px;
+}

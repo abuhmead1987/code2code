@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Languages>
+
+  <!--MasterPage-->
+
+  <InputKeyS>Please, Input key..</InputKeyS>
+  <CaptionLang>Tiếng việt</CaptionLang>
+  <Product>PRODUCTS</Product>
+  <CaptionSearch>SEARCH</CaptionSearch>
+  <lbShare>SHARES</lbShare>
+  <Online>HELP ONLINES</Online>
+  <!--CtrlContact-->
+  <InformationContact>Sent your information to us</InformationContact>
+  <CaptionContact>(*) This information is required.</CaptionContact>
+  <Name>Your Name (*)</Name>
+  <Phone>Phone (*)</Phone>
+  <Email>Email (*)</Email>
+  <Address>Address (*)</Address>
+  <Content>Content (*)</Content>
+  <btSent>Send</btSent>
+  <btCancel>Cancel</btCancel>
+  <PaggingPage>Page:</PaggingPage>
+  <ViewAll>View all</ViewAll>
+  <NumberDisplay>Display</NumberDisplay>
+  <BacktoTop>Back to top</BacktoTop>
+  <InforProduct>Information Product</InforProduct>
+  <BuyProduct>Buy Product</BuyProduct>
+  <DescriptionPro>Content:</DescriptionPro>
+  <PromotionalPrice>Promotional Price:</PromotionalPrice>
+  <Status>Status:</Status>
+  <ClickDetail>(Click icon color to view detail product)</ClickDetail>
+  <PriceD>Price:</PriceD>
+  <ColorD>Color:</ColorD>
+  <InputNumber>Input Number:</InputNumber>
+  <ltrChoseColorC>Chose color:</ltrChoseColorC>
+  <ltrSizeD>Chose size:</ltrSizeD>
+  <hplVote>Vote:</hplVote>
+  <SendAdmin>Send testimonial</SendAdmin>
+  <introYour>Send to your's friend</introYour>
+  <PrintPage>Print page</PrintPage>
+  <Uitiliti>Uitility</Uitiliti>
+  <BuyPD>Buy cont</BuyPD>
+  <Summoney>Sum money:</Summoney>
+  <btUpdateCard>Update card</btUpdateCard>
+  <btBuyPC>Buy product</btBuyPC>
+  <btBuyCtinu>Buy Continue</btBuyCtinu>
+
+  <!--Giỏ hàng-->
+  <ltrDelete>Delete</ltrDelete>
+  <ImagesP>Images</ImagesP>
+  <ProductName>Product name</ProductName>
+  <ProductCode>Code product</ProductCode>
+  <ltrSize>Size</ltrSize>
+  <ColorC>Color</ColorC>
+  <Numberc>Number</Numberc>
+  <PriceC>Price</PriceC>
+  <SumM>Money</SumM>
+  <DreakrunC>Your chose Product</DreakrunC>
+  <ltrCondition>
+    + This Product in Card, You can chace number product, if you want delete product, you chance number is 0 or delete product
+    (or your can click mouse in check bok delete in colunms delete ), after you click on
+  </ltrCondition>
+  <ltrCondition1>
+    + You chosed product alredy, you will chose
+  </ltrCondition1>
+  <ltrCondition2>to continue buy product.</ltrCondition2>
+  <ltrCondition3>
+    + To back buy product orthers, you click
+    khác, bạn chọn
+  </ltrCondition3>
+  <ltrCondition4>
+    + If dont want buy this products, You chose all check box and click
+  </ltrCondition4>
+  <ToPay>To Pay</ToPay>
+  <exchange>exchange</exchange>
+  <Continue>Continue</Continue>
+  <MoneyExchange>Money when merchandise exchange</MoneyExchange>
+  <TransferMoney>Transfer (of money) by bank</TransferMoney>
+  <WriteBill>Require write bill.</WriteBill>
+  <ByPost>Merchandise by Post office.</ByPost>
+  <ByAddress>Merchandise at your's address.</ByAddress>
+  <ByCompanyL>Merchandise at Big Nose and Littel Toe.</ByCompanyL>
+  <InformationChance>Information transfer:</InformationChance>
+  <Chutaikhoan>Account holder: Phan Duy Khang</Chutaikhoan>
+  <Sotaikhoan>Account number: 0102555521</Sotaikhoan>
+  <Chinhanh>Dong A bank - Branch Dinh Tien Hoang</Chinhanh>
+  <InformationCustomer>Information person to pay</InformationCustomer>
+  <Alias>Alias:</Alias>
+  <District>District:</District>
+  <tel>Tel:</tel>
+  <Note>Note:</Note>
+  <InformationReceiver>Information persion receiver</InformationReceiver>
+  <Like>Like persion adsress to pay</Like>
+  <Chance>Chance</Chance>
+  <Informationexchange>Information Exchange</Informationexchange>
+  <PaymentMethod>Payment Method</PaymentMethod>
+  <DeleteInformation>Delete Information</DeleteInformation>
+  <ltrNoteCa>If you accept information this, you click</ltrNoteCa>
+  <ltrOrtherNews>Other News</ltrOrtherNews>
+  <Contact>Contact</Contact>
+  <GoogleMap>Google Map</GoogleMap>
+  <PhoneCompany>Phone: (+84.8) 9999999</PhoneCompany>
+  <AddressCompany>115 Le Van Sy, ward 13, District Phu Nhuan, Ho Chi Minh city</AddressCompany>
+  <EmailF>Your's email(*):</EmailF>
+  <EmailReceiver>Email your's friend(*):</EmailReceiver>
+  <SubjectS>Subject(*):</SubjectS>
+  <Reset>Reset</Reset>
+  <View>VIEW DETAIL</View>
+  <Close>Close</Close>
+  <Comment>Send to comment</Comment>
+
+
+
+</Languages>

@@ -1,0 +1,236 @@
+BODY {
+	font-family:Tahoma;
+	font-size:11px;
+	text-align:justify;
+	margin:0px;
+	padding:0px;
+	background-color:#678FC2;
+}
+td
+{
+	font-size:11px;
+	font-family:Tahoma;
+	color:#304880;
+}
+
+a:link, a:visited { text-decoration:none; }
+a:hover { color: #cc0000; }
+
+.HCommand a
+{
+	font-weight:bold;
+	color:#304880;
+}
+.HCommand a:hover
+{
+	text-decoration:underline;
+}
+
+CODE {
+	COLOR: #404040
+}
+H1 {
+	FONT-SIZE: 150%
+}
+H2 {
+	FONT-SIZE: 140%
+}
+H3 {
+	FONT-SIZE: 120%
+}
+H4 {
+	FONT-SIZE: 100%
+}
+.validationErrorMessage
+{
+	font-size: 10pt;
+	font-weight: bold;
+	color: Red;
+}
+.errorMessage
+{
+	font-size: 11px;
+	font-weight: bold;
+	font-family:Arial;
+	color: Red;
+}
+.FieldCaption
+{
+	font-family: Tahoma, Arial;
+	font-size: 10pt;
+}
+.RequiredFieldCaption
+{
+	font-size: 10pt;
+	font-weight: bold;
+}
+.InputTextbox
+{
+	width: 300px;
+}
+.RequiredInputTextbox
+{
+	width: 300px;
+	background-color: lightgoldenrodyellow;
+}
+.RequiredDropdown
+{
+	width: 300px;
+	background-color: lightgoldenrodyellow;
+	font-family:Tahoma;
+	font-size:11px;
+}
+
+.dgGrid
+{
+	border:solid 1px #D0D7E5;
+}
+.filterHeader {
+	background-image:url(../Images/dgFooter.gif);
+	height:20px;
+	vertical-align:middle;
+}
+.filterHeader input, .filterHeader span
+{
+	vertical-align:middle;
+}
+tr.dgHeader {
+	background-image:url(../Images/dgHeader.gif);
+	height:18px;
+}
+.dgHeader
+{
+	color:#304880;
+	font-weight:bold;
+	padding-left:2px;
+}
+.dgHeader:hover
+{
+	text-decoration:none;
+	color:#EC911A;
+}
+
+
+.dgSelItem {
+	
+}
+.dgEditItem {
+	
+}
+
+.dgFooter {
+	background-image:url(../Images/dgHeader.gif);
+	height:18px;
+	background-color:#D3DCE9;
+}
+
+.dgPager {
+	background-image:url(../Images/dgPager.gif);
+	height:19px;
+}
+.selectPage
+{
+	font-weight:bold;
+	color:#15428B;
+}
+
+.Textbox {
+	FONT-SIZE: 11px;
+	COLOR: #4372CB;
+	BACKGROUND-REPEAT: repeat-x;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	BACKGROUND-COLOR: #ffffff;
+	width: 500px;
+	BORDER-RIGHT:#84A5CE 1px solid;
+	BORDER-TOP:#84A5CE 1px solid;
+	BORDER-LEFT:#C1D2E7 1px solid;
+	BORDER-BOTTOM:#C1D2E7 1px solid;
+}
+.TextboxSearch {
+	FONT-SIZE: 11px;
+	COLOR: #4372CB;
+	BACKGROUND-REPEAT: repeat-x;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	BACKGROUND-COLOR: #ffffff;
+	width: 300px;
+	BORDER-RIGHT:#84A5CE 1px solid;
+	BORDER-TOP:#84A5CE 1px solid;
+	BORDER-LEFT:#C1D2E7 1px solid;
+	BORDER-BOTTOM:#C1D2E7 1px solid;
+}
+
+.Button {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #11449E;
+	background-image: url(../Images/button-bg.png);
+	background-repeat: repeat-x;
+	border: 1px solid #BFA277;
+	height: 20px;
+}
+.Dropdown
+{
+	font-size:11px;
+	width: 300px;
+	background-color: #FFFFFF;
+}
+
+tr.dgItem:hover, tr.dgItem.over td, tr.dgAltItem:hover, tr.dgAltItem.over td
+{ 
+	background-image:url(../Images/dgHeaderOver.gif);
+	background-repeat:repeat-x;
+	background-color:#F4CD70;
+}
+
+.filterBox
+{
+	border:solid 1px gray;
+	padding:5px;
+	width:450px;
+	margin:5px;
+	background-image:url(../Images/filterBg.gif);
+	background-repeat:repeat-x;
+	background-color:#CBDAEF;
+	color:#4C4C4C;
+	
+}
+
+.FieldTD
+{
+	width:150px;
+}
+
+.loginBox
+{
+	width:439px;
+	margin-top:30px;
+	background-image:url('../Images/l_panel.jpg');
+	background-repeat:no-repeat;
+	height:356px;
+	margin-left:auto;
+	margin-right:auto;
+	border:solid 1px white;
+}
+.loginInfo {
+	margin: 110px auto 0px auto;
+	width: 90%;
+}
+.leftLoginCell
+{
+	width:130px;
+	height:30px;
+	text-align:right;
+}
+.centerLoginCell
+{
+	height:30px;
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+	color:red;
+}
+
+.Upload
+{
+	font-family:Verdana;
+	font-size:11px;
+}

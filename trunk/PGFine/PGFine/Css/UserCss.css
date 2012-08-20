@@ -1,0 +1,207 @@
+﻿body
+{
+	font-family:Tahoma;
+	font-size:13pt;
+	text-align:justify;
+	background-image:url('../Images/bgPage.gif');	
+	background-repeat:repeat-y;
+	margin:0px;
+	padding:0px;
+}
+.DivMain{width:980px;margin:auto;}
+.DivTop{width:auto;height:30px;}
+.DivTop_Left{float:left;width:auto;height:30px;width:60%;}
+.ImagesRows{padding:0px 0px 0px 0px;}
+.ImagesRowsLang{padding:0px 0px 5px 0px;}
+.LabelMenu{font-family:Arial;font-size:11px;margin:5px 0px 0px 0px;color:#8B8989;}
+a:hover{color:Blue;text-decoration:underline;}
+.DivTop_Right{float:right;width:auto;width:39%;height:30px;}
+.LabelMenuRight{font-family:Arial;font-size:11px;font-weight:bold;color:#575555;text-transform:uppercase;}
+.ImagesIconLeft{float:left;padding-top:10px;}
+.ImagesIcon{float:right;padding-top:10px;}
+.menuRightText{float:right;margin:10px 10px 0px 5px;}
+.menuRightTextLang{float:right;margin:9px 0px 0px 5px;font-family:Arial;font-size:12px;color:#666666;}
+.menuRightTextLeft{float:left;margin:10px 10px 0px 5px;}
+.DivCrossTop{width:100%;background-image:url('../Images/crossTop.gif');background-repeat:repeat-x;height:10px;}
+.DivBanner{width:100%;height:105px;border-bottom:solid 1px #D70E55;}
+.BannerLeft{float:left;width:30%;margin-top:15px;margin-left:1px;}
+.BannerRight{float:right;width:69%;}
+.ImgBanner{text-align:center;height:45px;width:100%;padding-top:30px;}
+.SearchBanner{float:right;}
+.InputSearch{float:right;background-image:url('../Images/inputsearch.gif');width:197px;height:29px;}
+.TitleSearch{float:right;padding-top:10px;padding-right:10px;font-family:Arial;font-size:11px;font-weight:bold;color:#9D9C9C;}
+.txtTextboxSearch{float:left;margin:7px 0px 0px 10px;height:13px;width:145px;border:0px;font-size:11px;font-family:Arial;font-style:italic;color:#666666;}
+.btSearch{float:left;width:20px;height:18px;border:0px;	margin:6px 0px 0px 11px;}
+.MainBanner{width:100%;height:239px;}
+.ListIcon{width:100%;height:34px;}
+.ListIconLeft{float:left;width:50%;}
+.ListIconRight{float:right;width:49%;}
+.TitleSupport{float:left;font-family:Arial;font-size:11px;font-weight:bold;color:#9E9C9C;margin:15px 0px 0px 0px;}
+.ImgSupport{margin:10px 5px 0px 5px;float:left;}
+.ImgSupporttel{margin:9px 5px 0px 25px;float:left;}
+.TelSupport{margin:15px 0px 0px 5px;font-size:13px;font-family:Arial;font-weight:bold;color:Black;}
+.TitleShare{float:right;padding-top:15px;padding-right:10px;font-family:Arial;font-size:11px;font-weight:bold;color:#9D9C9C;}
+.ImgShare{float:right;padding-top:10px;}
+.ImgBannerMain{width:956px;height:190px;border:solid 1px #CCCACA;padding:2px;margin:8px 0px 0px 10px;}
+.ImgBannerMainImages{width:955px;height:189px;}
+.DivMainDetailt{width:100%;height:auto;}
+.DivFootter{width:83%;height:auto;padding:0% 0% 0% 17%;}
+.dynamic{font-family:Arial;font-size:11px;color:#8B8989;padding:5px;font-weight:bold;border:solid 1px #891786;}
+.LabelMenuTop{font-family:Arial;font-size:11px;font-weight:bold;padding:10px 5px 0px 5px;color:#8B8989;}
+.CrossRed{float:left;border-top:solid 1px #D70E55;width:980px;height:2px;}
+.DivTitleFooter{float:left;padding-top:10px;}
+.TitleFooter{float:left;color:#919191;font-size:11px;font-family:Arial;padding:0px 20px 0px 0px;width:auto;text-transform:uppercase;text-decoration:none;color:#919191;}
+.TextPrint{float:left;width:auto;text-decoration:none;color:Black;}
+.TextPrintDetail{float:left;width:auto;text-decoration:none;color:#828080;}
+.TextPrintDetailNews{float:left;width:auto;text-decoration:none;color:Black;}
+.NameProductDe{text-decoration:none;color:Black;}
+.CoppyRight{float:left;color:#919191;font-size:9px;font-family:Arial;width:600px;height:20px;text-align:center;margin-top:9px;}
+.ImgesXem{float:left;}
+.Pageging{margin-top:10px;border-bottom:solid 1px #D70E55;padding-bottom:3px;width:980px;height:25px;}
+.PagegingBottomDe{padding-bottom:3px;width:980px;height:20px;}
+.PagegingBottom{float:left;margin-top:5px;padding-bottom:15px;width:100%;}
+.ListProduct{float:left;width:100%;height:auto;margin-top:10px;}
+.ProductMain{float:left;width:183px;height:280px;text-align:center;margin-left:10px;}
+.CaptionProductPrice{width:180px;}
+.DfTitle{float:left;color:#919191;font-size:10px;font-family:Arial;width:59%;margin-top:12px;text-transform:uppercase;}
+.imgMid{float:left;}
+.dfPrice{float:left;width:36%;font-size:10px;margin-top:7px;}
+.ColorPriceOld{font-size:10px;color:#D91A5C;text-decoration:line-through;}
+.ColorPriceOldActive{float:left;font-size:10px;color:#D91A5C;margin:5px 0px 0px 3px;}
+.ColorPrice{font-size:10px;color:#891786;}
+.btPosition{float:right;margin-top:155px;margin-left:10px;}
+.Breakrum{font-family:Arial;font-size:16px;color:#DA1B5A;font-weight:bold;text-transform:uppercase;margin-left:10px;}
+.TitleDetailProduct{font-family:Arial;font-size:18px;color:#2F2F2F;margin-left:10px;padding:auto;}
+.CodeProduct{font-family:Arial;font-size:12px;color:#726F6F;margin-left:5px 0px 3px 0px;text-transform:none;}
+.MainDetail{float:left;background-image:url('../Images/bgImagesdetail.gif');width:580px;height:552px;margin:0px 3px 3px 3px;}
+.MainDetailMid{float:left;width:262px;}
+.TitleCaptionDetail{float:left;background-image:url('../Images/TitleCaption.gif');width:256px;height:19px;text-transform:uppercase;font-family:Arial;
+	font-size:12px;font-weight:bold;color:#666666;padding:0px 0px 0px 5px;margin-top:4px;}
+.TitleCaptionBuyDetail{float:left;width:240px;height:19px;text-transform:uppercase;font-family:Arial;font-size:12px;font-weight:bold;
+	color:#666666;padding:15px 0px 0px 0px;margin:5px 0px 0px 5px;border-bottom:solid 1px #666666;}
+.bgMidTitleCaption{float:left;background-image:url('../Images/bgMidTitleCaption.gif');width:261px;height:520px;}
+.lbShortDescription{float:left;width:245px;font-family:Arial;font-size:11px;color:Black;margin-left:5px;text-align:justify;}
+.ShortDeProduct{float:left;width:180px;padding-top:10px;padding-left:9px;line-height:15px;}
+.bgMidIconCorlor{float:left;width:260px;margin-left:5px;}
+.TitleCorlor{float:left;font-family:Arial;font-size:12px;color:Black;padding-top:10px;margin-left:5px;}
+.ImagesCorlor{float:left;width:20px;padding:7px 3px 3px 5px;}
+.ClickCaptionProduct{float:left;font-family:Arial;font-size:10px;color:#B2B2B2;padding-left:50px;width:210px;padding-top:3px;}
+.PriceDetail{float:left;width:140px;font-size:18px;padding-top:5px;padding-left:10px;}
+.PriceDetailOld{float:left;color:#DA1B5A;font-size:18px;width:190px;padding-top:5px;padding-left:15px;text-decoration:line-through;}
+.PriceDetailOldActive{float:left;color:#DA1B5A;font-size:18px;width:190px;padding-top:5px;padding-left:15px;}
+.ValidateNum{font-family:Arial;font-size:10px;float:left;margin-top:4px;}
+.ColorStatus{float:left;width:135px;font-size:12px;font-weight:bold;font-family:Arial;color:#24A601;padding-top:11px;padding-left:5px;}
+.ChoseSize{float:left;width:100px;color:#DA1B5A;font-family:Arial;font-size:11px;padding:5px 0px 0px 10px;}
+.textNumber{float:left;width:100px;}
+.rdoSizeCss{float:left;font-family:Arial;font-size:12px;color:Black;float:left;padding:3px;width:125px;}
+.ChoseColor{float:left;margin:5px 0px 0px 20px;width:250px;}
+.ValidateSize{text-align:center;float:left;color:Red;font-family:Arial;font-size:12px;padding:6px 0px 0px 0px;width:100px;}
+.ImagesChoseColor{float:left;margin:20px 0px 0px 0xp;}
+.CheckChoseColor{float:left;margin-left:5px;}
+.BtBuyProduct{float:left;background-image:url('../Images/btBuyProduct.gif');width:78px;height:20px;border:0px;color:White;font-weight:bold;}
+.DivBuy{float:left;background-image:url('../Images/btBuyProduct.gif');width:78px;height:20px;}
+.LeftMainDetail{width:120px;}
+.MainleftProduct{width:115px;text-align:right;text-transform:uppercase;font-size:11px;font-family:Arial;font-weight:bold;color:#666666;margin-top:5px;}
+.PrintCaption{float:right;font-size:10px;font-family:Arial;color:#828080;margin:12px 5px 0px 0px;}
+.ImagesCaptionPrint{float:right;margin:10px 0px 0px 0px;}
+.DivPrintWidth{float:left;width:120px;margin-right:5px;}
+.ImagesMainDetail{float:left;text-align:center;width:460px;height:500px;margin:10px 0px 0px 0px;}
+.VoteDivMain{float:left;text-align:center;width:460px;margin:10px 0px 0px 0px;}
+.ImagesThumsListDe{float:left;width:100px;}
+.VoteTitle{float:left;font-family:Arial;font-size:11px;color:Black;margin:0px 0px 0px 25px;}
+.VoteTitle1{float:left;font-family:Arial;font-size:11px;color:Black;}
+.ImagesVote{float:left;padding:0px 0px 0px 5px;}
+.ImagesVoteDe{float:left;padding:0px 5px 0px 0px;}
+.SumVote{float:left;font-size:13px;font-weight:bold;font-family:Arial;color:#8E1D89;padding:0px 0px 0px 3px;}
+.CationVote{float:left;font-size:12px;font-family:Arial;color:#958F91;padding:0px 0px 0px 3px;}
+.ListImagesThumb{float:left;border:solid 1px #BDB9B9;width:75px;margin:15px 0px 0px 15px;text-align:center;background-color:White;padding:5px;}
+.ListImagesProduct{float:left;background-image:url('../Images/ListImagesdetail.gif');width:975px;height:190px;margin-left:3px;}
+.DivUpHome{text-align:right;}
+.ImagesUp{float:right;margin:7px 5px 5px 0px;}
+.testUp{float:right;color:#656365;font-family:Arial;font-size:11px;margin:10px 5px 5px 0px;}
+.ListOrtherProduct{float:left;text-align:center;width:130px;margin:10px 15px 0px 15px;}
+.ListProductName{text-align:center;width:130px;font-family:Arial;font-size:10px;color:#262626;text-transform:uppercase;}
+.ListProductNamehpl{text-align:center;font-family:Arial;font-size:10px;color:#262626;text-transform:uppercase;text-decoration:none;}
+.ListPriceDetailt{font-family:Arial;font-size:10px;color:#D91A5C;}
+.CaptionContact{font-family:Arial;font-size:12px;color:#67666B;padding:5px 0px 15px 0px;}
+.TitleContact{float:left;font-family:Arial;font-size:11px;color:#67666B;width:100px;}
+.ContactLeft{float:left;margin:15px 0px 0px 10px;padding-bottom:10px;width:490px;}
+.PaceContact{float:left;padding:5px 0px 5px 20px;}
+.PaceContactBT{float:left;padding:5px 0px 5px 115px;}
+.ValidateMess{font-family:Arial;font-size:11px;}
+.ValidateMessEmail{float:left;font-family:Arial;font-size:11px;margin-left:2px;margin-top:5px;}
+.MessageSuccess{color:Red;font-family:Arial;font-size:12px;}
+.NewsDetailContent{float:left;}
+.TitleNewsDetail{float:left;font-family:Arial;font-size:13px;font-weight:bold;color:#D91A5D;width:900px;padding:10px 0px 10px 10px;text-transform:uppercase;}
+.ShortDescriptionNewsDetail{float:left;font-family:Arial;font-size:12px;font-weight:bold;color:#67666B;width:900px;padding:0px 0px 10px 10px;}
+.DescriptionNewsDetail{float:left;font-family:Arial;font-size:12px;width:960px;padding:0px 0px 10px 10px;line-height:16px;letter-spacing:0px;}
+.CaptionOrtherNews{float:left;width:661px;height:5px;font-family:Arial;font-size:12px;font-weight:bold;text-transform:uppercase;color:#D91A5D;padding:5px 0px 10px 0px;}
+.BottomOrtherNews{float:left;background-image:url('../Images/bgBottomLine.gif');width:661px;height:5px;}
+.ListOrtherNews{float:left;width:661px;}
+.LinkOrtherNews{float:left;	padding:5px 0px 0px 5px;font-family:Arial;font-size:12px;width:661px;color:#D91A5D;}
+.ListNews{float:left;width:475px;margin:0px 0px 0px 0px;padding-top:10px;padding-left:10px;border-bottom:dotted 1px #CBC9C9;}
+.ListNewsImages{float:left;width:120px;height:90px;border:solid 1px #D3D1D1;padding:3px;}
+.NoImages{float:left;width:1px;height:1px;}
+.ListNewsTitle{float:left;width:327px;font-family:Arial;font-size:12px;font-weight:bold;text-transform:uppercase;margin:0px 0px 0px 10px;color:#D91A5D;}
+.ListNewsT{float:left;font-family:Arial;font-size:11px;font-weight:bold;text-transform:uppercase;color:#D91A5D;padding:0px 0px 10px 0px ;}
+.ListNewsShortDescript{float:left;width:330px;font-family:Arial;font-size:12px;color:#67666B;margin:0px 0px 0px 10px;}
+.NoI{float:left;width:100%;}
+.googleMap{margin:0px 0px 0px 10px;float:left;}
+.ImagesUptop{float:right;margin-right:5px;}
+.TitleUptop{float:right;font-size:12px;font-family:Arial;color:#666666;margin-top:2px;}
+.TextBoxNum{width:100px;height:15px;}
+.MainSentVote{float:left;height:300px;width:400px;}
+.TitleCationVote{float:left;font-family:Arial;font-size:14px;font-weight:bold;background-color:#FFF4F8;text-align:center;width:400px;height:25px;padding:5px 0px 0px 0px;}
+.RowsVote{float:left;margin:5px;height:20px;width:380px;}
+.RowsVotebt{float:left;margin:5px;height:40px;width:380px;padding-top:10px;}
+.CheckBokVote{float:left;font-family:Arial;font-size:12px;color:#666666;font-weight:bold;}
+.ImagesVoteSent{float:left;height:20px;padding:3px 0px 0px 5px;}
+.lbtSentVote{float:left;margin-left:10px;font-family:Arial;font-size:12px;color:#666666;font-weight:bold;}
+.hplSentVote{float:left;font-family:Arial;font-size:12px;color:#666666;padding-left:10px;font-weight:bold;}
+.DivBgTopGioHang{float:left;margin:5px 0px 10px 16px;}
+.InformationCustomer{float:left;width:425px;height:30px;background-image:url('../Images/bgTopInfomationInput.gif');	margin:5px 0px 0px 0px;}
+.TitleCaptionInput{float:left;font-family:Arial;font-size:12px;color:#D91A5D;text-transform:uppercase;margin:9px 0px 0px 5px;}
+.textboxI{float:left;border:solid 1px #666666;width:267px;height:18px;margin:0px 0px 0px 10px;}
+.textboxMode{float:left;border:solid 1px #666666;width:267px;height:113px;margin:0px 0px 0px 10px;}
+.buttonInput{float:left;width:128px;height:25px;margin-left:290px;font-family:Arial;font-size:12px;}
+.CssThanhToan{float: left; color: #3D3C3C; font-family: Arial; font-size: 12px; margin: 10px 0px 0px 40px;}
+.textboxContact{float:left;width:349px;height:19px;border:solid 1px #D6D0D0;}
+.TextModeContac{float:left;width:349px;	height:157px;border:solid 1px #D6D0D0;}
+.linkButtonContac{float:left;background-image:url('../Images/bg_lbt_contact.gif');width:70px;height:16px;text-decoration:none;font-family:Arial;font-size:12px;color:White;font-weight:bold;margin:5px;text-align:center;padding-top:3px;}
+.ContactRight{float:right;margin:15px 0px 0px 10px;padding-bottom:30px;width:460px;}
+.InformationContact{float:left;font-family:Arial;font-size:12px;color:#D91A5D;font-weight:bold;margin-left:5px;}
+.TitleInformationC{float:left;color:#67666B;font-weight:lighter;width:400px;padding:5px 0px 0px 5px;}
+.MapContact{float:left;font-family:Arial;font-size:11px;font-weight:bold;color:#C00991;}
+.hplChanceI{float:right;font-family:Arial;font-size:11px;color:#A4A3A3;margin:10px 10px 0px 0px;}
+
+ div#conner { 
+         float: left; width: 455px; height: 296px;
+                    margin: 10px 0px 0px 5px;
+    }
+    b.rtop, b.rbottom {
+          display:block;background: #FFF
+    }
+    b.rtop b, b.rbottom b {
+         display:block;
+         height: 1px;
+         overflow: hidden; 
+         background-color:#D6D0D0;
+    }
+    b.r1 {
+         margin: 0 5px
+    }
+    b.r2 {
+         margin: 0 3px
+    }
+    b.r3 { 
+         margin: 0 2px
+    }
+    b.rtop b.r4, b.rbottom b.r4 {
+         margin: 0 1px;height: 2px
+    }    
+.BottomPrint{float: right; font-family: Arial; font-size: 10px; margin: 7px 4px 0px 0px;}
+.CaptionSendMail{float: left; width: 400px; font-family: Arial; font-size: 14px; font-weight: bold;text-align: center; padding: 10px 0px 25px 0px; text-transform: uppercase;color:#9E9C9C;}
+.TitleCaptionS{float:left;font-family:Arial;font-size:12px;padding:2px 5px 0px 0px;width:120px;}
+.txtEmailS{float:left;font-family:Arial;font-size:12px;width:280px;}
+.BothSendM{float: left; width: 450px;padding:2px 0px 5px 5px;}
+.ViewCss{float:left;text-decoration:none;color:#D91A5D;}

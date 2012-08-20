@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Languages>
+
+  <!--MasterPage-->
+
+  <InputKeyS>Nhập từ khoá</InputKeyS>
+  <CaptionLang>English</CaptionLang>
+  <Product>SẢN PHẨM</Product>
+  <CaptionSearch>TÌM KIẾM</CaptionSearch>
+  <lbShare>CHIA SẺ</lbShare>
+  <Online>HỖ TRỢ TRỰC TUYẾN</Online> 
+  <InformationContact>Để liên hệ với chúng tôi, các bạn vui lòng cung cấp đầy đủ các thông tin bên dưới, thông tin có (*) là nên có để chúng tôi phục vụ các bạn tốt hơn.</InformationContact>
+  <CaptionContact>(*) Thông tin bắt buộc bạn phải nhập.</CaptionContact>
+  <Name>Họ Tên (*)</Name>
+  <Phone>Điện Thoại (*)</Phone>
+  <Email>Email (*)</Email>
+  <Address>Địa Chỉ (*)</Address>
+  <Content>Nội Dung (*)</Content>
+  <btSent>Gửi</btSent>
+  <btCancel>Bỏ qua</btCancel>  
+  <PaggingPage>Trang:</PaggingPage>
+  <ViewAll>Xem hết</ViewAll>
+  <NumberDisplay>Hiển thị</NumberDisplay>
+  <BacktoTop>Lên đầu trang</BacktoTop>
+  <InforProduct>Thông tin sản phẩm</InforProduct>
+  <BuyProduct>đặt hàng sản phẩm</BuyProduct>
+  <DescriptionPro>Mô tả:</DescriptionPro>
+  <PromotionalPrice>Giá khuyến mãi:</PromotionalPrice>
+  <Status>Tình trạng:</Status>
+  <ClickDetail>(Click vào ô màu để xem chi tiết sản phẩm)</ClickDetail>
+  <PriceD>Giá:</PriceD>
+  <ColorD>Màu sắc:</ColorD>
+  <InputNumber>Nhập số lượng:</InputNumber>
+  <ltrChoseColorC>Chọn màu:</ltrChoseColorC>
+  <ltrSizeD>Chọn size:</ltrSizeD>
+  <hplVote>Đánh giá:</hplVote>
+  <SendAdmin>Gửi phản hồi</SendAdmin>
+  <introYour>Giới thiệu bạn bè</introYour>
+  <PrintPage>In trang này</PrintPage>
+  <Uitiliti>Tiện ích</Uitiliti>
+  <BuyPD>Đặt hàng</BuyPD>
+  <Summoney>Tổng tiền:</Summoney>
+  <btUpdateCard>Cập nhật giỏ hàng</btUpdateCard>
+  <btBuyPC>Đặt hàng</btBuyPC>
+  <btBuyCtinu>Tiếp tục mua</btBuyCtinu>
+
+<!--Giỏ hàng-->
+  <ltrDelete>Xoá</ltrDelete>
+  <ImagesP>Hình ảnh</ImagesP>
+  <ProductName>Tên sản phẩm</ProductName>
+  <ProductCode>Mã sản phẩm</ProductCode>
+  <ltrSize>Kích cỡ</ltrSize>
+  <ColorC>Màu sắc</ColorC>
+  <Numberc>Số lượng</Numberc>
+  <PriceC>Đơn giá</PriceC>
+  <SumM>Thành tiền</SumM>
+  <DreakrunC>sản phẩm đã chọn</DreakrunC>
+  <ltrCondition>
+    + Trên đây là các mặt hàng
+    đã có trong giỏ, bạn có thể thay đổi số lượng của từng sản phẩm, nếu muốn loại bỏ
+    một sản phẩm nào đó chọn số lượng là 0 hay xóa bỏ ô số lượng tương ứng (hoặc là
+    bạn có thể nhấp chuột vào ô vuông ngay cột xóa ), sau đó nhấn vào
+  </ltrCondition>
+  <ltrCondition1>
+    + Sau khi đã lựa chọn xong
+    các sản phẩm, bạn hãy chọn
+  </ltrCondition1>
+  <ltrCondition2>để tiếp tục công việc mua bán.</ltrCondition2>
+  <ltrCondition3>
+    + Để quay lại mua sản phẩm
+    khác, bạn chọn
+  </ltrCondition3>
+  <ltrCondition4>
+    + Nếu không muốn mua các
+    sản phẩm này, bạn chọn tất cả các ô checkbox rồi chọn
+  </ltrCondition4>
+  <ToPay>Thanh toán</ToPay>
+  <exchange>Giao nhận</exchange>
+  <Continue>Tiếp tục</Continue>
+  <MoneyExchange>Tiền mặt khi nhận hàng</MoneyExchange>
+  <TransferMoney>Chuyển khoản qua ngân hàng</TransferMoney>
+  <WriteBill>Yêu cầu viết hoá đơn.</WriteBill>
+  <ByPost>Gửi hàng qua bưu điện.</ByPost>
+  <ByAddress>Giao hàng tại địa chỉ của quý khách.</ByAddress>
+  <ByCompanyL>Nhận hàng tại Big Nose and Littel Toe.</ByCompanyL>
+  <InformationChance>Thông tin chuyển khoản:</InformationChance>
+  <Chutaikhoan>Chủ tài khoản: Phan Duy Khang</Chutaikhoan>
+  <Sotaikhoan>Số tài khoản: 0102555521</Sotaikhoan>
+  <Chinhanh>Ngân hàng Đông Á - Chi nhánh Đinh Tiên Hoàng</Chinhanh>
+  <InformationCustomer>thông tin người thanh toán</InformationCustomer>
+  <Alias>Danh xưng</Alias>
+  <District>Quận/huyện:</District>
+  <tel>ĐTDĐ:</tel>
+  <Note>Ghi chú:</Note>
+  <InformationReceiver>Thông tin người nhận</InformationReceiver>
+  <Like>Giống địa chỉ thanh toán</Like>
+  <Chance>Thay đổi</Chance>
+  <Informationexchange>Thông tin giao nhận</Informationexchange>
+  <PaymentMethod>Phương thức thanh toán</PaymentMethod>
+  <DeleteInformation>Xoá thông tin</DeleteInformation>
+  <ltrNoteCa>Nếu đồng ý với thông tin trên, hãy nhấn</ltrNoteCa>
+  <ltrOrtherNews>Tin tức khác</ltrOrtherNews>
+  <Contact>Liên hệ</Contact>
+  <GoogleMap>Bản đồ</GoogleMap>
+  <PhoneCompany>Điện thoại: (+84.8) 9999999</PhoneCompany>
+  <AddressCompany>115 Lê Văn Sỹ, Phường 13, Quận Phú Nhuận, TP.HCM</AddressCompany>
+  <EmailF>Email của bạn(*):</EmailF>
+  <EmailReceiver>Email người nhận(*):</EmailReceiver>
+  <SubjectS>Chủ đề(*):</SubjectS>
+  <Reset>Làm lại</Reset>
+  <View>XEM THÊM</View>
+  <Close>Đóng</Close>
+  <Comment>Gửi bình luận</Comment>
+
+</Languages>

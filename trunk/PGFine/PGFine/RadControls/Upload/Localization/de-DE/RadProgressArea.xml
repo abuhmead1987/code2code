@@ -1,0 +1,11 @@
+<localization>
+	<string id="CancelButton">Aufheben</string>
+	<string id="TimeElapsed">Vergangen Zeit: </string>
+	<string id="TimeEstimated">Geschätzt Zeit: </string>
+	<string id="TransferSpeed">Geschwindigkeit: </string>
+	<string id="CurrentFileName">Akte wird geladen: </string>
+	<string id="Uploaded">Akte Ist Geladen </string>
+	<string id="UploadedFiles">Geladene Akten: </string>
+	<string id="Total">Summe </string>
+	<string id="TotalFiles">Gesamte Akten: </string>
+</localization>

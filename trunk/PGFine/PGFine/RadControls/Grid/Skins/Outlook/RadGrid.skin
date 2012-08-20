@@ -1,0 +1,3 @@
+<%@ Register TagPrefix="radG" Namespace="Telerik.WebControls" Assembly="RadGrid.Net2" %>
+<radG:RadGrid runat="server">
+</radG:RadGrid>

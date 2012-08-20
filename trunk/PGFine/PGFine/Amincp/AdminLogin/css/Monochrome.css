@@ -1,0 +1,139 @@
+body
+{
+	background-color: white;
+	font-family: Tahoma, Arial;	
+	font-size: 80%;
+	text-align: justify;
+}
+td
+{
+	font-family: Tahoma, Arial;	
+	font-size: 75%;
+}
+a
+{
+	font-family: Tahoma, Arial;	
+	font-size: 10pt;
+	color: Black;
+}
+a:hover { color: #cc0000; }
+H1 {
+	FONT-SIZE: 150%
+}
+H2 {
+	FONT-SIZE: 140%
+}
+H3 {
+	FONT-SIZE: 120%
+}
+H4 {
+	FONT-SIZE: 100%
+}
+.FieldCaption
+{
+	font-family: Tahoma, Arial;
+	font-size: 10pt;
+}
+.RequiredFieldCaption
+{
+	font-size: 10pt;
+	font-weight: bold;
+}
+.InputTextbox
+{
+	width: 300px;
+}
+.RequiredInputTextbox
+{
+	width: 300px;
+	background-color: lightgoldenrodyellow;
+}
+.RequiredDropdown
+{
+	width: 300px;
+	background-color: lightgoldenrodyellow;
+}
+.SectionCaption
+{
+	font-size: 10pt;
+	font-weight: bold;
+}
+.validationErrorMessage
+{
+	font-size: 10pt;
+	font-weight: bold;
+	color: Red;
+}
+.errorMessage
+{
+	font-size: 12pt;
+	font-weight: bold;
+	color: Red;
+}
+.filterHeader
+{
+	color: White;
+	background-color: Black;	
+	vertical-align: baseline;
+}
+.dgPager
+{
+	color: White;
+	background-color: Black;		
+}
+.dgPagerLinks
+{
+	color: White;		
+}
+.dgPagerText
+{
+	color: Silver;		
+}
+.dgGrid
+{
+	border-color: "#999999";
+	color: Black;
+	background-color: White;
+	padding: 3;
+	border-width: 1px;
+	border-style: Solid;
+	filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true');
+}
+.dgSelItem
+{
+	font-weight: bold;
+	color: Black;
+	background-color: #77E4EE;
+	border-width: 10;
+	border-style: solid;
+	border-color: black;
+}
+.dgItem {
+	BACKGROUND: White
+}
+.dgAltItem
+{
+	background-color: #CCCCCC;
+}
+.dgHeader
+{
+	font-weight: bold;
+	color: White;
+	background-color: Black;	
+}
+.dgFooter
+{
+	color: Black;
+	text-align: center;
+	background-color: #999999;
+	border-top-width: 1px;	
+	border-top-color: Black;
+	border-top-style: solid;
+}
+
+  
+hr		{height:2px;color:black;}
+.StdText	{font-family:verdana;font-size:9pt;font-weight:bold;}
+.StdTextBox	{font-family:verdana;font-size:9pt;border:solid 1px black;filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true');}
+.Shadow	{filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true');}
+

@@ -1,60 +1,97 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" MasterPageFile="~/MasterPageUser/MasterPageUser.Master"
-    Inherits="PGFine.Contact" EnableEventValidation="false" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage/MasterPage.Master" AutoEventWireup="true"
+    CodeBehind="Contact.aspx.cs" Inherits="PGFine.Contact" %>
 
-<%@ Register Src="Ctrl/CtrlContact.ascx" TagName="CtrlContact" TagPrefix="uc1" %>
-<%@ Register Src="Ctrl/CtrlMainBanner.ascx" TagName="CtrlMainBanner" TagPrefix="uc1" %>
-<%@ Register Src="Ctrl/CtrlRandomProduct.ascx" TagName="CtrlRandomProduct" TagPrefix="uc2" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <asp:Label ID="_errorLabel" runat="server" Visible="false"></asp:Label>
-    <uc1:CtrlMainBanner ID="CtrlMainBanner1" runat="server" />
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-    <div class="Pageging">
-        <asp:Label ID="lbBreakrumContact" runat="server" Text="Contact" CssClass="Breakrum"></asp:Label>
-    </div>
-    <div style="float: left; width: 970px; height: 460px;">
-        <uc1:CtrlContact ID="CtrlContact1" runat="server" />
-        <div class="ContactRight">
-            <div class="InformationContact">
-                <div style="float: left; width: 400px;">
-                    The Big Nose and little toe
-                </div>
-                <div class="TitleInformationC">
-                    <%--115 Lê Văn Sỹ, Phường 13, Quận Phú Nhuận, TP.HCM--%><asp:Literal ID="ltrAddressCompany" runat="server"></asp:Literal>
-                </div>
-                <div class="TitleInformationC">
-                    <%--Điện thoại: (+84.8) 9999999--%><asp:Literal ID="ltrPhoneCompany" runat="server"></asp:Literal>
-                </div>
-                <div class="TitleInformationC">
-                    Fax: (+84.8) 9999999
-                </div>
-                <div class="TitleInformationC">
-                    Email: info@thebisnoseandlitletoe.com
-                </div>
-            </div>
-            <div class="MapContact">
-                <div style="float: left; width: 400px; margin: 10px 0px 0px 5px;">
-                    <%--Bản đồ--%><asp:Literal ID="ltrMapg" runat="server"></asp:Literal>
-                </div>
-                <div id="conner">
-                    <b class="rtop"><b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4">
-                    </b></b>
-                    <div style="float: left; margin-left: 1px; border-left: solid 1px #D6D0D0; border-right: solid 1px #D6D0D0;">
-                        <asp:Literal ID="ltrMap" runat="server"></asp:Literal>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <!-- START PRIMARY SECTION -->
+    <div id="primary" class="inner group">
+        <div class="layout-sidebar-right group">
+            <!-- START CONTENT -->
+            <div id="content" role="main" class="group">
+                <h2>
+                    Get in Touch</h2>
+                <div id="post-73" class="post-73 page type-page status-publish hentry group">
+                    <div id="contact-form-contact-page" class="contact-form">
+                        <div class="usermessagea">
+                        </div>                       
+                            <ul>
+                                <li class="text-field">
+                                    <label for="name-contact-page">
+                                        <span class="label">Name</span>
+                                    </label>
+                                    <input type="text" name="name" id="name-contact-page" class="required" value="" />
+                                    <div class="msg-error">
+                                    </div>
+                                </li>
+                                <li class="text-field">
+                                    <label for="email-contact-page">
+                                        <span class="label">Email</span>
+                                    </label>
+                                    <input type="text" name="email" id="email-contact-page" class="required email-validate"
+                                        value="" />
+                                    <div class="msg-error">
+                                    </div>
+                                </li>
+                                <li class="textarea-field">
+                                    <label for="message-contact-page">
+                                        <span class="label">Message</span>
+                                    </label>
+                                    <textarea name="message" id="message-contact-page" rows="8" cols="30" class="required"></textarea>
+                                    <div class="msg-error">
+                                    </div>
+                                </li>
+                                <li class="submit-button">
+                                    <input type="hidden" name="action" value="sendmail" id="action" />
+                                    <input type="submit" name="sendemail" value="send message" class="sendmail alignright" />
+                                </li>
+                            </ul>                       
                     </div>
-                    <b class="rbottom"><b class="r4"></b><b class="r3"></b><b class="r2"></b><b class="r1">
-                    </b></b>
+                    <script type="text/javascript">
+                        var error_messages = {
+                            name: "Insert the name",
+                            email: "Insert a valid email",
+                            message: "Insert a message"
+                        };
+                    </script>
+                </div>
+                <div id="comments">
+                    <!--<p class="nocomments">&nbsp;</p>-->
+                </div>
+                <!-- #comments -->
+            </div>
+            <!-- END CONTENT -->
+            <!-- START SIDEBAR -->
+            <div id="sidebar" class="group">
+                <div id="text-4" class="widget-1 widget-first widget widget_text">
+                    <h3>
+                        Customer support</h3>
+                    <div class="textwidget">
+                        <p>
+                            Sed velit arcu, lobortis sit amet condimentum vitae, congue sit amet est. Donec
+                            pharetra quam a odio porttitor lobortis in in massa. Phasellus viverra placerat
+                            nunc eget tempor.<br />
+                            <br />
+                        </p>
+                    </div>
+                </div>
+                <div id="text-image-5" class="widget-2 widget-last widget text-image">
+                    <h3>
+                        Gift Card</h3>
+                    <div class="text-image" style="text-align: left">
+                        <img src="images/giftcard2.jpg" alt="Gift Card" /></div>
+                    <p>
+                        Mauris porta ligula sed ante imperdiet quis dignissim purus tempus. <strong>Aenean massa
+                            erat</strong>, vehicula et facilisis malesuada, <a href="#">ultrices eget</a>
+                        augue.
+                    </p>
                 </div>
             </div>
+            <!-- END SIDEBAR -->
         </div>
+        <!-- START EXTRA CONTENT -->
+        <!-- END EXTRA CONTENT -->
     </div>
-    <uc2:CtrlRandomProduct ID="CtrlRandomProduct1" runat="server" />
-    <div class="DivUpHome">
-        <div class="testUp">
-            <a href="javascript:top.window.scrollTo(0,0)">
-                <asp:Label ID="lbBreakrum" runat="server" Text="Lên đầu trang" Font-Underline="false"></asp:Label></a></div>
-        <div class="ImagesUp">
-            <a href="javascript:top.window.scrollTo(0,0)">
-                <asp:Image ID="Image33" runat="server" ImageUrl="~/Images/btlendautrang.gif" /></a></div>
-    </div>
+    <!-- END PRIMARY SECTION -->
+
 </asp:Content>

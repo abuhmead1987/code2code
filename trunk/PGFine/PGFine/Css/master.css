@@ -1,0 +1,461 @@
+/* RESET ================================================================================= */
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License:none (public domain)*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+	margin:0;
+	padding:0;
+	border:0;
+	font-size:100%;
+	font:inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+	display:block;
+}
+body {
+	line-height:1;
+}
+ol,ul {
+	list-style:none;
+}
+blockquote,q {
+	quotes:none;
+}
+blockquote:before,blockquote:after,q:before,q:after {
+	content:'';
+	content:none;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+p {
+	margin:0 0 10px 0;
+}
+strong {
+	font-weight: 700;
+}
+/* BODY ================================================================================= */
+body {
+	font-family:  Helvetica, Arial, sans-serif;
+	font-size:12px;
+	line-height:18px;
+	background: #fff url(../img/gradient_top.png) no-repeat center 50px;
+	color:#3d3d3d;
+}
+/* HEADER ================================================================================= */
+#top{
+	background:url(../img/top_line.png) repeat-x 0 0; 
+	height: 54px;
+	width:100%;
+	z-index:20;
+	position:absolute;
+	top:0;
+	left:0;
+}
+#top_wp {
+	width:960px;
+	margin:auto;
+}
+#top_wp img {
+	float:left;
+	width: 162px;
+	height:27px;
+	margin-top:10px;
+}
+#top_wp h3 {
+	float: right;
+	margin-top:16px;
+	text-shadow: 2px 2px 2px #000;
+	font-size:22px;
+	color:#fff;
+}
+#top_wp h3 span {
+	color:#989898;
+}
+  .timer_box_main {
+		  padding:9px 10px 8px 40px;
+		  background: url(../img/clock.png) no-repeat 8px center; 
+		  font-weight:bold; 
+		  color:#c11f73;
+		  background-color: #f2f2f2;
+		  -moz-border-radius: 5px;
+	      border-radius: 5px;
+		  margin-bottom:45px;
+		  font-size:13px;
+		  text-align:left;
+		  width: 310px;
+		  margin:auto;
+		  margin-bottom:30px;
+		  margin-left:10px;
+		  }
+	  .timer_box_main span {
+		  color:#111; 
+		  }
+
+/* SLIDER ONE  ================================================================================= */
+.main_image {
+	width:480px;
+	height:515px;
+	float:left;
+	position:relative;
+}
+.product_info {
+	width:370px;
+	float:right;
+	padding-top:50px;
+}
+.contentdiv_2 {
+	width:960px; margin:auto;
+	text-align:center;
+
+}
+/* SLIDER Three ================================================================================= */
+#slider_wp {
+	width:960px;
+	height: 444px;
+	margin:auto;
+	position:relative;
+	margin-top:50px;
+	padding-top:80px;
+	text-align:center;
+}
+/* CONTENT AREA ONE ================================================================================= */
+#line {
+	width:100%;
+	height:26px;
+	background:url(../img/line_black.png) repeat-x;
+	z-index:10; position:absolute; top:565px; left:0;
+}
+#content_1 {
+	width:960px;
+	margin:auto;
+	padding:45px 0 0 0;
+}
+#content_1 h2 {
+	color:#111;
+	font-size: 36px;
+	text-transform:uppercase;
+	display:block; text-align:center;
+	background:url(../img/line.png) no-repeat center bottom;
+	padding-bottom:30px;
+	margin-bottom:40px;
+	padding-top:19px;
+}
+.one_col {
+	float:left;
+	width:296px;
+	margin-right:35px;
+	margin-bottom:45px;
+	text-align:center;
+}
+
+.one_col.last {
+	margin-right:0px;
+	margin-bottom:45px;
+}
+#content_wp .one_col p, #content_wp .one_col.last p {
+	margin-bottom:25px;
+}
+ #content_wp .two_col p {
+	margin-bottom:30px;
+}
+.price {
+	font-family: 'Museo500';
+	color:#c11f73;
+	font-size:30px;
+	display:block;
+	position:relative;
+	margin-top:15px;
+	
+}
+.price em {
+	font-size:15px;
+	font-style:normal;
+	
+}
+.one_col h3 {
+	font-size:25px;
+	color:#111;
+	font-family: 'Museo500';
+	margin: 7px 0 10px 0;
+}
+.price strong {
+	background:#c11f73;
+	position:relative;
+	top:-4px;
+	font-size:12px;
+	color:#fff;
+	font-family: 'Museo300';
+	font-weight:normal;
+	padding:1px 8px;
+	margin-left:8px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	}
+	  .timer_box {
+	padding:7px 10px 6px 35px;
+	background: url(../img/clock.png) no-repeat 5px center;
+	font-weight:bold;
+	color:#c11f73;
+	width:223px;
+	text-align:left;
+	margin:auto;
+	margin-bottom:30px;
+	 background-color: #f2f2f2;
+		  -moz-border-radius: 5px;
+	      border-radius: 5px;
+		  }
+	  .timer_box span {
+		  color:#111; 
+		  }
+.two_col {
+	float:left;
+	width:627px;
+	margin-right:35px;
+	text-align:center;
+}	 
+.banner {
+	margin-bottom:35px;
+}	 
+.website {
+	border:1px solid #f9f9f9;
+}	 
+/* CONTENT AREA TWO ================================================================================= */
+#content_2 {
+	width:100%;
+	background:url(../img/pattern_content_2.png) repeat;
+}
+#line_1 {
+	width:100%;
+	background: url(../img/line_1_content_2.png) repeat-x; height:9px;
+}
+#line_2 {
+	width:100%;
+	background: url(../img/line_2_content_2.png) repeat-x; height:9px;
+}
+#content_wp {
+	width:960px;
+	margin:auto;
+	padding:45px  0 0 0;
+	}
+/* FORM STYLES ================================================================================= */
+
+#form_bg {
+	background: url(../img/bg_form.png) no-repeat top left;
+	width:290px;
+	height:35px;
+	position:relative;
+	margin:auto;
+	margin-top:25px;
+}
+#form_bg input {
+	position:absolute;
+	top: 3px;
+	left:3px;
+	border:none;
+	background:none;
+	padding:7px;
+	width:200px;
+	font-size:12px;
+	font-weight:bold;
+	color:#c4c4c4;
+	display:block;
+}
+.send_bt {
+	background: url(../img/subscribe_bt.png) no-repeat top left;
+	width:79px;
+	height:28px;
+	text-indent:-9999px;
+	display:block;
+	cursor:pointer;
+	position:absolute;
+	top: 4px;
+	left:207px;
+	border:none;
+}
+
+.success {
+	font-weight:bold;
+	color: #6C0;
+}
+
+/* error message */
+.error {
+	font-size:11px;
+	padding:2px 5px;
+	color: #C03;
+	width:110px;
+	margin:0 0 10px 0;
+	position:absolute;
+	top: 38px;
+	left:0px;
+	font-weight:700;
+}
+
+/* TIPOGRAPHY ================================================================================= */
+h1, h2 {
+	font-family: 'Museo500';
+	
+}
+h3, h4, h5 {
+	font-family: 'Museo300';
+}
+h4 {
+	font-size:22px;
+	text-shadow: 2px 2px 2px #fff;
+	margin-bottom:10px;
+}
+h5 {
+	font-size:18px;
+	text-shadow: 2px 2px 2px #fff;
+	margin-bottom:5px;
+}
+.product_info h2 {
+	font-size:40px;
+	text-shadow: 2px 2px 2px #fff;
+	color:#c11f73;
+	margin-bottom:15px;
+}
+.product_info h2 span {
+	font-size:24px;
+	text-shadow: 2px 2px 2px #fff;
+	color:#8e8e8e;
+	margin-left:5px;
+	text-decoration:line-through;
+}
+.product_info h3 {
+	font-size:42px;
+	text-shadow: 2px 2px 2px #fff;
+	color:#111;
+	font-family: 'Museo500';
+	margin-bottom:25px;
+}
+.product_info p {
+	font-size:14px;
+	margin-bottom:20px;
+}
+.phone  {
+	display:block;
+	font-size:24px;
+	color:#c11f73;
+	padding-top:5px;
+	font-weight:700;
+	text-shadow: 2px 2px 2px #fff;
+}
+.cards, .shipping {
+	margin: 15px 0 0 0;
+}
+
+/* OTHER STYLES ================================================================================= */
+.clr {
+	clear:both;
+}
+a:link,a:visited {
+	text-decoration:none;
+	color:#2e96bd;
+}
+a:hover {
+	text-decoration:underline;
+	color:#2e96bd;
+}
+.badge_1 {
+	background:url(../img/badge_1.png) no-repeat;
+	width: 103px;
+	height:63px;
+	position:absolute;
+	left:280px;
+	top:280px;
+	color:#fff;
+	font-family: 'Museo500';
+	text-align:center;
+	text-shadow: 2px 2px 2px #6d245f;
+	font-size:30px;
+	padding-top:40px;
+}
+
+ul.list {
+	margin:15px 0 0 0;
+	padding:0 0 0 0;
+	list-style-image: url(../img/bullet.png) ;
+}
+ul.list_ok {
+	margin:15px 0 0 0;
+	padding:0 0 0 0;
+	list-style-image:  url(../img/tick.png);
+}
+ul.list li {
+	padding:0 0 0 0; 
+margin:3px  0 0 0;
+	}
+ul.list_ok li {
+	padding:0 0 0 0; 
+	margin: 3px 0 0 0 ;
+	}
+/* BUTTONS ================================================================================= */
+a:link.details, a:visited.details {
+	background: url(../img/info_blue.png) no-repeat;	
+	display:block;
+	width:82px;
+	height:25px;
+	margin:auto;
+	float:left;
+	font:bold 12px Arial;
+	color:White;
+	padding-top:7px;
+	margin-left:5px;
+	}
+.buttonAligne{float:left;margin-left:60px;}
+.buttonBuy{float:left;margin-left:47px;}
+a:link.buy, a:visited.buy 
+{	
+	float:left;
+	background: url(../img/buy_bt.png) no-repeat;	
+	display:block;
+	width:141px;
+	height:30px;
+	margin:auto;
+	color:White;
+	font:bold 13px Arial;
+	padding:10px 0px 0px 0px;	
+	}	
+	
+	a:hover.buy {
+	background: url(../img/buy_bt_hover.png) no-repeat;	
+	display:block;
+	width:141px;
+	height:40px;
+	color:White;
+	font:bold 13px Arial;
+	text-decoration:none;
+	}	
+/* FOOTER  ================================================================================= */
+
+	#footer {
+	width:100%;
+	background: #fff;
+}
+#footer_wp {
+	width:960px;
+	margin:auto;
+	margin-top:35px;
+	margin-bottom:35px;
+}
+#footer_wp ul {
+	float:left;
+	width:625px;
+	display:block;
+}
+#footer_wp ul li {
+	float:left;
+	padding-right: 12px;
+	background: url(../img/menu_footer_divider.png) no-repeat center right;
+}
+#footer_wp ul li.last {
+	background: none;
+}
+#footer_wp p  {
+	float: right;
+	width:180px;
+	text-align:right;
+}

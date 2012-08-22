@@ -1,0 +1,116 @@
+.sliderwrapper{
+position: relative; /*leave as is*/
+overflow: hidden; /*leave as is*/
+width: 960px; /*width of featured content slider*/
+height: 515px;
+z-index:900;
+
+}
+
+.sliderwrapper .contentdiv{
+visibility: hidden; /*leave as is*/
+position: absolute; /*leave as is*/
+left: 0;  /*leave as is*/
+top: 0;  /*leave as is*/
+width: 960px; /*width of content DIVs within slider. Total width should equal slider's inner width (390+5+5=400) */
+height: 100%;
+}
+
+.pagination {
+width: 80px; /*Width of pagination DIV. Total width should equal slider's outer width (400+10+10=420)*/
+position: absolute; /*leave as is*/
+right: 0;  /*leave as is*/
+bottom: 20px;  /*leave as is*/
+z-index:999;
+height:34px;
+}
+.pagination a:hover, .pagination a.selected{
+
+}
+.main_image {
+	width:480px;
+	height:515px;
+	float:left;
+	position:relative;
+}
+.product_info {
+	width:370px;
+	float:right;
+	padding-top:20px;
+}
+
+a:link.next, a:visited.next {
+	display:block;
+	background: url(../img/next.png) no-repeat 0 0;
+	width:34px;
+	height:34px;
+	border:none;
+	float:right;
+	text-indent:-9999px;
+}
+
+a:link.prev, a:visited.prev {
+	display:block;
+	background: url(../img/prev.png) no-repeat 0 0;
+	width:34px;
+	height:34px;
+	border:none;
+	float:left;
+	text-indent:-9999px;
+}
+.shadow {
+	width: 455px;
+	height: 30px;
+	background: url(../img/shadow.png) no-repeat center top;
+	margin:0;
+	padding:0;
+}
+
+ul.info_1 li#add a:link, ul.info_1 li#add a:visited {
+	background: url(../img/plus.png) no-repeat right 5px;
+	
+}
+ul.info_1 li#full a:link, ul.info_1 li#full a:visited {
+	background: url(../img/zoom.png) no-repeat right 5px;
+}
+ul.info_3 li#how {
+	background: url(../img/question.png) no-repeat 2px 4px;
+	padding-left:15px;
+}
+
+ul.info_3 li#phone {
+	background: url(../img/phone.png) no-repeat left 3px;
+	padding-left:15px;
+}
+ul.info_3 li#skype {
+	background: url(../img/skype.png) no-repeat left 4px;
+	padding-left:15px;
+}
+ul.info_3 li#info {
+	background: url(../img/info.png) no-repeat 3px 5px;
+	padding-left:15px;
+}
+ul.info_3 li#info a:link, ul.info_3 li#info a:visited, ul.info_3 li#how  a:link, ul.info_3 li#how a:visited {
+	font-weight:normal;
+	text-decoration:underline;
+	font-size:12px;
+}
+.materiale {
+	height: 40px;
+	width:auto;
+	margin-left:10px;
+}
+.like {
+	position:absolute;
+	left:35px;
+	bottom:45px;
+	width:120px;
+	height:20px;
+}
+
+ul.didascalia {
+	
+	font-style:italic; line-height:16px; background-color:#fff;}
+	
+	ul.didascalia strong {
+		font-style:normal; margin-bottom:3px; display:block}
